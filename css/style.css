@@ -129,17 +129,17 @@ button {
 }
 
 .ps-findstorage-search-form-container .ps-findstorage-search-form-input[type=text] {
-    background-color: transparent;
-    border: none;
-    -webkit-box-flex: 2;
-    -ms-flex-positive: 2;
-    flex-grow: 2;
-    font-size: .875rem;
-    font-weight: 700;
-    color: #0f274d;
-    width: calc(100% - 147px);
-    padding-left: 15px;
-    outline: 0;
+	background-color: transparent;
+	border: none;
+	-webkit-box-flex: 2;
+	-ms-flex-positive: 2;
+	flex-grow: 2;
+	font-size: .875rem;
+	font-weight: 700;
+	color: #0f274d;
+	width: calc(100% - 5px);
+	padding-left: 15px;
+	outline: 0;
 }
 
 .ps-findstorage-search-form-container .ps-findstorage-search-form-button[type=submit] {

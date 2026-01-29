@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -11,6 +11,7 @@
    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
    <link rel="stylesheet" href="./css/style.css">
    <link rel="stylesheet" href="./css/responsive.css">
+   <link rel="stylesheet" href="./css/city-state-zip-dropdown.css">
    <title>My Storage Cart</title>
 </head>
 
@@ -239,15 +240,33 @@
                         <div class="form-container">
                            <div class="ps-findstorage-search-form-container">
                               <form autocomplete="off" class="ps-findstorage-search-form">
-                                 <div class="ps-findstorage-search-form-inputs">
-                                    <input aria-label="Enter City, State or Zip"
-                                       class="ps-findstorage-search-form-input" maxlength="500" name="location"
-                                       placeholder="Enter City, State or Zip" type="text" value="">
-                                    <input aria-hidden="true" name="type" type="hidden" value="IsStorageUnit">
-                                    <input aria-hidden="true" name="context-search" type="hidden" value="true">
-                                    <button aria-label="Find Storage" class="ps-findstorage-search-form-button"
-                                       role="button" tabindex="0" type="submit" VALUE="Form">Find Storage </button>
-                                 </div>
+
+                                <div class="autocomplete-container" style="position: relative;">
+  <input
+    aria-label="Enter City, State or Zip"
+    class="ps-findstorage-search-form-input"
+    maxlength="500"
+    name="location"
+    placeholder="Enter City, State or Zip"
+    type="text"
+    value=""
+    autocomplete="off"
+    id="locationInput"
+  />
+  <ul class="suggestions-list" id="suggestions" style="display: none;"></ul>
+</div>
+
+<button
+  aria-label="Find Storage"
+  class="ps-findstorage-search-form-button"
+  role="button"
+  tabindex="0"
+  type="submit"
+  value="Form"
+>
+  Find Storage
+</button>
+
                               </form>
                            </div>
                         </div>
@@ -984,6 +1003,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
+   <script src="js/city-state-zip-dropdown.js"></script>
    <script>
 
       $("#news-slider2").owlCarousel({
