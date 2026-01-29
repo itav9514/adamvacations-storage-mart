@@ -1,0 +1,169 @@
+@media (max-width:767px) {
+    .business ul{display: block;}
+    .solution-strore ul{display:block;width: 100%;}
+    .solution-strore ul li{margin-right: 0;margin-bottom: 20px;}
+    .explore-main ul {display: block;}
+    .explore-main ul li {margin-right: 0;width: 100%;height: auto;margin-bottom: 52px;}
+    .find-answer ul {display: block;}
+    .find-answer ul li:nth-child(1) {width: 100%;}
+    .find-answer ul li:nth-child(2){width:100%; padding: 22px 19px 22px;}
+    .reduceall ul li{width: 100%;float: left;margin: 0 0 25px 0;}
+    .ps-storage--section.hero-section .main-banner-wrap h1{font-size: 1rem;}
+    .ps-heading-50-bold {font-size: 1.125rem;font-weight: 800;margin-bottom: 26px;}
+    .ps-storage--intro-section {padding-top: 1rem;}
+    .reduceall ul li.stn1,.reduceall ul li {margin: 0 0 20px 0;text-align: center;}
+    .Contractor h2 {text-align: center;margin-bottom: 10px;    font-size: 18px;}
+    .Contractor{margin-top:0;}
+    .Storage h2 {font-size: 14px;font-weight: 600;}
+    .business ul li {margin-right: 0;text-align: center;}
+    .business ul li img {height: auto;}
+    .solution-strore h3 {text-align: center;font-size: 15px;margin-bottom: 15px;}
+    .solution-strore ul li p {font-size: 15px;}
+    .public-stroge a {font-size: 13px;}
+    .public-stroge .panel-body {font-size: 11px;}
+    .testimonals h3 {color: #060606;font-size: 18px;line-height: 23px;margin-top: 10px;font-weight: 700;}
+    .testimonals button {font-size: 12px;}
+    /* .testimonals h2 {display: block;} */
+    .business-stroge{margin-top: 0;}
+    .solution-strore {margin-bottom: 20px;}
+    .ldding {margin: 0 0 20px;}
+    .ldding p{font-size: 12px;}
+    .find-answer ul li:nth-child(2) h2 {font-size: 21px;line-height: 28px;}
+    .find-answer ul li:nth-child(2) p {font-size: 12px;line-height: 19px;font-weight: 400;color: #8a8a8a;}
+    .explore-main h2 {font-size: 16px;margin-bottom: 46px;}
+    .explore-main ul li p {font-size: 14px;}
+    .explore-main ul li span {font-size: 13px;height: auto;}
+    .foott .data-1 ul h3 {font-size: 15px;}
+    .foott .data-1 li a {font-size: 13px;}
+    .foott .data-2 ul h3 {font-size: 15px;height: auto;}
+    .foott .data-2 li a {font-size: 13px;line-height: 27px;}
+    .media .media-middla {display: block;width: 100%;}
+    .media .media-middla .media-lft ul li {display: flex;justify-content: space-around;}
+    footer h3 {font-size: 17px;margin: 25px 0 11px;}
+    footer ul li a {font-size: 13px;}
+    .reduceall ul li h3 {font-size: 15px;}
+    .reduceall ul li p {font-size: 12px;}
+    .business-footer ul {display: block;}
+    .mob-txt span {
+        text-align: center !important;
+        float: none;
+    }
+    .border-all input {
+        margin-bottom: 13px;
+        font-size: 13px;
+        height: 43px;
+    }
+    select.form-control:not([size]):not([multiple]) {
+        height: calc(2.56rem + 2px);
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+    .warehose-storage h4,.warehose-storage h5 {
+       
+        font-size: 22px;
+        text-align: left;
+      
+    }
+    .border-all {
+     
+        margin-bottom: 20px;
+    }
+    .border-all button {
+      
+        padding: 6px 0;
+        font-size: 15px;
+      
+    }
+    .main-all {
+      
+        width: 100%;
+        display: block;
+        
+    }
+    .main-all .depar-1 {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .main-all .depar-2 {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .addtxt {
+        color: #f9ca00;
+        font-size: 18px;
+    }
+    .addtxtgray {
+        color: #545454;
+        font-size: 13px;
+    }
+    .signup-step-container {
+        padding: 0 0;
+    }
+    .btn-big {
+   
+        font-size: 14px;
+       
+    }
+    .main-all .depar-1 h3,.main-all .depar-2 h3 {
+        font-size: 14px;
+       
+    }
+    .testimonals h2 span {
+      
+        font-size: 12px;
+      
+        line-height: 15px;
+    }
+    .testimonals p {
+        color: #121c30;
+        font-size: 11px;
+    }
+    .testimonals .photoall{justify-content: center;}
+
+    .testimonals .photoall .dta1 img {
+  
+        margin-right: 0;
+    }
+    .testimonals .photoall .dta1 p {
+     
+        text-align: center;
+    }
+    .public-stroge h2 {
+
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .testimonals {
+        float: left;
+        width: 100%;
+        margin: 31px 0 -19px;
+    }
+    .hide-top{display: none;}
+    .mobile-new{          
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 17px 8px;
+    }
+    .thankyou{width:100%;}
+    .thankyou img{height:50px;}
+    .thankyou h2 {
+      
+        font-size: 20px;
+        
+    }
+    .thankyou p {font-size:13px;}
+    .thankyou p br{display:none;}
+    .item-add ul li {
+        margin-right: 3px;
+        margin-bottom: 11px;
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link{font-size: 14px;}
+    .nav-pills .nav-link {
+        font-size: 14px;
+    }
+    .data-few-item{margin-top: 0;}
+
+
+}
+

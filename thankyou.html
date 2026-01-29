@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="./css/bootstrap.min.css" >
+      <link rel="stylesheet" href="./css/owl.carousel.min.css" >
+      <link rel="stylesheet" href="./css/owl.theme.default.min.css" >
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/responsive.css">
+      <title>thankyou</title>
+   </head>
+   <body>
+     
+
+
+      <section>
+         <div class="container">
+
+            <div class="row">
+             <div class="col-md-12">
+
+
+               <div class="thankyou">
+                  <img src="images/tick-icon.png">
+                  <hr>
+                  <h2>Thank You for getting in touch!</h2>
+                  <p>We appreciate you contacting us. One of our colleagues will get back to you at the<br> earliest. Have a great day!</p>
+
+                  <span class="tanks-icon">
+                     Follow US
+                     <div class="social-icons">
+                        <a href="#" title="facebook"> 
+                          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" title="twitter"> 
+                          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" title="instagram">  
+                          <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                       
+                       
+                       
+                      </div>
+                  </span>
+
+
+               </div>
+
+             </div>
+            </div>
+
+         </div>
+      </section>
+
+
+      
+
+      
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+        
+        $(document).ready(function () {
+    $('.nav-tabs > li a[title]').tooltip();
+    
+    //Wizard
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+        var target = $(e.target);
+    
+        if (target.parent().hasClass('disabled')) {
+            return false;
+        }
+    });
+
+    $(".next-step").click(function (e) {
+
+        var active = $('.wizard .nav-tabs li.active');
+        active.next().removeClass('disabled');
+        nextTab(active);
+
+    });
+    $(".prev-step").click(function (e) {
+
+        var active = $('.wizard .nav-tabs li.active');
+        prevTab(active);
+
+    });
+});
+
+function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+}
+function prevTab(elem) {
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+}
+
+
+$('.nav-tabs').on('click', 'li', function() {
+    $('.nav-tabs li.active').removeClass('active');
+    $(this).addClass('active');
+});
+
+      </script>
+           <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+         </script>
+   </body>
+</html>
