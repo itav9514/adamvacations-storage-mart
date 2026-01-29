@@ -1965,8 +1965,12 @@ select.form-control:not([size]):not([multiple]) {
     background: #f7bc13;
     border-radius: 12px;
     padding: 6px 12px;
+    z-index:9;
 }
 .phone-footer img {
         height: 36px;
 }
 .phone-footer a{color:#000; font-size: 18px;}
+.phone-footer-mobile{
+    display: none;
+}
