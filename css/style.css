@@ -129,17 +129,17 @@ button {
 }
 
 .ps-findstorage-search-form-container .ps-findstorage-search-form-input[type=text] {
-	background-color: transparent;
-	border: none;
-	-webkit-box-flex: 2;
-	-ms-flex-positive: 2;
-	flex-grow: 2;
-	font-size: .875rem;
-	font-weight: 700;
-	color: #0f274d;
-	width: calc(100% - 5px);
-	padding-left: 15px;
-	outline: 0;
+    background-color: transparent;
+    border: none;
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    font-size: .875rem;
+    font-weight: 700;
+    color: #0f274d;
+    width: calc(100% - 5px);
+    padding-left: 15px;
+    outline: 0;
 }
 
 .ps-findstorage-search-form-container .ps-findstorage-search-form-button[type=submit] {
@@ -1021,7 +1021,7 @@ footer {
     background: #04223d;
     float: left;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 75px;
 }
 
 footer h3 {
@@ -1912,14 +1912,61 @@ select.form-control:not([size]):not([multiple]) {
 .Privacy-Policy ul {}
 
 .Privacy-Policy ul li {
-     color: #000;
+    color: #000;
     font-size: 14px;
     font-weight: 400;
     padding: 4px 0;
 }
+
 .Privacy-Policy address {
-     color: #000;
+    color: #000;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
 }
+
+
+/*** Single Page Hero Header Start ***/
+.bg-breadcrumb {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(31, 46, 78, 1), rgba(0, 12, 33, 0.5)), url(../images/fact-bg.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 60px 0;
+    transition: 0.5s;
+
+}
+
+.bg-breadcrumb .breadcrumb {
+    position: relative;
+}
+
+.bg-breadcrumb .breadcrumb .breadcrumb-item a {
+    color: #fff;
+}
+
+/*** Single Page Hero Header End ***/
+#contactForm .form-control {
+    margin-bottom: 20px;
+}
+
+.btn.btn-light {
+    color: #fff;
+    background: #f7bc13;
+    border: 1px solid #f7bc13;
+}
+
+.phone-footer {
+    position: fixed;
+    bottom: 20px;
+    right: 38px;
+    background: #f7bc13;
+    border-radius: 12px;
+    padding: 6px 12px;
+}
+.phone-footer img {
+        height: 36px;
+}
+.phone-footer a{color:#000; font-size: 18px;}
