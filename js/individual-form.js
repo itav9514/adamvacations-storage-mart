@@ -1,38 +1,50 @@
-const JSON_URL = '../utilities/USCities.json'; // or full URL if hosted: 'https://raw.githubusercontent.com/millbj92/US-Zip-Codes-JSON/master/USCities.json'
+// Loading search location from session storage on page load
 
-let allLocations = [];
+window.addEventListener('load', () => {
+  const savedLocation = sessionStorage.getItem('searchLocation');
+  
+  if (savedLocation) {
+    // Example: pre-fill an input
+    const locationField = document.querySelector('#some-location-input');
+    if (locationField) {
+      locationField.value = savedLocation;
+    }
+
+    // Or display it
+    console.log('User searched for:', savedLocation);
+  }
+});
+
+
+
+
+// Autocomplete logic (unchanged)
+
+import { loadUSData } from './us-cities-data.js';  // adjust path if needed, e.g. './js/data.js'
+
+// No more local fetch or allLocations declaration here!
+
 let selectedIndex = -1;
 
 const input = document.getElementById('locationInput');
 const suggestions = document.getElementById('suggestions');
 
-// 1. Load the JSON once
-fetch(JSON_URL)
-  .then(response => {
-    if (!response.ok) throw new Error('Failed to load USCities.json');
-    return response.json();
-  })
-  .then(data => {
-    allLocations = data.map(item => ({
-      zip: String(item.zip_code).padStart(5, '0'), // ensure 5 digits
-      city: item.city.trim(),
-      state: item.state.trim()
-    }));
+// Load data once when the script runs (or on first input if you prefer lazy)
+let locationsLoaded = false;
+let allLocations = []; // local reference – will be filled once
 
-    console.log(`Loaded ${allLocations.length} US ZIP entries`);
-  })
-  .catch(err => {
-    console.error('Error loading ZIP data:', err);
-    // Optional: fallback message in UI
-  });
+async function ensureDataLoaded() {
+  if (!locationsLoaded) {
+    allLocations = await loadUSData();
+    locationsLoaded = true;
+  }
+}
 
-// 2. Filter function
+// 2. Filter function (now uses allLocations after await)
 function getSuggestions(query) {
   if (!query || query.length < 2) return [];
 
   const q = query.toLowerCase().trim();
-
-  // Split if looks like "city, state" or "state zip"
   const parts = q.split(/[\s,]+/).filter(Boolean);
   const hasComma = query.includes(',');
 
@@ -43,7 +55,6 @@ function getSuggestions(query) {
       const zipLower   = item.zip.toLowerCase();
 
       if (hasComma && parts.length >= 2) {
-        // e.g. "New York, NY" or "Dallas, Texas"
         const cityPart  = parts[0].toLowerCase();
         const statePart = parts.slice(1).join(' ').toLowerCase();
         return (
@@ -52,17 +63,16 @@ function getSuggestions(query) {
         );
       }
 
-      // Normal search: match any part
       return (
         zipLower.includes(q) ||
         cityLower.includes(q) ||
         stateLower.includes(q)
       );
     })
-    .slice(0, 25); // limit suggestions to avoid huge list
+    .slice(0, 25);
 }
 
-// 3. Render suggestions
+// 3. Render suggestions (unchanged, but now allLocations is filled)
 function renderSuggestions(matches, query) {
   suggestions.innerHTML = '';
 
@@ -90,8 +100,6 @@ function renderSuggestions(matches, query) {
       input.value = `${item.city}, ${item.state} ${item.zip}`;
       suggestions.style.display = 'none';
       selectedIndex = -1;
-      // Optional: auto-submit form here if desired
-      // input.form.submit();
     });
     suggestions.appendChild(li);
   });
@@ -100,15 +108,19 @@ function renderSuggestions(matches, query) {
   selectedIndex = -1;
 }
 
-// 4. Input handler
-input.addEventListener('input', () => {
+// 4. Input handler – now async to wait for data
+input.addEventListener('input', async () => {
+  await ensureDataLoaded(); // ensure data is ready before filtering
+
   const query = input.value.trim();
   const matches = getSuggestions(query);
   renderSuggestions(matches, query);
 });
 
-// 5. Keyboard navigation
-input.addEventListener('keydown', e => {
+// 5. Keyboard navigation (updated to use allLocations)
+input.addEventListener('keydown', async (e) => {
+  await ensureDataLoaded(); // safe-guard
+
   const items = suggestions.querySelectorAll('li:not(.no-match)');
 
   if (e.key === 'ArrowDown') {
@@ -126,16 +138,15 @@ input.addEventListener('keydown', e => {
   } else if (e.key === 'Enter') {
     if (selectedIndex >= 0 && items[selectedIndex]) {
       e.preventDefault();
-      const item = allLocations.find(loc =>
-        loc.city === items[selectedIndex].querySelector('span').textContent.split(',')[0].trim()
-      );
+      const selectedText = items[selectedIndex].querySelector('span').textContent.trim();
+      const city = selectedText.split(',')[0].trim();
+      const item = allLocations.find(loc => loc.city === city);
       if (item) {
         input.value = `${item.city}, ${item.state} ${item.zip}`;
       }
       suggestions.style.display = 'none';
       selectedIndex = -1;
     }
-    // If no selection → just let form submit with typed value
   } else if (e.key === 'Escape') {
     suggestions.style.display = 'none';
     selectedIndex = -1;
@@ -151,9 +162,10 @@ function highlightItem(items) {
   }
 }
 
-// 6. Hide on outside click
+// 6. Hide on outside click (unchanged)
 document.addEventListener('click', e => {
   if (!input.contains(e.target) && !suggestions.contains(e.target)) {
     suggestions.style.display = 'none';
   }
 });
+
