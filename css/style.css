@@ -137,7 +137,7 @@ button {
 	font-size: .875rem;
 	font-weight: 700;
 	color: #0f274d;
-	width: calc(100% - 147px);
+	width: calc(100% - 5px);
 	padding-left: 15px;
 	outline: 0;
 }

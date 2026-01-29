@@ -1,0 +1,2 @@
+# Repo link for US-Zip-Codes-JSON
+https://github.com/millbj92/US-Zip-Codes-JSON

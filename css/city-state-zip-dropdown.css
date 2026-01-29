@@ -1,0 +1,61 @@
+.autocomplete-container {
+    position: relative;
+    width: 100%; /* or your desired width */
+    max-width: 380px;
+  }
+
+  .ps-findstorage-search-form-input {
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 280px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    text-align: left;
+    border-radius: 3px;
+  }
+
+  .suggestions-list li {
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 15px;
+    color:#555;
+  }
+
+  .suggestions-list li:hover,
+  .suggestions-list li.selected {
+    background-color: #f0f7ff;
+  }
+
+  .suggestions-list li .zip {
+    color: #555;
+    font-size: 0.9em;
+  }
+
+  .suggestions-list li .state {
+    color: #777;
+    font-size: 0.92em;
+  }
+
+  .no-match {
+    padding: 12px 16px;
+    color: #888;
+    font-style: italic;
+  }
