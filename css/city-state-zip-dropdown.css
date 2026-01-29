@@ -41,7 +41,7 @@
 
   .suggestions-list li:hover,
   .suggestions-list li.selected {
-    background-color: #f0f7ff;
+    background-color: #fef1d8;
   }
 
   .suggestions-list li .zip {
