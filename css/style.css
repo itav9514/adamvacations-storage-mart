@@ -657,7 +657,7 @@ div#news-slider3 {
     width: 100%;
     padding: 50px 20px 0;
 }
-
+.public-stroge p{font-size: 14px;}
 .public-stroge h2 {
     text-align: center;
     font-size: 35px;
@@ -665,7 +665,13 @@ div#news-slider3 {
     color: #000;
     margin-bottom: 50px;
 }
-
+.public-stroge h3 {
+     text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 136px;
+}
 .public-stroge a span {
     background: #f9b32c;
     border-radius: 50%;
@@ -2471,3 +2477,80 @@ select.form-control:not([size]):not([multiple]) {
 .inventory ul li .img-2 {
     width: 57%;
 }
+
+.access {
+    width: 100%;
+    float: left;
+    margin: 20px 0 30px;
+}
+
+.access h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 18px 0 31px;
+    text-align: center;
+}
+
+.access ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.access ul li {
+    list-style-type: none;
+    border-top: 3px solid #ff6300;
+}
+
+.access ul li h3 {
+    color: #000;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 21px 0 10px;
+}
+
+.access ul li p {
+    color: #a3adbb;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 16px 0 0;
+}
+
+.facilities {
+    background: url(../images/ban-2.png) no-repeat center center / cover;
+    width: 100%;
+    height: 450px;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    align-items: center;
+    display: flex;
+}
+
+.facilities h2 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    margin: 33px 0 18px;
+}
+
+.facilities p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.facilities ul {
+    margin: 0;
+    padding: 0;
+}
+
+.facilities li {
+    color: #fff;
+    list-style: none;
+    font-size: 16px;
+    margin: 14px 0 0;
+}
+.facilities li img{margin-right: 10px;}
