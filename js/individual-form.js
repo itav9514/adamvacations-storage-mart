@@ -1,23 +1,3 @@
-// Loading search location from session storage on page load
-
-// window.addEventListener('load', () => {
-//   const savedLocation = sessionStorage.getItem('searchLocation');
-  
-//   if (savedLocation) {
-//     // Example: pre-fill an input
-//     const locationInput = document.getElementById('locationInput');
-//     if (locationInput) {
-//       locationInput.value = savedLocation;
-//       locationInput.dispatchEvent(new Event('input', { bubbles: true }));
-//     locationInput.dispatchEvent(new Event('change', { bubbles: true })); // optional but helpful
-//     }
-
-//     // Or display it
-//     console.log('User searched for:', savedLocation);
-//   }
-// });
-
-
 
 
 // Autocomplete logic (unchanged)
@@ -174,55 +154,138 @@ document.addEventListener('click', e => {
 });
 
 
+
+
+
+
+
+
+
+
+
 // ────────────────────────────────────────────────
-// Save personal info + location (if present) to sessionStorage
+// Personal Info – Real-time validation + country code + session save
 // ────────────────────────────────────────────────
 
-const saveButton = document.getElementById('saveAndNext');
+document.addEventListener('DOMContentLoaded', () => {
+  const form   = document.getElementById('personalInfoForm');
+  const button = document.getElementById('nextPersonalInfo');
 
-saveButton.addEventListener('click', () => {
-  // Collect form values
-  const firstName = document.getElementById('firstName')?.value.trim() || '';
-  const lastName  = document.getElementById('lastName')?.value.trim()  || '';
-  const phone     = document.getElementById('phone')?.value.trim()     || '';
-  const email     = document.getElementById('email')?.value.trim()     || '';
-  
-  // Optional: get location from your autocomplete input
-  const location  = document.getElementById('locationInput')?.value.trim() || '';
+  if (!form || !button) return;
 
-  // Basic validation (you can make it stricter)
-  if (!firstName || !lastName || !phone || !email) {
-    alert('Please fill in all required fields.');
-    return;
-  }
-
-  // Create object with the data
-  const personalInfo = {
-    firstName,
-    lastName,
-    phone,
-    email,
-    location: location || null,           // optional
-    savedAt: new Date().toISOString(),    // useful for debugging
+  const fields = {
+    firstName   : document.getElementById('firstName'),
+    lastName    : document.getElementById('lastName'),
+    countryCode : document.getElementById('countryCode'),
+    phone       : document.getElementById('phone'),
+    email       : document.getElementById('email')
   };
 
-  // Save to sessionStorage
-  sessionStorage.setItem('personalInfo', JSON.stringify(personalInfo));
+  // ── Sanitize function ──────────────────────────
+  function sanitize(str) {
+    if (!str) return '';
+    return str
+      .replace(/<[^>]*>/g, '')
+      .replace(/[&<>"']/g, m => ({
+        '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'
+      }[m]))
+      .trim();
+  }
 
-  console.log('Personal information saved:', personalInfo);
+  // ── Phone + country code validation ────────────
+  function isPhoneValid() {
+    return (
+      fields.countryCode.value !== '' &&
+      fields.phone.validity.valid
+    );
+  }
 
-  // ── Proceed to next step / tab / page ───────────────
-  // Option A: if you're using display toggling
-  // document.getElementById('step1-3').style.display = 'none';
-  // document.getElementById('step4-or-whatever').style.display = 'block';
+  // ── Full form validation ───────────────────────
+  function isFormValid() {
+    return (
+      fields.firstName.validity.valid &&
+      fields.lastName.validity.valid &&
+      fields.email.validity.valid &&
+      isPhoneValid()
+    );
+  }
 
-  // Option B: if using class-based tabs
-  // saveButton.closest('.tab-pane')?.classList.remove('active');
-  // document.querySelector('#next-tab-id')?.classList.add('active');
+  // ── Update button state ────────────────────────
+  function updateButtonState() {
+    const valid = isFormValid();
+    button.disabled = !valid;
+    button.style.opacity = valid ? '1' : '0.55';
+    button.style.cursor  = valid ? 'pointer' : 'not-allowed';
+  }
 
-  // Option C: redirect
-  // window.location.href = '/next-page.html';
+  // ── Toggle error messages ──────────────────────
+  function toggleFieldError(field, show) {
+    const error = field.closest('.position-relative')?.querySelector('.invalid-feedback')
+      || field.nextElementSibling;
 
-  // Most common for multi-step forms: just trigger your existing next logic
-  // (if you already have .next-step click handler – you can call it or merge)
+    if (!error) return;
+
+    error.style.display = show ? 'block' : 'none';
+    field.classList.toggle('is-invalid', show);
+    field.classList.toggle('is-valid', !show);
+  }
+
+  // ── Real-time validation ───────────────────────
+  Object.values(fields).forEach(field => {
+    field.addEventListener('input', () => {
+      if (field === fields.phone || field === fields.countryCode) {
+        toggleFieldError(fields.phone, !isPhoneValid());
+      } else {
+        toggleFieldError(field, !field.validity.valid);
+      }
+      updateButtonState();
+    });
+
+    field.addEventListener('blur', () => {
+      if (field === fields.phone || field === fields.countryCode) {
+        toggleFieldError(fields.phone, !isPhoneValid());
+      } else {
+        toggleFieldError(field, !field.validity.valid);
+      }
+      updateButtonState();
+    });
+  });
+
+  updateButtonState();
+
+  // ── Submit handler ─────────────────────────────
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    if (!isFormValid()) {
+      Object.values(fields).forEach(field => {
+        if (field === fields.phone || field === fields.countryCode) {
+          toggleFieldError(fields.phone, !isPhoneValid());
+        } else {
+          toggleFieldError(field, !field.validity.valid);
+        }
+      });
+      return;
+    }
+
+    // ── Combine phone number ──────────────────────
+    const fullPhone = `${fields.countryCode.value}${fields.phone.value}`;
+
+    // ── Save final sanitized data ─────────────────
+    const personalInfo = {
+      firstName : sanitize(fields.firstName.value),
+      lastName  : sanitize(fields.lastName.value),
+      phone     : sanitize(fullPhone), // ← FINAL phone saved
+      email     : sanitize(fields.email.value),
+      location  : document.getElementById('locationInput')?.value.trim() || null,
+      savedAt   : new Date().toISOString()
+    };
+
+    sessionStorage.setItem('personalInfo', JSON.stringify(personalInfo));
+    console.log('Personal information saved:', personalInfo);
+
+    // ── Move to next step ─────────────────────────
+    document.getElementById('step1-3').style.display = 'none';
+    document.getElementById('step2').style.display = 'block';
+  });
 });

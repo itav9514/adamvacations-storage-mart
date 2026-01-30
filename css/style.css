@@ -1996,3 +1996,25 @@ select.form-control:not([size]):not([multiple]) {
 .phone-footer-mobile{
     display: none;
 }
+
+
+
+/* Make sure dropdown looks good with Bootstrap */
+.iti {
+  width: 100%;
+}
+
+.iti__flag-container {
+  padding-left: 0.75rem;
+}
+
+.form-control.iti__tel-input {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.iti__selected-flag {
+  background-color: transparent !important;
+  border-right: 1px solid #ced4da;
+  padding: 0 8px;
+}
