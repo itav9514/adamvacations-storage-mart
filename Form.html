@@ -462,7 +462,14 @@
                                 style="display: none"
                               ></ul>
                             </div>
-
+                            <div
+                              id="location-error"
+                              class="text-danger mt-1"
+                              style="display: none; font-size: 0.9rem"
+                            >
+                              Please enter at least 4 characters (city, state,
+                              or ZIP code).
+                            </div>
                           </div>
 
                           <div class="col-md-12">
@@ -1072,96 +1079,103 @@
             </ul>
           </div>
 
-        <div class="col-md-12">
-          <hr>
-          <p>© 2026 My Storage Mart. All rights reserved.</p>
+          <div class="col-md-12">
+            <hr />
+            <p>© 2026 My Storage Mart. All rights reserved.</p>
+          </div>
         </div>
-
       </div>
-
-    </div>
-
-
-  </footer>
-
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="module" src="js/individual-form.js"></script>
 
-<script>
-// ────────────────────────────────────────────────
-// Real-time validation + button + error + visual feedback
-// ────────────────────────────────────────────────
+    <script>
+      // Wait until DOM is ready + your validation listeners are attached
+      document.addEventListener("DOMContentLoaded", () => {
+        // ── Your existing validation setup ───────────────────────────────
+        const locationInput = document.getElementById("locationInput");
+        const nextButton = document.querySelector(".next-step1-1");
+        const errorElement = document.getElementById("location-error");
 
-const locationInput  = document.getElementById("locationInput");
-const nextButton     = document.querySelector(".next-step1-1");
+        if (!locationInput || !nextButton || !errorElement) {
+          console.warn("One or more location form elements missing");
+          return;
+        }
 
-if (locationInput && nextButton) {
+        function updateValidationState() {
+          const value = locationInput.value.trim();
+          const isValid = value.length >= 4;
 
-  function updateValidationState() {
-    const value   = locationInput.value.trim();
-    const isValid = value.length >= 2;
+          nextButton.disabled = !isValid;
+          nextButton.style.opacity = isValid ? "1" : "0.6";
+          nextButton.style.cursor = isValid ? "pointer" : "not-allowed";
 
-    // Button state
-    nextButton.disabled = !isValid;
-    nextButton.style.opacity = isValid ? "1" : "0.6";
-    nextButton.style.cursor  = isValid ? "pointer" : "not-allowed";
+          errorElement.style.display = isValid ? "none" : "block";
 
-    // Visual feedback on input field
-    locationInput.classList.toggle("is-invalid", !isValid);
-    locationInput.classList.toggle("is-valid",   isValid);
-  }
+          locationInput.classList.toggle("is-invalid", !isValid);
+          locationInput.classList.toggle("is-valid", isValid);
 
-  // Initial check (important for pre-filled values / reload)
-  updateValidationState();
+          console.log("Validation updated. Valid:", isValid);
+        }
 
-  // Listen to many events to catch almost every possible change
-  const events = [
-    "input",
-    "change",
-    "paste",
-    "cut",
-    "keydown",
-    "keyup",
-    "focus",
-    "blur"
-  ];
+        // Attach listeners
+        const events = [
+          "input",
+          "change",
+          "paste",
+          "cut",
+          "keydown",
+          "keyup",
+          "focus",
+          "blur",
+        ];
 
-  events.forEach(eventName => {
-    locationInput.addEventListener(eventName, updateValidationState);
-  });
-}
+        events.forEach((ev) => {
+          locationInput.addEventListener(ev, updateValidationState);
+        });
 
-// ────────────────────────────────────────────────
-// Save location + proceed when clicking Next (only if valid)
-// ────────────────────────────────────────────────
+        // ── Now restore saved value (after listeners are ready) ──────────
+        const savedLocation = sessionStorage.getItem("searchLocation");
 
-document.addEventListener("click", function (e) {
-  if (!e.target.matches(".next-step1-1")) return;
+        if (savedLocation) {
+          locationInput.value = savedLocation;
 
-  e.preventDefault();
+          // Force immediate validation update
+          updateValidationState(); // ← direct call (most reliable)
 
-  // Safety check
-  if (nextButton.disabled) {
-    alert("Please enter a valid location (at least 4 characters).");
-    return;
-  }
+          // Also dispatch events (good defense in depth)
+          locationInput.dispatchEvent(new Event("input", { bubbles: true }));
+          locationInput.dispatchEvent(new Event("change", { bubbles: true }));
 
-  // ── Save to sessionStorage ───────────────────────
-  const locationValue = locationInput.value.trim();
+          console.log("Restored location:", savedLocation);
+        } else {
+          // Still good to run initial check even when empty
+          updateValidationState();
+        }
+      });
 
-  if (locationValue) {
-    sessionStorage.setItem("searchLocation", locationValue);
-    console.log("Saved location:", locationValue);
-  } else {
-    sessionStorage.removeItem("searchLocation");
-  }
+      window.addEventListener("load", () => {
+        const locationInput = document.getElementById("locationInput");
+        if (!locationInput) return;
 
+        const saved = sessionStorage.getItem("searchLocation");
+        if (saved) {
+          locationInput.value = saved;
 
-});
-</script>
+          // Force update even if listeners aren't guaranteed yet
+          if (typeof updateValidationState === "function") {
+            updateValidationState();
+          }
+
+          // Still dispatch
+          locationInput.dispatchEvent(new Event("input", { bubbles: true }));
+          locationInput.dispatchEvent(new Event("change", { bubbles: true }));
+        }
+      });
+    </script>
 
     <script>
       $(document).ready(function () {

@@ -1,19 +1,21 @@
 // Loading search location from session storage on page load
 
-window.addEventListener('load', () => {
-  const savedLocation = sessionStorage.getItem('searchLocation');
+// window.addEventListener('load', () => {
+//   const savedLocation = sessionStorage.getItem('searchLocation');
   
-  if (savedLocation) {
-    // Example: pre-fill an input
-    const locationInput = document.getElementById('locationInput');
-    if (locationInput) {
-      locationInput.value = savedLocation;
-    }
+//   if (savedLocation) {
+//     // Example: pre-fill an input
+//     const locationInput = document.getElementById('locationInput');
+//     if (locationInput) {
+//       locationInput.value = savedLocation;
+//       locationInput.dispatchEvent(new Event('input', { bubbles: true }));
+//     locationInput.dispatchEvent(new Event('change', { bubbles: true })); // optional but helpful
+//     }
 
-    // Or display it
-    console.log('User searched for:', savedLocation);
-  }
-});
+//     // Or display it
+//     console.log('User searched for:', savedLocation);
+//   }
+// });
 
 
 
