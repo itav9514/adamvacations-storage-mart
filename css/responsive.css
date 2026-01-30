@@ -387,4 +387,30 @@
         font-size: 12px;
     }
 
+    .phone-footer-mobile {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 38px;
+        width: 30px;
+        height: 30px;
+        background-color: #f7bc13;
+        border-radius: 100%;
+        text-align: center;
+        padding: 3px 6px 0;
+        z-index: 99;
+    }
+
+    .phone-footer-mobile a {
+        color: #fff;
+    }
+
+    .phone-footer {
+        display: none;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
 }

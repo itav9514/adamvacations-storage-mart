@@ -1965,6 +1965,7 @@ select.form-control:not([size]):not([multiple]) {
     background: #f7bc13;
     border-radius: 12px;
     padding: 6px 12px;
+    z-index:9;
 }
 .phone-footer img {
         height: 36px;
@@ -1991,4 +1992,7 @@ select.form-control:not([size]):not([multiple]) {
 .is-invalid {
   border-color: #dc3545 !important;
   background-image: url("data:image/svg+xml,..."); /* Bootstrap invalid icon */
+}
+.phone-footer-mobile{
+    display: none;
 }
