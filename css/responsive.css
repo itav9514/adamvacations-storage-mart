@@ -515,5 +515,123 @@
         font-size: 14px;
     }
 
+    .solutions h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 0;
+    }
+
+    .solutions p {
+        font-size: 13px;
+
+    }
+
+    .solutions ul {
+        display: block;
+    }
+
+    .solutions ul li {
+        width: 100%;
+        margin: 0 0 17px;
+    }
+
+    .solutions ul li h3 {
+        color: #000;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .sele-storage-soluions h2 {
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .sele-storage-soluions ul {
+        display: block;
+    }
+
+    .sele-storage-soluions ul li {
+        width: 100%;
+    }
+
+    .sele-storage-soluions ul li strong {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .sele-storage-soluions ul li p {
+        font-size: 14px;
+    }
+
+    .convenience .sale h2 {
+        font-size: 18px;
+    }
+
+    .convenience .sale h3 {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0 0 0;
+    }
+
+    .convenience .sale p {
+        font-size: 13px;
+    }
+
+    .convenience {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .trusted h2 {
+        color: #060606;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    .trusted span {
+
+        font-size: 16px;
+
+    }
+
+    .trusted p {
+        font-size: 13px;
+
+    }
+
+    .trusted strong {
+        font-size: 16px;
+        margin: 0 0 7px;
+    }
+
+    .inventory h2 {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+
+    .inventory ul {
+
+        display: block;
+
+    }
+
+    .inventory ul li .img-1,
+    .inventory ul li .img-2 {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .inventory ul li {
+        margin-bottom: 30px;
+        display: block;
+        width: 100%;
+    }
+    .inventory ul li h2 {
+ 
+    margin: 19px 0 8px;
+            font-size: 18px;
+}
 
 }

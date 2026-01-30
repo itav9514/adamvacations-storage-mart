@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self Storage</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <style>
+    .bg-breadcrumb {
+      background: linear-gradient(rgba(31, 46, 78, 1), rgba(0, 12, 33, 0.1)), url(images/selt-banner.png);
+      padding: 39px 0 13px 0;
+    }
+
+    .ldding {
+
+      margin: 11px 0 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark hide-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="logo-home" href="/" title="Public Storage Home" aria-label="Go to Home page">
+          <img src="images/logo-6.svg" alt="Commerce Cloud Storefront Reference Architecture" fetchpriority="high"
+            width="100%" height="80px">
+        </a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="business.html">
+              Business
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="business.html">
+              Size Guide
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Storage Types
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="self-storage.html">Self Storage</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">24 Hour Self Storage</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Business Storage</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Vehicle & RV Storage</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Boat Storage</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Climate Controlled Storage</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+              <!--  /.container  -->
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="Form.html"><button class="primary-btn px-3 py-2">Book Storage</button></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 ml-1">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Business</a>
+            <a href="#">Business Storage</a>
+            <!-- <a href="#">About Us</a> -->
+          </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-new">
+    <div>
+      <a class="logo-home" href="/" title="Public Storage Home" aria-label="Go to Home page">
+        <img src="images/logo-6.svg" alt="Commerce Cloud Storefront Reference Architecture" fetchpriority="high"
+          width="100%" height="50px">
+      </a>
+    </div>
+    <div id="mySidenav1" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">Business</a>
+      <a href="#">Business Storage</a>
+
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+  <div class="container-fluid bg-breadcrumb mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 thanks-head">
+          <h1>
+            Self-Storage
+          </h1>
+          <p>Clean, Well-Lit Personal Self-Storage Options In Your Neighborhood.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MultiStep Form -->
+  <section class="solutions">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Storage Solutions for Every Need</h2>
+          <p>Whether you’re moving, renovating, or downsizing, we have the perfect space.</p>
+          <ul>
+            <li>
+              <h3>Personal Storage</h3>
+              <p>Ideal for furniture, seasonal items, and household goods.</p>
+            </li>
+            <li>
+              <h3>Business Storage</h3>
+              <p>Secure document, inventory, and equipment storage.</p>
+            </li>
+            <li>
+              <h3>Vehicle Storage</h3>
+              <p>Protected storage for cars, motorcycles, and boats.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="clearfix"></div>
+  <section class="sele-storage-soluions">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>SELF STORAGE SOLUTIONS</h2>
+
+          <ul>
+            <li>
+              <strong>Moving</strong>
+              <p>
+                Sometimes schedules slip and couches don't fit. If your moving plans leave you in limbo, you can
+                always store your packed-up household items with us.
+              </p>
+            </li>
+            <li>
+              <strong>Traveling and Military Deployment</strong>
+              <p>
+                Going on an adventure? Shipping out to serve our country? Pack light and store everything else with
+                us. All our units are month-to-month rentals, so you can grab things and go when you return.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="convenience">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="sale">
+            <h2>Designed for Convenience</h2>
+            <hr>
+            <h3>Staging for a Sale</h3>
+            <p>House shoppers need to be able to see themselves in the homes they consider, which is why Realtors tell
+              sellers to declutter before the first open house. If you're putting your house on the market, put some
+              things in storage so your house shows at its best.</p>
+            <h3>Subletting and Airbnb-ing</h3>
+            <p>People expect furnishings and a working kitchen when they sublet or rent via Airbnb, but they probably
+              don't want to live with your personal items. If you have things that you don't want to share with your
+              guests, store them with us.</p>
+            <h3>Remodeling</h3>
+            <p>When you're opening up walls and tearing out cabinets, the more room you have in which to work, the
+              better.
+              Whether you're doing it yourself or hiring it out, putting things in storage will make remodeling a lot
+              easier.</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section>
+  <section class="trusted">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <h2>Trusted by Millions</h2>
+          <span>See what our customers have to say</span>
+          <div id="news-slider2" class="owl-carousel owl-theme">
+
+            <div class="item">
+              <p>
+                ““I was going through a difficult time at home and had to downsize. The site manager,
+                Lydia, was very helpful and friendly. She and her assistant, Linda, made me feel right at home.
+                I feel I made some new friends. The location hours work perfectly for me, and this site is always very
+                clean and well-lit at night. I love my Public Storage.””
+              </p>
+              <strong>— Verified Customer</strong>
+            </div>
+            <div class="item">
+              <p>
+                ““I was going through a difficult time at home and had to downsize. The site manager,
+                Lydia, was very helpful and friendly. She and her assistant, Linda, made me feel right at home.
+                I feel I made some new friends. The location hours work perfectly for me, and this site is always very
+                clean and well-lit at night. I love my Public Storage.””
+              </p>
+              <strong>— Verified Customer</strong>
+            </div>
+            <div class="item">
+              <p>
+                ““I was going through a difficult time at home and had to downsize. The site manager,
+                Lydia, was very helpful and friendly. She and her assistant, Linda, made me feel right at home.
+                I feel I made some new friends. The location hours work perfectly for me, and this site is always very
+                clean and well-lit at night. I love my Public Storage.””
+              </p>
+              <strong>— Verified Customer</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="public-stroge">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="col-md-12">
+          <div class="container">
+            <div class="row">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="width: 100%">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne" class="">
+                        <span>01</span> What unit size do I need?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel"
+                    aria-labelledby="headingOne" style="">
+                    <div class="panel-body">
+                      Our storage experts can help you choose the perfect size based on your items.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <span>02</span> Are rentals month‑to‑month?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo"
+                    style="">
+                    <div class="panel-body">
+                      Yes, all rentals are flexible with no long‑term commitment.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <span>03</span> Is my storage unit secure?
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                    aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      We offer gated access, surveillance, and on‑site staff.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="inventory">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>Get the most out of self-storage</h2>
+        </div>
+        <div class="col-md-12">
+          <ul>
+            <li>
+              <div class="img-1">
+                <img src="images/get-banner-1.png" class="img-fluid">
+              </div>
+              <div class="img-2">
+                <h2>Label those boxes</h2>
+                <p>Take inventory as you pack, label each box (we like to list the contents too) and keep track of where
+                  you put it in your unit.</p>
+              </div>
+            </li>
+            <li>
+              <div class="img-1">
+                <img src="images/get-banner-2.png" class="img-fluid">
+              </div>
+              <div class="img-2">
+                <h2>Plan your storage space</h2>
+                <p>Pack your unit so that the items you need most are up front, where you can easily get to them.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-12">
+          <ul>
+            <li>
+              <div class="img-1">
+                <img src="images/get-banner-3.png" class="img-fluid">
+              </div>
+              <div class="img-2">
+                <h2>Be prepared</h2>
+                <p>Leave an extra key to your unit with a trusted friend who can access it if you're away or
+                  unavailable. You can authorize someone to access your unit in your account settings.</p>
+              </div>
+            </li>
+            <li>
+              <div class="img-1">
+                <img src="images/get-banner-4.png" class="img-fluid">
+              </div>
+              <div class="img-2">
+                <h2>Label those boxes</h2>
+                <p>Leave an extra key to your unit with a trusted friend who can access it if you're away or
+                  unavailable. You can authorize someone to access your unit in your account settings.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ldding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            Public Storage is the leading provider of Storage units for Your
+            personal, business and vehicle needs with thousands of locations
+            nationwide. We offer a wide variety of unites and sizes available
+            with no obligation and no long-term commitment. Call today at
+            1-855-663-3181 for a free reservation and get your first month's
+            rent for just $1.
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Storage Types</h3>
+          <ul>
+            <li>
+              <a href="self-storage.html">
+                Self Storage
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Business Storage
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Car and RV Storage
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Boat Storage
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Climate Controlled Storage
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Support</h3>
+          <ul>
+            <li>
+              <a href="contactus.html">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="privacypolicy.html">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="cookiespolicy.html">
+                Cookies Policy
+              </a>
+            </li>
+            <li>
+              <a href="termsconditions.html">
+                Terms and Conditions
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Company Info</h3>
+          <ul>
+            <li>
+              <a href="#">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                U.S. Locations
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Global Locations
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                3rd Party Management
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Commercial Real Estate
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Cell Tower Lease
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                AdChoices
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="col-md-12">
+          <hr>
+          <p>© 2026 My Storage Mart. All rights reserved.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </footer>
+  <div class="phone-footer">
+    <a href="tel:1-855-663-3181"><img src="images/phone-icon.png"> 1-855-663-3181</a>
+  </div>
+  <div class="phone-footer-mobile">
+    <a href="tel:1-855-663-3181"><i class="fa fa-phone"></i></a>
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $("#news-slider2").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      navigation: true,
+      autoPlay: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+        },
+      },
+    });
+    $(document).ready(function () {
+      $('.nav-tabs > li a[title]').tooltip();
+
+      //Wizard
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+        var target = $(e.target);
+
+        if (target.parent().hasClass('disabled')) {
+          return false;
+        }
+      });
+
+      $(".next-step").click(function (e) {
+
+        var active = $('.wizard .nav-tabs li.active');
+        active.next().removeClass('disabled');
+        nextTab(active);
+
+      });
+      $(".prev-step").click(function (e) {
+
+        var active = $('.wizard .nav-tabs li.active');
+        prevTab(active);
+
+      });
+    });
+
+    function nextTab(elem) {
+      $(elem).next().find('a[data-toggle="tab"]').click();
+    }
+    function prevTab(elem) {
+      $(elem).prev().find('a[data-toggle="tab"]').click();
+    }
+
+
+    $('.nav-tabs').on('click', 'li', function () {
+      $('.nav-tabs li.active').removeClass('active');
+      $(this).addClass('active');
+    });
+
+  </script>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("mySidenav1").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("mySidenav1").style.width = "0";
+    }
+  </script>
+</body>
+
+</html>

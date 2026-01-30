@@ -2250,3 +2250,224 @@ select.form-control:not([size]):not([multiple]) {
     margin-top: 104px;
     font-size: 18px;
 }
+
+.solutions {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.solutions h2 {
+    color: #060606;
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+
+.solutions p {
+    color: #060606;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.solutions ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.solutions ul li {
+    list-style-type: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    width: 32%;
+    padding: 15px;
+}
+
+.solutions ul li h3 {
+    color: #000;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.solutions ul li p {
+    color: #989da4;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sele-storage-soluions {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+}
+
+.sele-storage-soluions h2 {
+    color: #060606;
+    font-size: 29px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.sele-storage-soluions ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sele-storage-soluions ul li {
+    list-style-type: none;
+    width: 40%;
+}
+
+.sele-storage-soluions ul li strong {
+    color: #000;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: left;
+    display: inherit;
+}
+
+.sele-storage-soluions ul li p {
+    color: #a3adbb;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: justify;
+    margin: 13px 0 10px;
+}
+
+.convenience {
+    background: url(../images/self-banner-2.png) no-repeat center center / cover;
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.convenience .sale {}
+
+.convenience .sale h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 24px 0 0;
+}
+
+.convenience .sale h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 8px 0 12px;
+}
+
+.convenience .sale p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: 400;
+}
+
+.convenience .sale hr {
+    border-top: 1px solid #fff;
+}
+
+.trusted {
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.trusted h2 {
+    color: #060606;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.trusted span {
+    color: #a3adbb;
+    font-size: 25px;
+    display: inline-block;
+    margin: 0 0 14px;
+}
+
+.trusted p {
+    color: #121c30;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.trusted strong {
+    color: #a3adbb;
+    font-size: 22px;
+    text-align: left;
+    display: block;
+    margin: 24px 0 7px;
+}
+
+.inventory {
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.inventory h2 {
+    color: #060606;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.inventory ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inventory ul li {
+    list-style-type: none;
+    margin-bottom: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 49%;
+}
+
+.inventory ul li h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+.inventory ul li p {
+    color: #a3adbb;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0 0 3px;
+}
+
+.inventory ul li img {
+    border-radius: 12px 0 0 12px;
+    width: 100%;
+}
+
+.inventory ul li .img-1 {
+    width: 40%;
+    margin-right: 3%;
+}
+
+.inventory ul li .img-2 {
+    width: 57%;
+}
