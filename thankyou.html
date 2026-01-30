@@ -141,57 +141,33 @@
   </div>
   <div class="container">
     <div class="row">
+
+
       <div class="col-md-8">
-        <div class="top-head">
-          <h2>Booking Summary</h2>
-          <ul>
-            <li>
-              <strong>Booking Ref</strong>
-              <p>AV-000245</p>
-            </li>
-            <li>
-              <strong>Name</strong>
-              <p>John Doe</p>
-            </li>
-            <li>
-              <strong>Email</strong>
-              <p>john.doe@example.com</p>
-            </li>
-            <li>
-              <strong>Phone</strong>
-              <p>123-456-7890</p>
-            </li>
-            <li>
-              <strong>Car</strong>
-              <p>Toyota Corolla</p>
-            </li>
-            <li>
-              <strong>Category</strong>
-              <p>Economy</p>
-            </li>
-            <li>
-              <strong>Pickup</strong>
-              <p>London Airport</p>
-            </li>
-            <li>
-              <strong>Drop-off</strong>
-              <p>Manchester</p>
-            </li>
-            <li>
-              <strong>Add-ons</strong>
-              <p>GPS, Child Seat</p>
-            </li>
-            <li>
-              <strong>Base Price</strong>
-              <p>$220.00</p>
-            </li>
-          </ul>
-          <div class="total-price">
-            <p>Total Price</p>
-            <strong>$420.00</strong>
-          </div>
+      <div class="top-head">
+        <h2>Booking Summary</h2>
+        <ul id="enquiry-summary-list">
+          <!-- These <li> items will be replaced / filled by JavaScript -->
+          <li><strong>Booking Ref</strong><p id="booking-ref">Loading...</p></li>
+          <li><strong>Name</strong><p id="customer-name">Loading...</p></li>
+          <li><strong>Email</strong><p id="customer-email">Loading...</p></li>
+          <li><strong>Phone</strong><p id="customer-phone">Loading...</p></li>
+          <li><strong>Storage Package</strong><p id="package-type">Loading...</p></li>
+          <li><strong>Package Description</strong><p id="package-desc">Loading...</p></li>
+          <li><strong>Preferred Area</strong><p id="preferred-area">Loading...</p></li>
+          <li><strong>Lift Available</strong><p id="lift-availability">Loading...</p></li>
+          <li><strong>Floor</strong><p id="floor-number">Loading...</p></li>
+          <li><strong>Duration</strong><p id="duration-months">Loading...</p></li>
+          <li><strong>Tentative Pickup Date</strong><p id="tentative-date">Loading...</p></li>
+        </ul>
+
+        <div class="total-price">
+          <p>Total Estimated Cost</p>
+          <strong id="total-cost-display">$0.00</strong>
         </div>
       </div>
+    </div>
+
       <div class="col-md-4">
         <div class="address-bar">
           <h3><img src="images/thanks-icon-1.png"> Office Address</h3>
@@ -200,7 +176,7 @@
         </div>
         <div class="address-bar-1">
           <h3><img src="images/thanks-icon-2.png"> Email Support</h3>
-          <p>Support@adamvacations.com</p>
+          <p>support@adamvacations.com</p>
         </div>
         <div class="address-bar-1">
           <h3><img src="images/thanks-icon-3.png"> Availability</h3>
@@ -439,6 +415,85 @@
       document.getElementById("mySidenav1").style.width = "0";
     }
   </script>
+
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const storedData = sessionStorage.getItem("myStorageMartIndividualEnquiryResponse");
+
+    if (!storedData) {
+      // No data → show fallback message
+      document.getElementById("enquiry-summary-list").innerHTML = 
+        '<li class="text-danger"><strong>Error:</strong> No booking details found. Please contact support.</li>';
+      document.getElementById("total-cost-display").textContent = "—";
+      return;
+    }
+
+    try {
+      const data = JSON.parse(storedData);
+
+      // Booking Ref – using your format AV- followed by padded ID
+      const refId = data.id ? `SM-${String(data.id).padStart(6, '0')}` : "—";
+      document.getElementById("booking-ref").textContent = refId;
+
+      // Name
+      const fullName = [
+        data.personalInfo?.firstName || "",
+        data.personalInfo?.lastName || ""
+      ].filter(Boolean).join(" ") || "—";
+      document.getElementById("customer-name").textContent = fullName;
+
+      // Email & Phone
+      document.getElementById("customer-email").textContent = data.personalInfo?.email || "—";
+      document.getElementById("customer-phone").textContent = data.personalInfo?.phone || "—";
+
+      // Storage info
+      document.getElementById("package-type").textContent = data.selectedStoragePackage?.selectedType || "—";
+      document.getElementById("package-desc").textContent = data.selectedStoragePackage?.description || "—";
+
+      // Pickup info
+      document.getElementById("preferred-area").textContent = data.pickupDetails?.preferredArea || "—";
+      document.getElementById("lift-availability").textContent = 
+        (data.pickupDetails?.liftAvailability || "—").toUpperCase();
+
+      document.getElementById("floor-number").textContent = data.pickupDetails?.floor ?? "—";
+
+      const duration = data.pickupDetails?.durationMonths 
+        ? `${data.pickupDetails.durationMonths} months` 
+        : "—";
+      document.getElementById("duration-months").textContent = duration;
+
+      // Tentative date – formatted nicely
+      let pickupDate = "—";
+      if (data.pickupDetails?.tentativeDate) {
+        const dateObj = new Date(data.pickupDetails.tentativeDate);
+        if (!isNaN(dateObj)) {
+          pickupDate = dateObj.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+          });
+        }
+      }
+      document.getElementById("tentative-date").textContent = pickupDate;
+
+      // Total cost
+      document.getElementById("total-cost-display").textContent = 
+        data.totalStorageCost || "—";
+
+
+    } catch (error) {
+      console.error("Error parsing stored data:", error);
+      document.getElementById("enquiry-summary-list").innerHTML = 
+        '<li class="text-danger"><strong>Error:</strong> Unable to load booking details.</li>';
+      document.getElementById("total-cost-display").textContent = "—";
+    }
+  });
+
+</script>
+
+
 </body>
 
 </html>
