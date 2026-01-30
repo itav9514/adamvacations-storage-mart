@@ -657,7 +657,7 @@ div#news-slider3 {
     width: 100%;
     padding: 50px 20px 0;
 }
-
+.public-stroge p{font-size: 14px;}
 .public-stroge h2 {
     text-align: center;
     font-size: 35px;
@@ -665,7 +665,13 @@ div#news-slider3 {
     color: #000;
     margin-bottom: 50px;
 }
-
+.public-stroge h3 {
+     text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 136px;
+}
 .public-stroge a span {
     background: #f9b32c;
     border-radius: 50%;
@@ -1021,7 +1027,7 @@ footer {
     background: #04223d;
     float: left;
     width: 100%;
-    margin-top: 75px;
+    margin-top: 0;
 }
 
 footer h3 {
@@ -1966,35 +1972,43 @@ select.form-control:not([size]):not([multiple]) {
     background: #f7bc13;
     border-radius: 12px;
     padding: 6px 12px;
-    z-index:9;
+    z-index: 9;
 }
+
 .phone-footer img {
-        height: 36px;
+    height: 36px;
 }
-.phone-footer a{color:#000; font-size: 18px;}
+
+.phone-footer a {
+    color: #000;
+    font-size: 18px;
+}
 
 
 
 
 #location-error {
-  min-height: 1.2em;           /* prevents layout jump */
+    min-height: 1.2em;
+    /* prevents layout jump */
 }
 
 .default-btn:disabled,
 .default-btn[disabled] {
-  opacity: 0.6 !important;
-  cursor: not-allowed !important;
-  /* Optional: change background if you want stronger disabled look */
-  /* background-color: #cccccc !important; */
-  /* color: #666666 !important; */
+    opacity: 0.6 !important;
+    cursor: not-allowed !important;
+    /* Optional: change background if you want stronger disabled look */
+    /* background-color: #cccccc !important; */
+    /* color: #666666 !important; */
 }
 
 /* If using Bootstrap, you can also do: */
 .is-invalid {
-  border-color: #dc3545 !important;
-  background-image: url("data:image/svg+xml,..."); /* Bootstrap invalid icon */
+    border-color: #dc3545 !important;
+    background-image: url("data:image/svg+xml,...");
+    /* Bootstrap invalid icon */
 }
-.phone-footer-mobile{
+
+.phone-footer-mobile {
     display: none;
 }
 
@@ -2002,22 +2016,22 @@ select.form-control:not([size]):not([multiple]) {
 
 /* Make sure dropdown looks good with Bootstrap */
 .iti {
-  width: 100%;
+    width: 100%;
 }
 
 .iti__flag-container {
-  padding-left: 0.75rem;
+    padding-left: 0.75rem;
 }
 
 .form-control.iti__tel-input {
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
 }
 
 .iti__selected-flag {
-  background-color: transparent !important;
-  border-right: 1px solid #ced4da;
-  padding: 0 8px;
+    background-color: transparent !important;
+    border-right: 1px solid #ced4da;
+    padding: 0 8px;
 }
 
 
@@ -2106,3 +2120,525 @@ select.form-control:not([size]):not([multiple]) {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     font-family: inherit;
   }
+
+/********Thankyou Start*************/
+.thanks-head {}
+
+.thanks-head h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    margin: 0 0 28px;
+}
+
+.thanks-head p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 29px;
+}
+
+.thanks-head a {
+    display: table;
+    background: rgb(247 188 19 / 80%);
+    color: #fff;
+    font-weight: 700;
+    margin: 0 auto 0;
+    border-radius: 10px;
+    padding: 6px 14px 10px;
+}
+
+.top-head {
+    margin-top: -95px;
+    background: #fff;
+    border: 2px solid #92bce7;
+    border-radius: 20px;
+    padding: 20px 20px 40px;
+    width: 100%;
+    float: left;
+}
+
+.top-head h2 {
+    color: #1b1b1b;
+    font-weight: 700;
+    font-size: 33px;
+    margin: 0 0 24px;
+}
+
+.top-head ul {
+    margin: 0;
+    padding: 0;
+}
+
+.top-head ul li {
+    list-style-type: none;
+    background: #f5f8ff;
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    float: left;
+    border-radius: 10px;
+    padding: 2px 11px;
+}
+
+.top-head ul li strong {
+    color: #000;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0 0 24px;
+}
+
+.top-head ul li p {
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 3px;
+}
+
+.top-head .total-price {
+    width: 100%;
+    float: left;
+    background: #ecfdf5;
+    border: 2px dashed #9ef1bc;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+.top-head .total-price p {
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0 0 0;
+}
+
+.top-head .total-price strong {
+    color: #000;
+    font-weight: 800;
+    font-size: 23px;
+    margin: 0 0 0;
+}
+
+.address-bar {
+    margin-top: -95px;
+    background: #fff;
+    border: 2px solid #92bce7;
+    border-radius: 20px;
+    padding: 20px 20px 0;
+    width: 100%;
+    float: left;
+}
+
+.address-bar h3 {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.address-bar p {
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.address-bar-1 {
+    margin-top: 20px;
+    background: #fff;
+    border: 2px solid #92bce7;
+    border-radius: 20px;
+    padding: 20px 20px 0;
+    width: 100%;
+    float: left;
+}
+
+.address-bar-1 h3 {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.address-bar-1 p {
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.process-works {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.process-works h4 {
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.process-works ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.process-works ul li {
+    list-style-type: none;
+    width: 25%;
+}
+
+.process-works ul li h5 {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 24px 0 14px;
+}
+
+.process-works ul li p {
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 3px;
+}
+
+.process-works ul li span {
+    background: #f5f8ff;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 13px;
+}
+
+.need-banner {
+    background: url(../images/thanks-banner-2.png) no-repeat center center / cover;
+    height: 232px;
+    margin: 41px 0 56px;
+}
+
+.need-banner h6 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 34px;
+    margin: 70px 0 14px;
+}
+
+.need-banner p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 5px 0 0;
+}
+
+.need-banner button {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    border-radius: 25px;
+    margin-top: 104px;
+    font-size: 18px;
+}
+
+.solutions {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.solutions h2 {
+    color: #060606;
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+
+.solutions p {
+    color: #060606;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.solutions ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.solutions ul li {
+    list-style-type: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    width: 32%;
+    padding: 15px;
+}
+
+.solutions ul li h3 {
+    color: #000;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.solutions ul li p {
+    color: #989da4;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sele-storage-soluions {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+}
+
+.sele-storage-soluions h2 {
+    color: #060606;
+    font-size: 29px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.sele-storage-soluions ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sele-storage-soluions ul li {
+    list-style-type: none;
+    width: 40%;
+}
+
+.sele-storage-soluions ul li strong {
+    color: #000;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: left;
+    display: inherit;
+}
+
+.sele-storage-soluions ul li p {
+    color: #a3adbb;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: justify;
+    margin: 13px 0 10px;
+}
+
+.convenience {
+    background: url(../images/self-banner-2.png) no-repeat center center / cover;
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.convenience .sale {}
+
+.convenience .sale h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 24px 0 0;
+}
+
+.convenience .sale h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 8px 0 12px;
+}
+
+.convenience .sale p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: 400;
+}
+
+.convenience .sale hr {
+    border-top: 1px solid #fff;
+}
+
+.trusted {
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.trusted h2 {
+    color: #060606;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.trusted span {
+    color: #a3adbb;
+    font-size: 25px;
+    display: inline-block;
+    margin: 0 0 14px;
+}
+
+.trusted p {
+    color: #121c30;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.trusted strong {
+    color: #a3adbb;
+    font-size: 22px;
+    text-align: left;
+    display: block;
+    margin: 24px 0 7px;
+}
+
+.inventory {
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.inventory h2 {
+    color: #060606;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.inventory ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inventory ul li {
+    list-style-type: none;
+    margin-bottom: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 49%;
+}
+
+.inventory ul li h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+.inventory ul li p {
+    color: #a3adbb;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0 0 3px;
+}
+
+.inventory ul li img {
+    border-radius: 12px 0 0 12px;
+    width: 100%;
+}
+
+.inventory ul li .img-1 {
+    width: 40%;
+    margin-right: 3%;
+}
+
+.inventory ul li .img-2 {
+    width: 57%;
+}
+
+.access {
+    width: 100%;
+    float: left;
+    margin: 20px 0 30px;
+}
+
+.access h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 18px 0 31px;
+    text-align: center;
+}
+
+.access ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.access ul li {
+    list-style-type: none;
+    border-top: 3px solid #ff6300;
+}
+
+.access ul li h3 {
+    color: #000;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 21px 0 10px;
+}
+
+.access ul li p {
+    color: #a3adbb;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 16px 0 0;
+}
+
+.facilities {
+    background: url(../images/ban-2.png) no-repeat center center / cover;
+    width: 100%;
+    height: 450px;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    align-items: center;
+    display: flex;
+}
+
+.facilities h2 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    margin: 33px 0 18px;
+}
+
+.facilities p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.facilities ul {
+    margin: 0;
+    padding: 0;
+}
+
+.facilities li {
+    color: #fff;
+    list-style: none;
+    font-size: 16px;
+    margin: 14px 0 0;
+}
+.facilities li img{margin-right: 10px;}

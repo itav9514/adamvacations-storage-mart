@@ -413,4 +413,278 @@
         font-size: 13px;
     }
 
+    .thanks-head h1 {
+        font-size: 18px;
+    }
+
+    .thanks-head p,
+    .thanks-head a {
+        font-size: 14px;
+    }
+
+    .top-head h2 {
+        font-size: 18px;
+    }
+
+    .top-head ul li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 4%;
+    }
+
+    .top-head ul li strong {
+        font-size: 15px;
+    }
+
+    .address-bar {
+        margin-top: 30px;
+    }
+
+    .address-bar h3,
+    .address-bar-1 h3 {
+        font-size: 15px;
+    }
+
+    .address-bar p,
+    .address-bar-1 p {
+        font-size: 13px;
+
+    }
+
+    .process-works h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .process-works ul {
+
+        display: block;
+    }
+
+    .process-works ul li {
+        list-style-type: none;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .process-works ul li h5 {
+        color: #000;
+        font-weight: 700;
+        font-size: 15px;
+        margin: 11px 0 7px;
+    }
+
+    .process-works ul li p {
+        font-size: 13px;
+    }
+
+    .top-head .total-price p {
+        font-size: 13px;
+    }
+
+    .top-head .total-price strong {
+        font-size: 18px;
+    }
+
+    .need-banner {
+        height: auto;
+        margin: 2px 0 0px;
+    }
+
+    .need-banner h6 {
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 23px 0 14px;
+    }
+
+    .need-banner p {
+        color: #fff;
+        font-weight: 400;
+        font-size: 15px;
+        margin: 5px 0 0;
+    }
+
+    .need-banner button {
+        display: inline-block;
+        background: #fff;
+        color: #000;
+        border-radius: 25px;
+        margin-top: 36px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .solutions h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 0;
+    }
+
+    .solutions p {
+        font-size: 13px;
+
+    }
+
+    .solutions ul {
+        display: block;
+    }
+
+    .solutions ul li {
+        width: 100%;
+        margin: 0 0 17px;
+    }
+
+    .solutions ul li h3 {
+        color: #000;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .sele-storage-soluions h2 {
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .sele-storage-soluions ul {
+        display: block;
+    }
+
+    .sele-storage-soluions ul li {
+        width: 100%;
+    }
+
+    .sele-storage-soluions ul li strong {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .sele-storage-soluions ul li p {
+        font-size: 14px;
+    }
+
+    .convenience .sale h2 {
+        font-size: 18px;
+    }
+
+    .convenience .sale h3 {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0 0 0;
+    }
+
+    .convenience .sale p {
+        font-size: 13px;
+    }
+
+    .convenience {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .trusted h2 {
+        color: #060606;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    .trusted span {
+
+        font-size: 16px;
+
+    }
+
+    .trusted p {
+        font-size: 13px;
+
+    }
+
+    .trusted strong {
+        font-size: 16px;
+        margin: 0 0 7px;
+    }
+
+    .inventory h2 {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+
+    .inventory ul {
+
+        display: block;
+
+    }
+
+    .inventory ul li .img-1,
+    .inventory ul li .img-2 {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .inventory ul li {
+        margin-bottom: 30px;
+        display: block;
+        width: 100%;
+    }
+
+    .inventory ul li h2 {
+
+        margin: 19px 0 8px;
+        font-size: 18px;
+    }
+
+    .access h2 {
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0px 0 18px;
+    }
+
+    .access ul {
+        display: block;
+    }
+
+    .access ul li h3 {
+        color: #000;
+        font-weight: 600;
+        font-size: 17px;
+        margin: 10px 0 0;
+    }
+
+    .access ul li p {
+        color: #a3adbb;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 3px 0 13px;
+    }
+
+    .facilities {
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 30px;
+    }
+
+    .facilities h2 {
+        font-size: 18px;
+        margin: 20px 0 12px;
+    }
+
+    .facilities p {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .facilities li {
+        font-size: 13px;
+        margin: 12px 0 0;
+    }
+
+    .public-stroge h3 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
 }
