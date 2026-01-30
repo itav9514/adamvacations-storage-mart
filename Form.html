@@ -11,108 +11,154 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/city-state-zip-dropdown.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
 
     <title>Form</title>
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-dark hide-top">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <a class="logo-home" href="/" title="Public Storage Home" aria-label="Go to Home page">
-          <img src="images/logo-6.svg" alt="Commerce Cloud Storefront Reference Architecture" fetchpriority="high"
-            width="100%" height="80px">
-        </a>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="business.html">
-              Business
-            </a>
-          </li>
+    <nav class="navbar navbar-expand-lg navbar-dark hide-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a
+            class="logo-home"
+            href="/"
+            title="Public Storage Home"
+            aria-label="Go to Home page"
+          >
+            <img
+              src="images/logo-6.svg"
+              alt="Commerce Cloud Storefront Reference Architecture"
+              fetchpriority="high"
+              width="100%"
+              height="80px"
+            />
+          </a>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="business.html"> Business </a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="business.html">
-              Size Guide
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Storage Types
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-
-                    <ul class="nav flex-column">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">Self Storage</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">24 Hour Self Storage</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">Business Storage</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">Vehicle & RV Storage</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">Boat Storage</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">Climate Controlled Storage</a>
-                      </li>
-                    </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="business.html"> Size Guide </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Storage Types
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Self Storage</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#"
+                            >24 Hour Self Storage</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#"
+                            >Business Storage</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#"
+                            >Vehicle & RV Storage</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Boat Storage</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#"
+                            >Climate Controlled Storage</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-
                 </div>
               </div>
-              <!--  /.container  -->
+            </li>
+            <li class="nav-item">
+              <a href="Form.html"
+                ><button class="primary-btn px-3 py-2">Book Storage</button></a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 ml-1">
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <a href="#">Home</a>
+              <a href="#">Business</a>
+              <a href="#">Business Storage</a>
+              <!-- <a href="#">About Us</a> -->
             </div>
-          </li>
-          <li class="nav-item">
-            <a href="Form.html"><button class="primary-btn px-3 py-2">Book Storage</button></a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0 ml-1">
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Home</a>
-            <a href="#">Business</a>
-            <a href="#">Business Storage</a>
-            <!-- <a href="#">About Us</a> -->
-          </div>
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        </form>
+            <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+              >&#9776;</span
+            >
+          </form>
+        </div>
       </div>
+    </nav>
+    <div class="mobile-new">
+      <div>
+        <a
+          class="logo-home"
+          href="/"
+          title="Public Storage Home"
+          aria-label="Go to Home page"
+        >
+          <img
+            src="images/logo-6.svg"
+            alt="Commerce Cloud Storefront Reference Architecture"
+            fetchpriority="high"
+            width="100%"
+            height="50px"
+          />
+        </a>
+      </div>
+      <div id="mySidenav1" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#">Home</a>
+        <a href="#">Business</a>
+        <a href="#">Business Storage</a>
+      </div>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776;</span
+      >
     </div>
-  </nav>
-  <div class="mobile-new">
-    <div>
-      <a class="logo-home" href="/" title="Public Storage Home" aria-label="Go to Home page">
-        <img src="images/logo-6.svg" alt="Commerce Cloud Storefront Reference Architecture" fetchpriority="high"
-          width="100%" height="50px">
-      </a>
-    </div>
-    <div id="mySidenav1" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">Home</a>
-      <a href="#">Business</a>
-      <a href="#">Business Storage</a>
-      
-    </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-  </div>
     <!-- MultiStep Form -->
     <div class="container-fluid">
       <section class="signup-step-container">
@@ -123,7 +169,11 @@
                 <div class="wizard-inner">
                   <div class="connecting-line"></div>
                   <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active">
+                    <li
+                      role="presentation"
+                      class="active"
+                      onclick="displayForm1()"
+                    >
                       <a
                         href="#step1"
                         data-toggle="tab"
@@ -151,7 +201,11 @@
                         <p>Provide Information</p></a
                       >
                     </li>
-                    <li role="presentation" class="disabled">
+                    <li
+                      role="presentation"
+                      class="disabled"
+                      onclick="displayForm2()"
+                    >
                       <a
                         href="#step2"
                         data-toggle="tab"
@@ -180,7 +234,11 @@
                         <p>Add storage requirement</p></a
                       >
                     </li>
-                    <li role="presentation" class="disabled">
+                    <li
+                      role="presentation"
+                      class="disabled"
+                      onclick="displayForm3()"
+                    >
                       <a
                         href="#step3"
                         data-toggle="tab"
@@ -209,7 +267,11 @@
                         <p>Provide pick-up details</p></a
                       >
                     </li>
-                    <li role="presentation" class="disabled">
+                    <li
+                      role="presentation"
+                      class="disabled"
+                      onclick="displayForm4()"
+                    >
                       <a
                         href="#step4"
                         data-toggle="tab"
@@ -267,7 +329,7 @@
                             >
                               <input
                                 aria-label="Please enter city, state or zip where you’d like to use our services."
-                                class="ps-findstorage-search-form-input"
+                                class="ps-findstorage-search-form-input form-control"
                                 maxlength="500"
                                 name="location"
                                 placeholder="Please enter city, state or zip where you’d like to use our services."
@@ -420,12 +482,13 @@
                             />
                           </div>
 
-                          <!--<div
-    class="invalid-feedback text-danger mt-1 small"
-    style="display: none"
-  >
-    Please select a country code and enter a valid phone number.
-  </div>-->
+                          <div
+                            class="invalid-feedback text-danger mt-1 small"
+                            style="display: none"
+                          >
+                            Please select a country code and enter a valid phone
+                            number.
+                          </div>
                         </div>
 
                         <div class="col-md-12 gap-bottom position-relative">
@@ -483,7 +546,7 @@
                               aria-controls="pills-Items"
                               aria-selected="true"
                             >
-                              Few Items
+                              Small 4'x 4'
                             </button>
                           </li>
                           <li class="nav-item" role="presentation">
@@ -497,7 +560,7 @@
                               aria-controls="pills-onerk"
                               aria-selected="false"
                             >
-                              1 Rk
+                              Small 5' x 5'
                             </button>
                           </li>
                           <li class="nav-item" role="presentation">
@@ -511,7 +574,7 @@
                               aria-controls="pills-onebhk"
                               aria-selected="false"
                             >
-                              1 BHK
+                              Small 5' x 10'
                             </button>
                           </li>
                           <li class="nav-item" role="presentation">
@@ -525,7 +588,7 @@
                               aria-controls="pills-twobhk"
                               aria-selected="false"
                             >
-                              2 BHK
+                              Medium 10' x 10'
                             </button>
                           </li>
                           <li class="nav-item" role="presentation">
@@ -539,7 +602,7 @@
                               aria-controls="pills-threebhk"
                               aria-selected="false"
                             >
-                              3 BHK
+                              Large 10' x 15'
                             </button>
                           </li>
                           <li class="nav-item" role="presentation">
@@ -553,7 +616,7 @@
                               aria-controls="pills-fourbhk"
                               aria-selected="false"
                             >
-                              4 BHK
+                              Large 10' x 20'
                             </button>
                           </li>
                         </ul>
@@ -566,7 +629,7 @@
                               aria-labelledby="pills-home-tab"
                             >
                               <p>
-                                <strong>Few Items -</strong> 8 Boxes
+                                <strong>Small 4' x 4' -</strong> 8 Boxes
                                 (Approximately)
                               </p>
                             </div>
@@ -577,7 +640,7 @@
                               aria-labelledby="pills-profile-tab"
                             >
                               <p>
-                                <strong>1 Room Kitchen -</strong>1 Large, 2
+                                <strong>Small 5' x 5' -</strong>1 Large, 2
                                 Medium, 1 Small Items, 4 Boxes (Approximately)
                               </p>
                             </div>
@@ -588,9 +651,8 @@
                               aria-labelledby="pills-contact-tab"
                             >
                               <p>
-                                <strong>1 Bedroom Hall Kitchen -</strong>1
-                                Large, 2 Medium, 2 Small Items, 6 Boxes
-                                (Approximately)
+                                <strong>Small 5' x 10' -</strong>1 Large, 2
+                                Medium, 2 Small Items, 6 Boxes (Approximately)
                               </p>
                             </div>
                             <div
@@ -600,9 +662,8 @@
                               aria-labelledby="pills-contact-tab"
                             >
                               <p>
-                                <strong>2 Bedroom Hall Kitchen -</strong>2
-                                Large, 3 Medium, 3 Small Items, 10 Boxes
-                                (Approximately)
+                                <strong>Medium 10' x 10' -</strong>2 Large, 3
+                                Medium, 3 Small Items, 10 Boxes (Approximately)
                               </p>
                             </div>
                             <div
@@ -612,9 +673,8 @@
                               aria-labelledby="pills-contact-tab"
                             >
                               <p>
-                                <strong>3 Bedroom Hall Kitchen -</strong>3
-                                Large, 3 Medium, 6 Small Items, 15 Boxes
-                                (Approximately)
+                                <strong>Large 10' x 15' -</strong>3 Large, 3
+                                Medium, 6 Small Items, 15 Boxes (Approximately)
                               </p>
                             </div>
                             <div
@@ -624,9 +684,8 @@
                               aria-labelledby="pills-contact-tab"
                             >
                               <p>
-                                <strong>4 Bedroom Hall Kitchen -</strong>4
-                                Large, 4 Medium, 8 Small Items, 20 Boxes
-                                (Approximately)
+                                <strong>Large 10' x 20' -</strong>4 Large, 4
+                                Medium, 8 Small Items, 20 Boxes (Approximately)
                               </p>
                             </div>
                           </div>
@@ -669,7 +728,7 @@
                             src="images/phone-icon.png"
                             style="height: 35px"
                           />
-                          800-688-8057
+                          1-855-663-3181
                         </div>
                         <div class="txt-normal">
                           If you require an urgent Pick-Up,or need any other
@@ -681,7 +740,11 @@
 
                     <ul class="list-inline pull-right">
                       <li>
-                        <button type="button" class="default-btn prev-step">
+                        <button
+                          type="button"
+                          onclick="displayForm1()"
+                          class="default-btn prev-step"
+                        >
                           Back
                         </button>
                       </li>
@@ -689,6 +752,9 @@
                       <li>
                         <button
                           type="button"
+                          onclick="
+                            saveSelectedStoragePackage() && displayForm2()
+                          "
                           class="default-btn next-step next-tab"
                         >
                           Continue
@@ -696,187 +762,235 @@
                       </li>
                     </ul>
                   </div>
+
                   <div class="tab-pane" role="tabpanel" id="step3">
                     <h4 class="addtxt">Pick-Up Details</h4>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <select name="country" class="form-control" id="">
-                            <option value="">
-                              Search for Area*(Type in Society Name, Colony
-                              Name, Area Name)*
-                            </option>
-                            <option value="">Bengaluru</option>
-                            <option value="">Delhi/NCR</option>
-                            <option value="">Mumbai</option>
-                            <option value="">Pune</option>
-                          </select>
+                    <form id="pickupDetailsForm">
+                      <div class="row">
+                        <!-- Preferred Area with Autocomplete -->
+                        <div class="col-md-12">
+                          <div class="form-group position-relative">
+                            <label for="preferredAreaInput" class="form-label"
+                              >Preferred Area*</label
+                            >
+                            <input
+                              type="text"
+                              id="preferredAreaInput"
+                              name="preferred_area"
+                              class="form-control"
+                              placeholder="Society / Colony / Area Name"
+                              autocomplete="off"
+                              required
+                            />
+                            <ul
+                              class="suggestions-list"
+                              id="preferredSuggestions"
+                              style="display: none"
+                            ></ul>
+                            <div
+                              id="preferred-error"
+                              class="text-danger mt-1"
+                              style="display: none; font-size: 0.9rem"
+                            >
+                              Please enter at least 4 characters
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input
-                            class="form-control"
-                            type="text"
-                            name="name"
-                            placeholder="Pin Code*"
-                          />
+
+                        <!-- Service Lift Availability -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="liftAvailability" class="form-label"
+                              >Service Lift Availability*</label
+                            >
+                            <select
+                              id="liftAvailability"
+                              class="form-control"
+                              required
+                            >
+                              <option value="">Select</option>
+                              <option value="yes">Yes</option>
+                              <option value="no">No</option>
+                            </select>
+                            <div
+                              id="lift-error"
+                              class="text-danger mt-1"
+                              style="display: none"
+                            >
+                              Required field
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input
-                            class="form-control"
-                            type="text"
-                            name="name"
-                            placeholder="State*"
-                          />
+
+                        <!-- Floor -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="floor" class="form-label">Floor*</label>
+                            <input
+                              type="number"
+                              id="floor"
+                              name="floor"
+                              class="form-control"
+                              min="0"
+                              placeholder="Floor*"
+                              required
+                            />
+                            <div
+                              id="floor-error"
+                              class="text-danger mt-1"
+                              style="display: none"
+                            >
+                              Enter a valid floor number (0 or positive)
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input
-                            class="form-control"
-                            type="text"
-                            name="name"
-                            placeholder="City*"
-                          />
+
+                        <!-- Duration of Storage (Monthly) – Range Slider with Yellow Theme -->
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="durationMonths" class="form-label"
+                              >Duration of Storage (Monthly)*</label
+                            >
+                            <input
+                              type="range"
+                              id="durationMonths"
+                              min="1"
+                              max="24"
+                              value="1"
+                              class="form-range yellow-range"
+                              required
+                            />
+                            <div
+                              id="durationValue"
+                              class="text-center mt-2 fw-bold"
+                            >
+                              1 month
+                            </div>
+                            <div
+                              id="duration-error"
+                              class="text-danger mt-1"
+                              style="display: none"
+                            >
+                              Select duration (1-24 months)
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input
-                            class="form-control"
-                            type="text"
-                            name="name"
-                            placeholder="service Lift Availability*"
-                          />
+
+                        <!-- Tentative Pick-Up Date – Flatpickr Single Calendar with Yellow Theme -->
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="tentativeDate" class="form-label"
+                              >Tentative Pick-Up Date*</label
+                            >
+                            <input
+                              type="text"
+                              id="tentativeDate"
+                              name="tentative_date"
+                              class="form-control"
+                              placeholder="Tentative Pick-Up Date*"
+                              required
+                            />
+                            <div
+                              id="date-error"
+                              class="text-danger mt-1"
+                              style="display: none"
+                            >
+                              Select a valid future date
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input
-                            class="form-control"
-                            type="text"
-                            name="name"
-                            placeholder="Floor*"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input
-                            class="form-control"
-                            type="text"
-                            name="name"
-                            placeholder="Storage Type (Monthly/Weekly)*"
-                          />
+
+                        <!-- Phone Assistance -->
+                        <div class="col-md-12 text-center gap-top">
+                          <div class="txt-bold">
+                            <img
+                              src="images/phone-icon.png"
+                              style="height: 35px"
+                            />
+                            1-855-663-3181
+                          </div>
+                          <div class="txt-normal">
+                            If you require an urgent Pick-Up, or need any other
+                            assistance, please call us and speak to an SMG
+                            representative.
+                          </div>
                         </div>
                       </div>
 
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <input
-                            class="form-control"
-                            type="text"
-                            name="name"
-                            placeholder="Duration of Storage (Monthly)*"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <input
-                            class="form-control"
-                            type="text"
-                            name="name"
-                            placeholder="Tentative Pick-Up Date*"
-                          />
-                        </div>
-                      </div>
-
-                      <div class="col-md-12 text-center gap-top">
-                        <div class="txt-bold">
-                          <img
-                            src="images/phone-icon.png"
-                            style="height: 35px"
-                          />
-                          800-688-8057
-                        </div>
-                        <div class="txt-normal">
-                          If you require an urgent Pick-Up,or need any other
-                          assistance, please call us and speak to an SMG
-                          representative.
-                        </div>
-                      </div>
-                    </div>
-                    <ul class="list-inline pull-right">
-                      <li>
-                        <button type="button" class="default-btn prev-step">
-                          Back
-                        </button>
-                      </li>
-                      <!-- <li><button type="button" class="default-btn next-step skip-btn">Skip</button></li> -->
-                      <li>
-                        <button
-                          type="button"
-                          class="default-btn next-step next-tab"
-                        >
-                          Continue
-                        </button>
-                      </li>
-                    </ul>
+                      <!-- Navigation Buttons -->
+                      <ul class="list-inline pull-right">
+                        <li>
+                          <button
+                            type="button"
+                            onclick="displayForm2()"
+                            class="default-btn prev-step"
+                          >
+                            Back
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            type="button"
+                            id="continuePickupBtn"
+                            class="default-btn next-step next-tab"
+                            onclick="calculateStoragePricing()"
+                            disabled
+                          >
+                            Continue
+                          </button>
+                        </li>
+                      </ul>
+                    </form>
                   </div>
+
                   <div class="tab-pane" role="tabpanel" id="step4">
                     <h4 class="addtxt">Your Estimate</h4>
                     <p class="addtxtgray">
-                      This is a tentative estimate Final price may Very based on
+                      This is a tentative estimate Final price may vary based on
                       the actual stroge items, as verified at the time of
                       pick-up.
                     </p>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="Payment-main">
-                          <p>
-                            Estimated Monthly Storage Chargs
-                            <span>$4000 + 18% GST</span>
-                          </p>
-                          <p>Discounte Percentage <span>20%</span></p>
-                          <p>
-                            Monthly Storage Charges(After Discount)
-                            <span>$4000</span>
-                          </p>
-                          <p>
-                            Logistics Charges(Packaging and Transport)
-                            <span>$3600</span>
-                          </p>
-                          <p>Refundable Security Deposit<span>$36000</span></p>
-                          <hr />
+
+                    <div class="row p-4">
+                      <div class="Payment-main">
+                        <p>
+                          Storage Plan
+                          <span id="storageTypeDuration">Loading...</span>
+                        </p>
+
+                        <p>
+                          Monthly Storage Rate
+                          <span id="monthlyRate">Loading...</span>
+                        </p>
+
+                        <hr />
+                      </div>
+
+                      <div class="booking-Amount">
+                        <div>
+                          <h4>Total Storage Cost</h4>
+                          <p>(Excluding Security deposit)</p>
+
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="agreeTermsCheckbox"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="agreeTermsCheckbox"
+                            >
+                              I agree to the <b>Terms & Conditions</b>
+                            </label>
+                          </div>
                         </div>
 
-                        <div class="booking-Amount">
-                          <div>
-                            <h4>Booking Amount</h4>
-                            <p>(To Reserve Your Storage at this price)</p>
-                            <div class="form-check">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                value=""
-                                id="flexCheckDefault"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="flexCheckDefault"
-                              >
-                                I agree to the <b>Terms & Conditions</b>
-                              </label>
-                            </div>
-                          </div>
-                          <div>
-                            <strong>$36000 </strong>
-                            <button type="button">Pay Now</button>
-                          </div>
+                        <div>
+                          <strong id="totalStorageCost">Loading...</strong>
+                          <button type="button" id="payNowBtn" disabled>
+                            Pay Now
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -937,7 +1051,6 @@
               <li>
                 <a href="termsconditions.html"> Terms and Conditions </a>
               </li>
-             
             </ul>
           </div>
           <div class="col-md-4">
@@ -975,8 +1088,16 @@
       </div>
     </footer>
 
+    <style>
+      .loading {
+        opacity: 0.6;
+        font-style: italic;
+      }
+    </style>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="module" src="js/individual-form.js"></script>
 
@@ -1043,24 +1164,28 @@
         }
       });
 
-      window.addEventListener("load", () => {
-        const locationInput = document.getElementById("locationInput");
-        if (!locationInput) return;
+      function loadSavedLocation() {
+        window.addEventListener("load", () => {
+          const locationInput = document.getElementById("locationInput");
+          if (!locationInput) return;
 
-        const saved = sessionStorage.getItem("searchLocation");
-        if (saved) {
-          locationInput.value = saved;
+          const saved = sessionStorage.getItem("searchLocation");
+          if (saved) {
+            locationInput.value = saved;
 
-          // Force update even if listeners aren't guaranteed yet
-          if (typeof updateValidationState === "function") {
-            updateValidationState();
+            // Force update even if listeners aren't guaranteed yet
+            if (typeof updateValidationState === "function") {
+              updateValidationState();
+            }
+
+            // Still dispatch
+            locationInput.dispatchEvent(new Event("input", { bubbles: true }));
+            locationInput.dispatchEvent(new Event("change", { bubbles: true }));
           }
+        });
+      }
 
-          // Still dispatch
-          locationInput.dispatchEvent(new Event("input", { bubbles: true }));
-          locationInput.dispatchEvent(new Event("change", { bubbles: true }));
-        }
-      });
+      loadSavedLocation();
     </script>
 
     <script>
@@ -1118,6 +1243,314 @@
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("mySidenav1").style.width = "0";
+      }
+    </script>
+
+    <script>
+      function loadSavedLocation() {
+        console.log("Running loadSavedLocation");
+
+        const locationInput = document.getElementById("locationInput");
+        if (!locationInput) {
+          console.warn("locationInput not found");
+          return;
+        }
+
+        const saved = sessionStorage.getItem("searchLocation");
+        if (saved) {
+          locationInput.value = saved.trim();
+          console.log("Restored location:", saved);
+
+          // Trigger any listeners/validation
+          locationInput.dispatchEvent(new Event("input", { bubbles: true }));
+          locationInput.dispatchEvent(new Event("change", { bubbles: true }));
+        }
+      }
+
+      function displayForm1() {
+        const steps = ["step2", "step1-1", "step3", "step4"];
+
+        steps.forEach((id) => {
+          const el = document.getElementById(id);
+          if (el) {
+            el.style.display = id === "step1-1" ? "block" : "none";
+            loadSavedLocation();
+          }
+        });
+      }
+
+      function displayForm2() {
+        // Better: hide all steps first, then show the target one
+        const steps = ["step2", "step1-1", "step3", "step4"];
+
+        steps.forEach((id) => {
+          const el = document.getElementById(id);
+          if (el) {
+            el.style.display = id === "step2" ? "block" : "none";
+          }
+        });
+      }
+
+      function displayForm3() {
+        // Better: hide all steps first, then show the target one
+        const steps = ["step2", "step1-1", "step3", "step4"];
+
+        steps.forEach((id) => {
+          const el = document.getElementById(id);
+          if (el) {
+            el.style.display = id === "step3" ? "block" : "none";
+          }
+        });
+      }
+
+      function displayForm4() {
+        // Better: hide all steps first, then show the target one
+        const steps = ["step2", "step1-1", "step3", "step4"];
+
+        steps.forEach((id) => {
+          const el = document.getElementById(id);
+          if (el) {
+            el.style.display = id === "step4" ? "block" : "none";
+          }
+        });
+      }
+    </script>
+
+    <script>
+      function saveSelectedStoragePackage() {
+        const activeTab = document.querySelector(
+          "#pills-tabContent .tab-pane.active",
+        );
+
+        if (!activeTab) {
+          alert("Please select a storage package first.");
+          return false; // ← return false to indicate failure (optional)
+        }
+
+        const selectedId = activeTab.id;
+
+        const storageOptions = {
+          "pills-Items": {
+            type: "Small4x4",
+            description: "8 Boxes (Approximately)",
+          },
+          "pills-onerk": {
+            type: "Small5x5",
+            description:
+              "1 Large, 2 Medium, 1 Small Items, 4 Boxes (Approximately)",
+          },
+          "pills-onebhk": {
+            type: "Small5x10",
+            description:
+              "1 Large, 2 Medium, 2 Small Items, 6 Boxes (Approximately)",
+          },
+          "pills-twobhk": {
+            type: "Medium10x10",
+            description:
+              "2 Large, 3 Medium, 3 Small Items, 10 Boxes (Approximately)",
+          },
+          "pills-threebhk": {
+            type: "Large10x15",
+            description:
+              "3 Large, 3 Medium, 6 Small Items, 15 Boxes (Approximately)",
+          },
+          "pills-fourbhk": {
+            type: "Large10x20",
+            description:
+              "4 Large, 4 Medium, 8 Small Items, 20 Boxes (Approximately)",
+          },
+        };
+
+        const selected = storageOptions[selectedId];
+
+        if (!selected) {
+          alert("No storage package selected. Please choose one.");
+          return false;
+        }
+
+        // Save to sessionStorage
+        const storageData = {
+          selectedType: selected.type,
+          description: selected.description,
+          tabId: selectedId, // optional: save the tab ID too
+          selectedAt: new Date().toISOString(),
+        };
+
+        sessionStorage.setItem(
+          "selectedStoragePackage",
+          JSON.stringify(storageData),
+        );
+
+        // Show confirmation
+        alert(
+          `Selected Storage Package: ${selected.type}\nDetails: ${selected.description}\n\nSaved successfully!`,
+        );
+
+        console.log("Storage package saved:", storageData);
+
+        return true; // success
+      }
+    </script>
+
+    <script>
+      // Only runs once when the DOM is fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        const areaInput = document.getElementById("preferredAreaInput");
+
+        if (!areaInput) {
+          console.warn("Preferred area input not found on page");
+          return;
+        }
+
+        // Try to load from sessionStorage
+        const savedArea = sessionStorage.getItem("searchLocation");
+
+        if (savedArea && savedArea.trim() !== "") {
+          areaInput.value = savedArea.trim();
+          console.log("Loaded preferred area from sessionStorage:", savedArea);
+        } else {
+          console.log("No saved preferred area found in sessionStorage");
+          // Optional: you can set a default placeholder value if needed
+          // areaInput.value = "Select your preferred area";
+        }
+      });
+    </script>
+
+    <script>
+      let isPricingReady = false;
+
+      // ── Your Estimate / Payment Section Logic ───────────────────────────────
+
+      document.addEventListener("DOMContentLoaded", () => {
+        setupTermsAndPayButton();
+        console.log("Price value", isPricingReady);
+      });
+
+      function calculateStoragePricing() {
+        // Show loading state
+        const fields = [
+          "storageTypeDuration",
+          "monthlyRate",
+          "totalStorageCost",
+        ];
+
+        fields.forEach((id) => {
+          const el = document.getElementById(id);
+          el.textContent = "Loading...";
+          el.classList.add("loading");
+        });
+
+        // Small delay to allow sessionStorage to be ready
+        setTimeout(() => {
+          const baseMonthlyRates = {
+            Small4x4: 48,
+            Small5x5: 120,
+            Small5x10: 180,
+            Medium10x10: 350,
+            Large10x15: 400,
+            Large10x20: 500,
+          };
+
+          const refundableSecurityDeposit = 36000;
+
+          const selectedPackage = JSON.parse(
+            sessionStorage.getItem("selectedStoragePackage") || "{}",
+          );
+          const pickupDetails = JSON.parse(
+            sessionStorage.getItem("pickupDetails") || "{}",
+          );
+
+          console.log("Selected Package:", selectedPackage);
+          console.log("Pickup Details:", pickupDetails);
+
+          const selectedType = selectedPackage.selectedType || "Small 4' x 4'";
+          const durationMonths = Number(pickupDetails.durationMonths) || 1;
+
+          const monthlyRate = baseMonthlyRates[selectedType] || 1000;
+          const totalStorageCost = monthlyRate * durationMonths;
+          const bookingAmount = refundableSecurityDeposit;
+
+          // Update UI with real data
+          document.getElementById("storageTypeDuration").textContent =
+            `${selectedType} – ${durationMonths} month${durationMonths > 1 ? "s" : ""}`;
+
+          document.getElementById("monthlyRate").textContent =
+            `$${monthlyRate}`;
+          document.getElementById("totalStorageCost").textContent =
+            `$${totalStorageCost}`;
+
+          // Remove loading style
+          fields.forEach((id) => {
+            document.getElementById(id).classList.remove("loading");
+          });
+
+          isPricingReady = true;
+        }, 500); // ⏳ 0.5 second delay (adjust if needed)
+      }
+
+      function setupTermsAndPayButton() {
+        const agreeCheckbox = document.getElementById("agreeTermsCheckbox");
+        const payNowBtn = document.getElementById("payNowBtn");
+
+        if (!agreeCheckbox || !payNowBtn) {
+          console.warn("Terms checkbox or Pay Now button not found in DOM");
+          return;
+        }
+
+        // Ensure Pay Now starts disabled
+        payNowBtn.disabled = true;
+
+        // Enable/disable Pay Now when checkbox changes
+        agreeCheckbox.addEventListener("change", () => {
+          payNowBtn.disabled = !agreeCheckbox.checked;
+        });
+
+        // Pay Now click → collect data and log (ready for payment gateway)
+        payNowBtn.addEventListener("click", () => {
+          // Double-check (though button should be disabled)
+          if (!agreeCheckbox.checked) {
+            alert("Please agree to the Terms & Conditions first.");
+            return;
+          }
+
+          if (!isPricingReady) {
+            alert("Please wait — pricing is still calculating.");
+            return;
+          }
+
+          // Gather all relevant data
+          const selectedStoragePackage = JSON.parse(
+            sessionStorage.getItem("selectedStoragePackage") || "{}",
+          );
+          const pickupDetails = JSON.parse(
+            sessionStorage.getItem("pickupDetails") || "{}",
+          );
+          const personalInfo = JSON.parse(
+            sessionStorage.getItem("personalInfo") || "{}",
+          );
+
+
+          const paymentData = {
+            selectedStoragePackage: selectedStoragePackage,
+            pickupDetails: pickupDetails,
+            personalInfo: personalInfo,
+            timestamp: new Date().toISOString(),
+            totalStorageCost:
+              document.getElementById("totalStorageCost")?.textContent || "N/A",
+            agreedToTerms: agreeCheckbox.checked,
+            // You can add more later: userId, email, finalAmount, currency, etc.
+          };
+
+          console.log(
+            "Pay Now clicked – Payment initiation data:",
+            paymentData,
+          );
+
+          // Temporary user feedback (replace with real payment flow later)
+          alert(
+            "Payment process started.\n\nCheck browser console for full payment data object.",
+          );
+        });
       }
     </script>
   </body>

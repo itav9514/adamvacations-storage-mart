@@ -1693,6 +1693,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .item-add ul li {
     margin-right: 13px;
+    margin-bottom: 10px;
 }
 
 .nav-pills .nav-link.active,
@@ -2018,3 +2019,90 @@ select.form-control:not([size]):not([multiple]) {
   border-right: 1px solid #ced4da;
   padding: 0 8px;
 }
+
+
+
+
+/* Base slider */
+.form-range.yellow-range {
+  height: 6px;
+  cursor: pointer;
+}
+
+/* ===== TRACK (background line) ===== */
+.form-range.yellow-range::-webkit-slider-runnable-track {
+  background: #ffecb3; /* light yellow track */
+  height: 6px;
+  border-radius: 5px;
+}
+.form-range.yellow-range::-moz-range-track {
+  background: #ffecb3;
+  height: 6px;
+  border-radius: 5px;
+}
+.form-range.yellow-range::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* ===== FILLED PROGRESS (Firefox only) ===== */
+.form-range.yellow-range::-moz-range-progress {
+  background-color: #ffc107; /* strong yellow progress */
+  height: 6px;
+  border-radius: 5px;
+}
+
+/* ===== THUMB (the draggable circle) ===== */
+.form-range.yellow-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #ffc107;
+  border: 2px solid #e0a800;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-top: -6px; /* centers thumb */
+  box-shadow: 0 0 0 2px #fff;
+}
+.form-range.yellow-range::-moz-range-thumb {
+  background-color: #ffc107;
+  border: 2px solid #e0a800;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+}
+.form-range.yellow-range::-ms-thumb {
+  background-color: #ffc107;
+  border: 2px solid #e0a800;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+}
+
+/* Hover effect */
+.form-range.yellow-range::-webkit-slider-thumb:hover {
+  background-color: #ffca2c;
+}
+.form-range.yellow-range::-moz-range-thumb:hover {
+  background-color: #ffca2c;
+}
+
+
+
+
+  /* Flatpickr Yellow Theme Overrides */
+  .flatpickr-day.selected,
+  .flatpickr-day.selected:hover,
+  .flatpickr-day.selected:focus {
+    background: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #000 !important;
+  }
+  .flatpickr-day.today {
+    border-color: #ffc107;
+  }
+  .flatpickr-calendar {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: inherit;
+  }

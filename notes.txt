@@ -1,2 +1,8 @@
 # Repo link for US-Zip-Codes-JSON
-https://github.com/millbj92/US-Zip-Codes-JSON
+https://github.com/millbj92/US-Zip-Codes-
+
+# Repo link for India-Pin-Codes-JSON
+https://github.com/mithunsasidharan/India-Pincode-Lookup/tree/master
+
+# Repo link for Europe and Misseleanous
+https://github.com/zauberware/postal-codes-json-xml-csv

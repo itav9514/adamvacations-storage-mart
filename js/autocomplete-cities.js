@@ -60,9 +60,9 @@ function renderSuggestions(matches, query) {
   if (matches.length === 0) {
     if (query.trim()) {
       const li = document.createElement('li');
-      // li.className = 'no-match';
-      // li.textContent = 'No exact match — you can still search with this value';
-      // suggestions.appendChild(li);
+      li.className = 'no-match';
+      li.textContent = 'No exact match — you can still search with this value';
+      suggestions.appendChild(li);
     }
     suggestions.style.display = query.trim() ? 'block' : 'none';
     selectedIndex = -1;
