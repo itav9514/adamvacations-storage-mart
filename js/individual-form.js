@@ -1,19 +1,21 @@
 // Loading search location from session storage on page load
 
-window.addEventListener('load', () => {
-  const savedLocation = sessionStorage.getItem('searchLocation');
+// window.addEventListener('load', () => {
+//   const savedLocation = sessionStorage.getItem('searchLocation');
   
-  if (savedLocation) {
-    // Example: pre-fill an input
-    const locationField = document.querySelector('#some-location-input');
-    if (locationField) {
-      locationField.value = savedLocation;
-    }
+//   if (savedLocation) {
+//     // Example: pre-fill an input
+//     const locationInput = document.getElementById('locationInput');
+//     if (locationInput) {
+//       locationInput.value = savedLocation;
+//       locationInput.dispatchEvent(new Event('input', { bubbles: true }));
+//     locationInput.dispatchEvent(new Event('change', { bubbles: true })); // optional but helpful
+//     }
 
-    // Or display it
-    console.log('User searched for:', savedLocation);
-  }
-});
+//     // Or display it
+//     console.log('User searched for:', savedLocation);
+//   }
+// });
 
 
 
@@ -79,9 +81,9 @@ function renderSuggestions(matches, query) {
   if (matches.length === 0) {
     if (query.trim()) {
       const li = document.createElement('li');
-      li.className = 'no-match';
-      li.textContent = 'No exact match — you can still search with this value';
-      suggestions.appendChild(li);
+      // li.className = 'no-match';
+      // li.textContent = 'No exact match — you can still search with this value';
+      // suggestions.appendChild(li);
     }
     suggestions.style.display = query.trim() ? 'block' : 'none';
     selectedIndex = -1;
@@ -100,6 +102,7 @@ function renderSuggestions(matches, query) {
       input.value = `${item.city}, ${item.state} ${item.zip}`;
       suggestions.style.display = 'none';
       selectedIndex = -1;
+      input.dispatchEvent(new Event('input', { bubbles: true }));
     });
     suggestions.appendChild(li);
   });
@@ -143,6 +146,7 @@ input.addEventListener('keydown', async (e) => {
       const item = allLocations.find(loc => loc.city === city);
       if (item) {
         input.value = `${item.city}, ${item.state} ${item.zip}`;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
       }
       suggestions.style.display = 'none';
       selectedIndex = -1;
@@ -169,3 +173,56 @@ document.addEventListener('click', e => {
   }
 });
 
+
+// ────────────────────────────────────────────────
+// Save personal info + location (if present) to sessionStorage
+// ────────────────────────────────────────────────
+
+const saveButton = document.getElementById('saveAndNext');
+
+saveButton.addEventListener('click', () => {
+  // Collect form values
+  const firstName = document.getElementById('firstName')?.value.trim() || '';
+  const lastName  = document.getElementById('lastName')?.value.trim()  || '';
+  const phone     = document.getElementById('phone')?.value.trim()     || '';
+  const email     = document.getElementById('email')?.value.trim()     || '';
+  
+  // Optional: get location from your autocomplete input
+  const location  = document.getElementById('locationInput')?.value.trim() || '';
+
+  // Basic validation (you can make it stricter)
+  if (!firstName || !lastName || !phone || !email) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+
+  // Create object with the data
+  const personalInfo = {
+    firstName,
+    lastName,
+    phone,
+    email,
+    location: location || null,           // optional
+    savedAt: new Date().toISOString(),    // useful for debugging
+  };
+
+  // Save to sessionStorage
+  sessionStorage.setItem('personalInfo', JSON.stringify(personalInfo));
+
+  console.log('Personal information saved:', personalInfo);
+
+  // ── Proceed to next step / tab / page ───────────────
+  // Option A: if you're using display toggling
+  // document.getElementById('step1-3').style.display = 'none';
+  // document.getElementById('step4-or-whatever').style.display = 'block';
+
+  // Option B: if using class-based tabs
+  // saveButton.closest('.tab-pane')?.classList.remove('active');
+  // document.querySelector('#next-tab-id')?.classList.add('active');
+
+  // Option C: redirect
+  // window.location.href = '/next-page.html';
+
+  // Most common for multi-step forms: just trigger your existing next logic
+  // (if you already have .next-step click handler – you can call it or merge)
+});

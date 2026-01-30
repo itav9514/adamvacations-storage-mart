@@ -1971,6 +1971,28 @@ select.form-control:not([size]):not([multiple]) {
         height: 36px;
 }
 .phone-footer a{color:#000; font-size: 18px;}
+
+
+
+
+#location-error {
+  min-height: 1.2em;           /* prevents layout jump */
+}
+
+.default-btn:disabled,
+.default-btn[disabled] {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+  /* Optional: change background if you want stronger disabled look */
+  /* background-color: #cccccc !important; */
+  /* color: #666666 !important; */
+}
+
+/* If using Bootstrap, you can also do: */
+.is-invalid {
+  border-color: #dc3545 !important;
+  background-image: url("data:image/svg+xml,..."); /* Bootstrap invalid icon */
+}
 .phone-footer-mobile{
     display: none;
 }

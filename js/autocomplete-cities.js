@@ -60,9 +60,9 @@ function renderSuggestions(matches, query) {
   if (matches.length === 0) {
     if (query.trim()) {
       const li = document.createElement('li');
-      li.className = 'no-match';
-      li.textContent = 'No exact match — you can still search with this value';
-      suggestions.appendChild(li);
+      // li.className = 'no-match';
+      // li.textContent = 'No exact match — you can still search with this value';
+      // suggestions.appendChild(li);
     }
     suggestions.style.display = query.trim() ? 'block' : 'none';
     selectedIndex = -1;
@@ -153,16 +153,42 @@ document.addEventListener('click', e => {
 // 7. Form submit (unchanged)
 const searchForm = document.getElementById('locationSearchForm');
 
+// searchForm.addEventListener('submit', function(event) {
+//   event.preventDefault();
+//   const locationValue = input.value.trim();
+
+//   if (locationValue) {
+//     sessionStorage.setItem('searchLocation', locationValue);
+//     console.log('Saved location:', locationValue);
+//   } else {
+//     sessionStorage.removeItem('searchLocation');
+//   }
+
+//   window.location.href = 'Form.html'; // your next page
+// });
+
+
+
 searchForm.addEventListener('submit', function(event) {
   event.preventDefault();
-  const locationValue = input.value.trim();
 
-  if (locationValue) {
-    sessionStorage.setItem('searchLocation', locationValue);
-    console.log('Saved location:', locationValue);
-  } else {
-    sessionStorage.removeItem('searchLocation');
+  const value = input.value.trim();
+  const errorElement = document.getElementById('location-error');
+
+  if (value.length < 4) {
+    if (errorElement) {
+      errorElement.textContent = "Please enter a valid location (at least 4 characters).";
+      errorElement.style.display = 'block';
+    } else {
+      alert("Please enter a valid location (at least 4 characters).");
+    }
+    input.focus();
+    return;
   }
 
-  window.location.href = 'Form.html'; // your next page
+  // Clear error if present
+  if (errorElement) errorElement.style.display = 'none';
+
+  sessionStorage.setItem('searchLocation', value);
+  window.location.href = 'Form.html';
 });
