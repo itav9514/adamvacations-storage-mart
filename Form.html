@@ -462,14 +462,7 @@
                                 style="display: none"
                               ></ul>
                             </div>
-                            <div
-                              id="location-error"
-                              class="text-danger mt-1"
-                              style="display: none; font-size: 0.9rem"
-                            >
-                              Please enter at least 4 characters (city, state,
-                              or ZIP code).
-                            </div>
+
                           </div>
 
                           <div class="col-md-12">
@@ -1097,57 +1090,78 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="module" src="js/individual-form.js"></script>
 
-    <script>
-      // ────────────────────────────────────────────────
-      // 1. Real-time input validation + button state
-      // ────────────────────────────────────────────────
+<script>
+// ────────────────────────────────────────────────
+// Real-time validation + button + error + visual feedback
+// ────────────────────────────────────────────────
 
-      const locationInput = document.getElementById("locationInput");
-      const nextButton = document.querySelector(".next-step1-1");
-      const errorElement = document.getElementById("location-error");
+const locationInput  = document.getElementById("locationInput");
+const nextButton     = document.querySelector(".next-step1-1");
 
-      if (locationInput && nextButton && errorElement) {
-        function updateValidationState() {
-          const value = locationInput.value.trim();
-          const isValid = value.length >= 4;
+if (locationInput && nextButton) {
 
-          nextButton.disabled = !isValid;
-          nextButton.style.opacity = isValid ? "1" : "0.6";
-          nextButton.style.cursor = isValid ? "pointer" : "not-allowed";
+  function updateValidationState() {
+    const value   = locationInput.value.trim();
+    const isValid = value.length >= 2;
 
-          errorElement.style.display = isValid ? "none" : "block";
-        }
+    // Button state
+    nextButton.disabled = !isValid;
+    nextButton.style.opacity = isValid ? "1" : "0.6";
+    nextButton.style.cursor  = isValid ? "pointer" : "not-allowed";
 
-        updateValidationState(); // initial check
-        locationInput.addEventListener("input", updateValidationState);
-      }
+    // Visual feedback on input field
+    locationInput.classList.toggle("is-invalid", !isValid);
+    locationInput.classList.toggle("is-valid",   isValid);
+  }
 
-      // ────────────────────────────────────────────────
-      // 2. Handle "Next" button click → save + proceed
-      // ────────────────────────────────────────────────
+  // Initial check (important for pre-filled values / reload)
+  updateValidationState();
 
-      document.addEventListener("click", function (e) {
-        if (!e.target.matches(".next-step1-1")) return;
+  // Listen to many events to catch almost every possible change
+  const events = [
+    "input",
+    "change",
+    "paste",
+    "cut",
+    "keydown",
+    "keyup",
+    "focus",
+    "blur"
+  ];
 
-        e.preventDefault();
+  events.forEach(eventName => {
+    locationInput.addEventListener(eventName, updateValidationState);
+  });
+}
 
-        // Double-check (defense in depth)
-        if (nextButton.disabled) {
-          alert("Please enter a valid location (at least 4 characters).");
-          return;
-        }
+// ────────────────────────────────────────────────
+// Save location + proceed when clicking Next (only if valid)
+// ────────────────────────────────────────────────
 
-        // ── Save to sessionStorage ───────────────────────
-        const locationValue = locationInput.value.trim();
+document.addEventListener("click", function (e) {
+  if (!e.target.matches(".next-step1-1")) return;
 
-        if (locationValue) {
-          sessionStorage.setItem("searchLocation", locationValue);
-          console.log("Saved location:", locationValue);
-        } else {
-          sessionStorage.removeItem("searchLocation");
-        }
-      });
-    </script>
+  e.preventDefault();
+
+  // Safety check
+  if (nextButton.disabled) {
+    alert("Please enter a valid location (at least 4 characters).");
+    return;
+  }
+
+  // ── Save to sessionStorage ───────────────────────
+  const locationValue = locationInput.value.trim();
+
+  if (locationValue) {
+    sessionStorage.setItem("searchLocation", locationValue);
+    console.log("Saved location:", locationValue);
+  } else {
+    sessionStorage.removeItem("searchLocation");
+  }
+
+
+});
+</script>
 
     <script>
       $(document).ready(function () {

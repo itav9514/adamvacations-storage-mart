@@ -100,6 +100,7 @@ function renderSuggestions(matches, query) {
       input.value = `${item.city}, ${item.state} ${item.zip}`;
       suggestions.style.display = 'none';
       selectedIndex = -1;
+      input.dispatchEvent(new Event('input', { bubbles: true }));
     });
     suggestions.appendChild(li);
   });
@@ -143,6 +144,7 @@ input.addEventListener('keydown', async (e) => {
       const item = allLocations.find(loc => loc.city === city);
       if (item) {
         input.value = `${item.city}, ${item.state} ${item.zip}`;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
       }
       suggestions.style.display = 'none';
       selectedIndex = -1;
