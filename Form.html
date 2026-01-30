@@ -462,13 +462,20 @@
                                 style="display: none"
                               ></ul>
                             </div>
+                            <div
+                              id="location-error"
+                              class="text-danger mt-1"
+                              style="display: none; font-size: 0.9rem"
+                            >
+                              Please enter at least 4 characters (city, state,
+                              or ZIP code).
+                            </div>
                           </div>
 
                           <div class="col-md-12">
                             <button
                               type="button"
                               class="default-btn next-step next-step1-1 btn-big"
-                              onclick="saveServiceLocation()"
                             >
                               Next
                             </button>
@@ -511,32 +518,40 @@
                         <input
                           class="form-control"
                           type="text"
-                          name="name"
+                          id="firstName"
+                          name="firstName"
                           placeholder="First Name*"
+                          required
                         />
                       </div>
                       <div class="col-md-12 gap-bottom">
                         <input
                           class="form-control"
                           type="text"
-                          name="name"
+                          id="lastName"
+                          name="lastName"
                           placeholder="Last Name*"
+                          required
                         />
                       </div>
                       <div class="col-md-12 gap-bottom">
                         <input
                           class="form-control"
-                          type="text"
-                          name="name"
+                          type="tel"
+                          id="phone"
+                          name="phone"
                           placeholder="Contact Number*"
+                          required
                         />
                       </div>
                       <div class="col-md-12 gap-bottom">
                         <input
                           class="form-control"
-                          type="text"
-                          name="name"
+                          type="email"
+                          id="email"
+                          name="email"
                           placeholder="Email *"
+                          required
                         />
                       </div>
 
@@ -544,6 +559,7 @@
                         <button
                           type="button"
                           class="default-btn next-step next-tab btn-big"
+                          id="saveAndNext"
                         >
                           Next
                         </button>
@@ -990,150 +1006,144 @@
       </section>
     </div>
 
-      <footer>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Storage Types</h3>
+            <ul>
+              <li>
+                <a href="#"> Self Storage Facilities </a>
+              </li>
+              <li>
+                <a href="#"> Business Storage </a>
+              </li>
+              <li>
+                <a href="#"> Car and RV Storage </a>
+              </li>
+              <li>
+                <a href="#"> Boat Storage </a>
+              </li>
+              <li>
+                <a href="#"> Climate Controlled Storage </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Support</h3>
+            <ul>
+              <li>
+                <a href="contactus.html"> Contact Us </a>
+              </li>
+              <li>
+                <a href="privacypolicy.html"> Privacy Policy </a>
+              </li>
+              <li>
+                <a href="cookiespolicy.html"> Cookies Policy </a>
+              </li>
+              <li>
+                <a href="termsconditions.html"> Terms and Conditions </a>
+              </li>
+              <li>
+                <a href="#"> Size Guide </a>
+              </li>
+              <li>
+                <a href="#"> Public Storage Blog </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Company Info</h3>
+            <ul>
+              <li>
+                <a href="#"> Careers </a>
+              </li>
+              <li>
+                <a href="#"> U.S. Locations </a>
+              </li>
+              <li>
+                <a href="#"> Global Locations </a>
+              </li>
+              <li>
+                <a href="#"> 3rd Party Management </a>
+              </li>
+              <li>
+                <a href="#"> Commercial Real Estate </a>
+              </li>
+              <li>
+                <a href="#"> Cell Tower Lease </a>
+              </li>
+              <li>
+                <a href="#"> AdChoices </a>
+              </li>
+            </ul>
+          </div>
 
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-4">
-          <h3>Storage Types</h3>
-          <ul>
-            <li>
-              <a href="#">
-                Self Storage Facilities
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Business Storage
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Car and RV Storage
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Boat Storage
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Climate Controlled Storage
-              </a>
-            </li>
-          </ul>
+          <div class="col-md-12">
+            <hr />
+            <p>© 2026 Public Storage. All rights reserved.</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h3>Support</h3>
-          <ul>
-            <li>
-              <a href="contactus.html">
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a href="privacypolicy.html">
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="cookiespolicy.html">
-                Cookies Policy
-              </a>
-            </li>
-            <li>
-              <a href="termsconditions.html">
-                Terms and Conditions
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Size Guide
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Public Storage Blog
-              </a>
-            </li>
-
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h3>Company Info</h3>
-          <ul>
-            <li>
-              <a href="#">
-                Careers
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                U.S. Locations
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Global Locations
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                3rd Party Management
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Commercial Real Estate
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Cell Tower Lease
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                AdChoices
-              </a>
-            </li>
-
-          </ul>
-        </div>
-
-        <div class="col-md-12">
-          <hr>
-          <p>© 2026 Public Storage. All rights reserved.</p>
-        </div>
-
       </div>
-
-    </div>
-
-
-  </footer>
-
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="module" src="js/individual-form.js"></script>
+
     <script>
-      function saveServiceLocation() {
-        const locationValue = document
-          .getElementById("locationInput")
-          ?.value?.trim();
+      // ────────────────────────────────────────────────
+      // 1. Real-time input validation + button state
+      // ────────────────────────────────────────────────
+
+      const locationInput = document.getElementById("locationInput");
+      const nextButton = document.querySelector(".next-step1-1");
+      const errorElement = document.getElementById("location-error");
+
+      if (locationInput && nextButton && errorElement) {
+        function updateValidationState() {
+          const value = locationInput.value.trim();
+          const isValid = value.length >= 4;
+
+          nextButton.disabled = !isValid;
+          nextButton.style.opacity = isValid ? "1" : "0.6";
+          nextButton.style.cursor = isValid ? "pointer" : "not-allowed";
+
+          errorElement.style.display = isValid ? "none" : "block";
+        }
+
+        updateValidationState(); // initial check
+        locationInput.addEventListener("input", updateValidationState);
+      }
+
+      // ────────────────────────────────────────────────
+      // 2. Handle "Next" button click → save + proceed
+      // ────────────────────────────────────────────────
+
+      document.addEventListener("click", function (e) {
+        if (!e.target.matches(".next-step1-1")) return;
+
+        e.preventDefault();
+
+        // Double-check (defense in depth)
+        if (nextButton.disabled) {
+          alert("Please enter a valid location (at least 4 characters).");
+          return;
+        }
+
+        // ── Save to sessionStorage ───────────────────────
+        const locationValue = locationInput.value.trim();
 
         if (locationValue) {
           sessionStorage.setItem("searchLocation", locationValue);
+          console.log("Saved location:", locationValue);
         } else {
           sessionStorage.removeItem("searchLocation");
         }
-        console.log("Saved location:", locationValue);
-      }
+      });
     </script>
+
     <script>
       $(document).ready(function () {
         $(".nav-tabs > li a[title]").tooltip();

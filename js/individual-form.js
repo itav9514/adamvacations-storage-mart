@@ -5,9 +5,9 @@ window.addEventListener('load', () => {
   
   if (savedLocation) {
     // Example: pre-fill an input
-    const locationField = document.querySelector('#some-location-input');
-    if (locationField) {
-      locationField.value = savedLocation;
+    const locationInput = document.getElementById('locationInput');
+    if (locationInput) {
+      locationInput.value = savedLocation;
     }
 
     // Or display it
@@ -169,3 +169,56 @@ document.addEventListener('click', e => {
   }
 });
 
+
+// ────────────────────────────────────────────────
+// Save personal info + location (if present) to sessionStorage
+// ────────────────────────────────────────────────
+
+const saveButton = document.getElementById('saveAndNext');
+
+saveButton.addEventListener('click', () => {
+  // Collect form values
+  const firstName = document.getElementById('firstName')?.value.trim() || '';
+  const lastName  = document.getElementById('lastName')?.value.trim()  || '';
+  const phone     = document.getElementById('phone')?.value.trim()     || '';
+  const email     = document.getElementById('email')?.value.trim()     || '';
+  
+  // Optional: get location from your autocomplete input
+  const location  = document.getElementById('locationInput')?.value.trim() || '';
+
+  // Basic validation (you can make it stricter)
+  if (!firstName || !lastName || !phone || !email) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+
+  // Create object with the data
+  const personalInfo = {
+    firstName,
+    lastName,
+    phone,
+    email,
+    location: location || null,           // optional
+    savedAt: new Date().toISOString(),    // useful for debugging
+  };
+
+  // Save to sessionStorage
+  sessionStorage.setItem('personalInfo', JSON.stringify(personalInfo));
+
+  console.log('Personal information saved:', personalInfo);
+
+  // ── Proceed to next step / tab / page ───────────────
+  // Option A: if you're using display toggling
+  // document.getElementById('step1-3').style.display = 'none';
+  // document.getElementById('step4-or-whatever').style.display = 'block';
+
+  // Option B: if using class-based tabs
+  // saveButton.closest('.tab-pane')?.classList.remove('active');
+  // document.querySelector('#next-tab-id')?.classList.add('active');
+
+  // Option C: redirect
+  // window.location.href = '/next-page.html';
+
+  // Most common for multi-step forms: just trigger your existing next logic
+  // (if you already have .next-step click handler – you can call it or merge)
+});
