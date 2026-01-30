@@ -1,353 +1,152 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
-    <link rel="stylesheet" href="./css/city-state-zip-dropdown.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>My Storage Cart</title>
-  </head>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <link rel="stylesheet" href="./css/city-state-zip-dropdown.css" />
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark hide-top">
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <a
-            class="logo-home"
-            href="index.html"
-            title="Public Storage Home"
-            aria-label="Go to Home page"
-          >
-            <img
-              src="images/logo-6.svg"
-              alt="Commerce Cloud Storefront Reference Architecture"
-              fetchpriority="high"
-              width="100%"
-              height="80px"
-            />
-          </a>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"> Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="business.html"> Business </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Find Storage
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <span class="text-uppercase text-white">Category 1</span>
-                      <ul class="nav flex-column">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link item</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link item</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <!-- /.col-md-4  -->
-                    <div class="col-md-4">
-                      <ul class="nav flex-column">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link item</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link item</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <!-- /.col-md-4  -->
-                    <div class="col-md-4">
-                      <a
-                        target="_blank"
-                        href="https://bootstrapcreative.com/resources/a-beginners-guide-to-hubspot-cms/"
-                      >
-                        <img
-                          src="https://i0.wp.com/bootstrapcreative.com/wp-bc/wp-content/uploads/2022/07/beginners-guide-to-hubspot-cms-cover.png?w=200&ssl=1"
-                          alt="Web Design Guides"
-                          class="img-fluid"
-                        />
-                      </a>
-                      <p class="text-white">Get Free Guides</p>
-                    </div>
-                    <!-- /.col-md-4  -->
-                  </div>
-                </div>
-                <!--  /.container  -->
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Size Guide
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <span class="text-uppercase text-white">Category 2</span>
-                      <ul class="nav flex-column">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link item</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link item</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <!-- /.col-md-4  -->
-                    <div class="col-md-4">
-                      <ul class="nav flex-column">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link item</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link item</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <!-- /.col-md-4  -->
-                    <div class="col-md-4">
-                      <a
-                        target="_blank"
-                        href="https://bootstrapcreative.com/shop/jake-portfolio-hubspot-theme/"
-                      >
-                        <img
-                          src="https://i0.wp.com/bootstrapcreative.com/wp-bc/wp-content/uploads/2022/01/jake-portfolio-cover.jpg?w=200&ssl=1"
-                          alt="Portfolio Website Templates"
-                          class="img-fluid"
-                        />
-                      </a>
-                      <p class="text-white">Create a Portfolio Website Fast</p>
-                    </div>
-                    <!-- /.col-md-4  -->
-                  </div>
-                </div>
-                <!--  /.container  -->
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Storage Types
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <span class="text-uppercase text-white">Category 3</span>
-                      <ul class="nav flex-column">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link item</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link item</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <!-- /.col-md-4  -->
-                    <div class="col-md-4">
-                      <ul class="nav flex-column">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link item</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link item</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <!-- /.col-md-4  -->
-                    <div class="col-md-4">
-                      <a
-                        target="_blank"
-                        href="https://bootstrapcreative.com/resources/"
-                      >
-                        <img
-                          src="https://i0.wp.com/bootstrapcreative.com/wp-bc/wp-content/uploads/2020/09/Filtered-Paint-Image-Instagram-Square.png?w=200&ssl=1"
-                          alt="Web Design Resources"
-                          class="img-fluid"
-                        />
-                      </a>
-                      <p class="text-white">Free Web Design Resources</p>
-                    </div>
-                    <!-- /.col-md-4  -->
-                  </div>
-                </div>
-                <!--  /.container  -->
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="Form.html" target="_blank"
-                ><button class="primary-btn px-3 py-2">Book Storage</button></a
-              >
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0 ml-1">
-            <div id="mySidenav" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                >&times;</a
-              >
-              <a href="#">Find Storage</a>
-              <a href="#">Size Guide</a>
-              <a href="#">Storage Types</a>
-              <a href="#">About Us</a>
-            </div>
-            <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-              >&#9776;</span
-            >
-          </form>
-        </div>
-      </div>
-    </nav>
-    <div class="mobile-new">
-      <div>
-        <a
-          class="logo-home"
-          href="index.html"
-          title="Public Storage Home"
-          aria-label="Go to Home page"
-        >
-          <img
-            src="images/logo-6.svg"
-            alt="Commerce Cloud Storefront Reference Architecture"
-            fetchpriority="high"
-            width="100%"
-            height="50px"
-          />
+  <title>My Storage Cart</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark hide-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="logo-home" href="/" title="Public Storage Home" aria-label="Go to Home page">
+          <img src="images/logo-6.svg" alt="Commerce Cloud Storefront Reference Architecture" fetchpriority="high"
+            width="100%" height="80px">
         </a>
-      </div>
-      <div id="mySidenav1" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <a href="#">Find Storage</a>
-        <a href="#">Size Guide</a>
-        <a href="#">Storage Types</a>
-        <a href="#">About Us</a>
-      </div>
-      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-        >&#9776;</span
-      >
-    </div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="business.html">
+              Business
+            </a>
+          </li>
 
-    <div class="ps-storage--section hero-section p-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 section-1">
-            <div class="main-banner-wrap">
-              <div class="section-tag-line text-white mb-4 text-center">
-                BUSINESS STORAGE
+          <li class="nav-item">
+            <a class="nav-link" href="business.html">
+              Size Guide
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Storage Types
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Self Storage</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">24 Hour Self Storage</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Business Storage</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Vehicle & RV Storage</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Boat Storage</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Climate Controlled Storage</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
               </div>
-              <h1 class="main-banner-text-div-heading pr-md-6 mb-4 text-center">
-                Commercial Storage Units for Your Small Business.
-              </h1>
-              <div class="main-banner-text-div text-md-left text-center">
-                <div class="ps-findstorage-control ps-findstorage-page-view">
-                  <div class="form-container">
-                    <div class="ps-findstorage-search-form-container">
-                      <form
-                        id="locationSearchForm"
-                        class="ps-findstorage-search-form"
-                      >
-                        <div
-                          class="autocomplete-container"
-                          style="position: relative"
-                        >
-                          <input
-                            aria-label="Enter City, State or Zip"
-                            class="ps-findstorage-search-form-input"
-                            maxlength="500"
-                            name="location"
-                            placeholder="Enter City, State or Zip"
-                            type="text"
-                            value=""
-                            autocomplete="off"
-                            id="locationInput"
-                          />
-                          <ul
-                            class="suggestions-list"
-                            id="suggestions"
-                            style="display: none"
-                          ></ul>
-                        </div>
+              <!--  /.container  -->
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="Form.html"><button class="primary-btn px-3 py-2">Book Storage</button></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 ml-1">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Business</a>
+            <a href="#">Business Storage</a>
+            <!-- <a href="#">About Us</a> -->
+          </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-new">
+    <div>
+      <a class="logo-home" href="/" title="Public Storage Home" aria-label="Go to Home page">
+        <img src="images/logo-6.svg" alt="Commerce Cloud Storefront Reference Architecture" fetchpriority="high"
+          width="100%" height="50px">
+      </a>
+    </div>
+    <div id="mySidenav1" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">Business</a>
+      <a href="#">Business Storage</a>
+      
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+
+  <div class="ps-storage--section hero-section p-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section-1">
+          <div class="main-banner-wrap">
+            <div class="section-tag-line text-white mb-4 text-center">
+              BUSINESS STORAGE
+            </div>
+            <h1 class="main-banner-text-div-heading pr-md-6 mb-4 text-center">
+              Commercial Storage Units for Your Small Business.
+            </h1>
+            <div class="main-banner-text-div text-md-left text-center">
+              <div class="ps-findstorage-control ps-findstorage-page-view">
+                <div class="form-container">
+                  <div class="ps-findstorage-search-form-container">
+                    <form id="locationSearchForm" class="ps-findstorage-search-form">
+                      <div class="autocomplete-container" style="position: relative">
+                        <input aria-label="Enter City, State or Zip" class="ps-findstorage-search-form-input"
+                          maxlength="500" name="location" placeholder="Enter City, State or Zip" type="text" value=""
+                          autocomplete="off" id="locationInput" />
+                        <ul class="suggestions-list" id="suggestions" style="display: none"></ul>
+                      </div>
 
 
-                        <button
-                          aria-label="Find Storage"
-                          class="ps-findstorage-search-form-button"
-                          type="submit"
-                        >
-                          Find Storage
-                        </button>
-                        
-                      </form>
+                      <button aria-label="Find Storage" class="ps-findstorage-search-form-button" type="submit">
+                        Find Storage
+                      </button>
 
-                      
-                    </div>
+                    </form>
+
+
                   </div>
                 </div>
               </div>
@@ -356,588 +155,515 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="ps-storage--intro-section">
-      <div class="container">
-        <div class="row" style="align-items: center">
-          <div class="col-md-5 col-xs-12">
-            <div class="middeltxt">
-              <h2 class="ps-heading-50-bold">
-                Easily manage flexible and affordable business storage spaces
-                right from your phone.
-              </h2>
-            </div>
-          </div>
-          <div class="col-md-7 col-xs-12">
-            <div class="reduceall">
-              <ul>
-                <li>
-                  <img src="images/1-icon.png" />
-                  <h3>Reduce Costs</h3>
-                  <p>
-                    Why spend a fortune on expensive commercial real estate? Our
-                    business storage solutions let you store your items for a
-                    fraction of the cost.
-                  </p>
-                </li>
-                <li class="stn1">
-                  <img src="images/2-icon.png" />
-                  <h3>Stay Flexible</h3>
-                  <p>
-                    Stop overspending on costly commercial real estate. With our
-                    business storage solutions, you can store your items for a
-                    fraction of the price.
-                  </p>
-                </li>
-                <li>
-                  <img src="images/3-icon.png" />
-                  <h3>Save Time</h3>
-                  <p>
-                    Why waste money on pricey commercial real estate? Our
-                    business storage solutions make it possible to store your
-                    stuff at a fraction of the cost.
-                  </p>
-                </li>
-                <li class="stn2">
-                  <img src="images/4-icon.png" />
-                  <h3>Stop Worrying</h3>
-                  <p>
-                    Why waste money on pricey commercial real estate? Our
-                    business storage solutions make it possible to store your
-                    stuff at a fraction of the cost.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="Contractor">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>Explore Business Industries We Serve</h2>
-            <div id="news-slider2" class="owl-carousel owl-theme">
-              <div class="item">
-                <img src="images/image-1.png" />
-                <h4>
-                  Construction & Contractor<br />
-                  Business Storage
-                </h4>
-              </div>
-              <div class="item">
-                <img src="images/image-2.png" />
-                <h4>
-                  Real Estate Business <br />
-                  Storage
-                </h4>
-              </div>
-              <div class="item">
-                <img src="images/image-3.png" />
-                <h4>
-                  Retail & Commerce Inventory <br />
-                  Business Storage
-                </h4>
-              </div>
-              <div class="item">
-                <img src="images/image-1.png" />
-                <h4>
-                  Retail & Commerce Inventory <br />
-                  Business Storage
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="Storage">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>
-              No matter what your business storage needs are, <br />
-              we have a solution that fits.
+  <div class="ps-storage--intro-section">
+    <div class="container">
+      <div class="row" style="align-items: center">
+        <div class="col-md-5 col-xs-12">
+          <div class="middeltxt">
+            <h2 class="ps-heading-50-bold">
+              Easily manage flexible and affordable business storage spaces
+              right from your phone.
             </h2>
           </div>
-          <div class="business">
+        </div>
+        <div class="col-md-7 col-xs-12">
+          <div class="reduceall">
             <ul>
               <li>
-                <img src="images/image-4.png" />
-                <h3>Small Business Storage</h3>
+                <img src="images/1-icon.png" />
+                <h3>Reduce Costs</h3>
                 <p>
-                  Why waste money on pricey commercial real estate? Our business
-                  storage solutions make it possible to store your stuff at a
+                  Why spend a fortune on expensive commercial real estate? Our
+                  business storage solutions let you store your items for a
                   fraction of the cost.
                 </p>
               </li>
-              <li>
-                <img src="images/image-5.png" />
-                <h3>Medium Business Storage</h3>
+              <li class="stn1">
+                <img src="images/2-icon.png" />
+                <h3>Stay Flexible</h3>
                 <p>
-                  Why waste money on pricey commercial real estate? Our business
-                  storage solutions make it possible to store your stuff at a
-                  fraction of the cost.
+                  Stop overspending on costly commercial real estate. With our
+                  business storage solutions, you can store your items for a
+                  fraction of the price.
                 </p>
               </li>
               <li>
-                <img src="images/image-6.png" />
-                <h3>Large Business Storage</h3>
+                <img src="images/3-icon.png" />
+                <h3>Save Time</h3>
                 <p>
-                  Why waste money on pricey commercial real estate? Our business
-                  storage solutions make it possible to store your stuff at a
-                  fraction of the cost.
+                  Why waste money on pricey commercial real estate? Our
+                  business storage solutions make it possible to store your
+                  stuff at a fraction of the cost.
                 </p>
               </li>
-              <li>
-                <img src="images/image-7.png" />
-                <h3>Business Vehicle Storage</h3>
+              <li class="stn2">
+                <img src="images/4-icon.png" />
+                <h3>Stop Worrying</h3>
                 <p>
-                  Why waste money on pricey commercial real estate? Our business
-                  storage solutions make it possible to store your stuff at a
-                  fraction of the cost.
+                  Why waste money on pricey commercial real estate? Our
+                  business storage solutions make it possible to store your
+                  stuff at a fraction of the cost.
                 </p>
               </li>
             </ul>
-            <div class="progress-bredcum">
-              <span class="point active">1</span>
-              <span class="bar"></span>
-              <span class="point active">2</span>
-              <span class="bar"></span>
-              <span class="point active">3</span>
-              <span class="bar"></span>
-              <span class="point active">4</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="Contractor">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Explore Business Industries We Serve</h2>
+          <div id="news-slider2" class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="images/image-1.png" />
+              <h4>
+                Construction & Contractor<br />
+                Business Storage
+              </h4>
+            </div>
+            <div class="item">
+              <img src="images/image-2.png" />
+              <h4>
+                Real Estate Business <br />
+                Storage
+              </h4>
+            </div>
+            <div class="item">
+              <img src="images/image-3.png" />
+              <h4>
+                Retail & Commerce Inventory <br />
+                Business Storage
+              </h4>
+            </div>
+            <div class="item">
+              <img src="images/image-1.png" />
+              <h4>
+                Retail & Commerce Inventory <br />
+                Business Storage
+              </h4>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="business-stroge">
-      <div class="strore-1">
-        <div class="datalft">
+    </div>
+  </section>
+  <section class="Storage">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
           <h2>
-            BUSINESS STORAGE <br />
-            SOLUTIONS
+            No matter what your business storage needs are, <br />
+            we have a solution that fits.
           </h2>
+        </div>
+        <div class="business">
           <ul>
             <li>
-              <h3>
-                Construction <br />
-                Storage
-              </h3>
+              <img src="images/image-4.png" />
+              <h3>Small Business Storage</h3>
               <p>
-                Tired of storing all your equipment in your truck or garage? Our
-                drive-up business storage units make it easy to access supplies,
-                materials and equipment.
+                Why waste money on pricey commercial real estate? Our business
+                storage solutions make it possible to store your stuff at a
+                fraction of the cost.
               </p>
             </li>
             <li>
-              <h3>
-                Pharmaceutical <br />
-                Storage
-              </h3>
+              <img src="images/image-5.png" />
+              <h3>Medium Business Storage</h3>
               <p>
-                Need a place to store your sales materials and samples? Our
-                climate-controlled commercial storage units are perfect for
-                sales reps who need easy access to their inventory.
+                Why waste money on pricey commercial real estate? Our business
+                storage solutions make it possible to store your stuff at a
+                fraction of the cost.
+              </p>
+            </li>
+            <li>
+              <img src="images/image-6.png" />
+              <h3>Large Business Storage</h3>
+              <p>
+                Why waste money on pricey commercial real estate? Our business
+                storage solutions make it possible to store your stuff at a
+                fraction of the cost.
+              </p>
+            </li>
+            <li>
+              <img src="images/image-7.png" />
+              <h3>Business Vehicle Storage</h3>
+              <p>
+                Why waste money on pricey commercial real estate? Our business
+                storage solutions make it possible to store your stuff at a
+                fraction of the cost.
               </p>
             </li>
           </ul>
-        </div>
-        <div class="datargt">
-          <img src="images/image-8.png" />
-        </div>
-      </div>
-    </section>
-    <section class="solution-strore">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h3>Business Storage Solutions</h3>
-            <ul>
-              <li>
-                <img src="images/image-9.png" />
-                <p>1.Office Equipment Storage</p>
-                <span
-                  >Why waste money on pricey commercial real estate? Our
-                  business storage solutions make it possible to store your
-                  stuff at a fraction of the cost.</span
-                >
-              </li>
-              <li>
-                <img src="images/image-10.png" />
-                <p>1.Office Equipment Storage</p>
-                <span
-                  >Why waste money on pricey commercial real estate? Our
-                  business storage solutions make it possible to store your
-                  stuff at a fraction of the cost.</span
-                >
-              </li>
-            </ul>
+          <div class="progress-bredcum">
+            <span class="point active">1</span>
+            <span class="bar"></span>
+            <span class="point active">2</span>
+            <span class="bar"></span>
+            <span class="point active">3</span>
+            <span class="bar"></span>
+            <span class="point active">4</span>
           </div>
         </div>
       </div>
-    </section>
-    <section class="business-stroge">
-      <div class="strore-1">
-        <div class="datalft">
-          <h2>
-            COMMERCIAL STORAGE<br />
-            SOLUTIONS
-          </h2>
-          <ul>
-            <li>
-              <h3>Retail Inventory Storage</h3>
-              <p>
-                When it comes to managing a retail business, it pays to be
-                prepared for anything. Commercial self-storage is the perfect
-                way to make sure you always have access to the inventory you
-                need, when you need it.
-              </p>
-            </li>
-            <li>
-              <h3>Real Estate Agent Storage</h3>
-              <p>
-                If location is everything, we've got the competition beat.
-                There’s a commercial storage unit near every neighborhood, so
-                you can store your signs, banners, brochures and home staging
-                supplies right around the corner from your next big sale.
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="datargt">
-          <img src="images/image-11.png" />
-        </div>
-      </div>
-    </section>
-    <section class="testimonals">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <button>Testimonial</button>
-            <h3>
-              See what our customers<br />
-              have to say
-            </h3>
-            <hr />
-          </div>
-          <div class="col-md-8">
-            <div id="news-slider3" class="owl-carousel">
-              <div class="item">
-                <p>
-                  When I needed a storage unit for my business, I chose Public
-                  Storage on a recommendation from a co-worker. I like the
-                  spacious units, code entry for privacy purposes and easy
-                  access. The office staff was very helpful and got me all set
-                  up the day of my first visit.
-                </p>
-                <h2>
-                  <img src="images/trustpiolte.png" />
-
-                  <span
-                    >Testimonials provided by actual My Storage Mart customers.
-                    Images are stock photography and not of the actual persons
-                    providing the testimonial.</span
-                  >
-                </h2>
-                <div class="photoall">
-                  <div class="dta1">
-                    <img src="images/photo.png" />
-                    <p>
-                      <img src="images/star5.png" /><br />
-                      Hannah S.
-                    </p>
-                  </div>
-                  <div class="dta2">
-                    <img src="images/coma-icon.png" />
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <p>
-                  When I needed a storage unit for my business, I chose Public
-                  Storage on a recommendation from a co-worker. I like the
-                  spacious units, code entry for privacy purposes and easy
-                  access. The office staff was very helpful and got me all set
-                  up the day of my first visit.
-                </p>
-                <h2>
-                  <img src="images/trustpiolte.png" />
-
-                  <span
-                    >Testimonials provided by actual Public Storage customers.
-                    Images are stock photography and not of the actual persons
-                    providing the testimonial.</span
-                  >
-                </h2>
-                <div class="photoall">
-                  <div class="dta1">
-                    <img src="images/photo.png" />
-                    <p>
-                      <img src="images/star5.png" /><br />
-                      Hannah S.
-                    </p>
-                  </div>
-                  <div class="dta2">
-                    <img src="images/coma-icon.png" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="public-stroge">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>Why Public Storage</h2>
-          </div>
-          <div class="col-md-5">
-            <div class="container">
-              <div class="row">
-                <div
-                  class="panel-group"
-                  id="accordion"
-                  role="tablist"
-                  aria-multiselectable="true"
-                  style="width: 100%"
-                >
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                      <h4 class="panel-title">
-                        <a
-                          data-toggle="collapse"
-                          data-parent="#accordion"
-                          href="#collapseOne"
-                          aria-expanded="true"
-                          aria-controls="collapseOne"
-                        >
-                          <span>01</span> Free Reservations
-                        </a>
-                      </h4>
-                    </div>
-                    <div
-                      id="collapseOne"
-                      class="panel-collapse collapse show"
-                      role="tabpanel"
-                      aria-labelledby="headingOne"
-                    >
-                      <div class="panel-body">
-                        You can access our unit from 6am to 9pm. at most
-                        locations.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title">
-                        <a
-                          class="collapsed"
-                          data-toggle="collapse"
-                          data-parent="#accordion"
-                          href="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                          <span>02</span> Convenient Hours
-                        </a>
-                      </h4>
-                    </div>
-                    <div
-                      id="collapseTwo"
-                      class="panel-collapse collapse"
-                      role="tabpanel"
-                      aria-labelledby="headingTwo"
-                    >
-                      <div class="panel-body">
-                        You can access our unit from 6am to 9pm. at most
-                        locations.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                      <h4 class="panel-title">
-                        <a
-                          class="collapsed"
-                          data-toggle="collapse"
-                          data-parent="#accordion"
-                          href="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree"
-                        >
-                          <span>03</span> Temperature Controlled
-                        </a>
-                      </h4>
-                    </div>
-                    <div
-                      id="collapseThree"
-                      class="panel-collapse collapse"
-                      role="tabpanel"
-                      aria-labelledby="headingThree"
-                    >
-                      <div class="panel-body">
-                        You can access our unit from 6am to 9pm. at most
-                        locations.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingfour">
-                      <h4 class="panel-title">
-                        <a
-                          class="collapsed"
-                          data-toggle="collapse"
-                          data-parent="#accordion"
-                          href="#collapsefour"
-                          aria-expanded="false"
-                          aria-controls="collapsefour"
-                        >
-                          <span>04</span> Multiple Unit Sizes
-                        </a>
-                      </h4>
-                    </div>
-                    <div
-                      id="collapsefour"
-                      class="panel-collapse collapse"
-                      role="tabpanel"
-                      aria-labelledby="headingfour"
-                    >
-                      <div class="panel-body">
-                        You can access our unit from 6am to 9pm. at most
-                        locations.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingfive">
-                      <h4 class="panel-title">
-                        <a
-                          class="collapsed"
-                          data-toggle="collapse"
-                          data-parent="#accordion"
-                          href="#collapsefive"
-                          aria-expanded="false"
-                          aria-controls="collapsefive"
-                        >
-                          <span>05</span> Electronic Gate Access
-                        </a>
-                      </h4>
-                    </div>
-                    <div
-                      id="collapsefive"
-                      class="panel-collapse collapse"
-                      role="tabpanel"
-                      aria-labelledby="headingfive"
-                    >
-                      <div class="panel-body">
-                        You can access our unit from 6am to 9pm. at most
-                        locations.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-7">
-            <img src="images/image-12.png" class="img-fluid" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="find-answer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <ul>
-              <li><img src="images/image-13.png" class="img-fluid" /></li>
-
-              <li>
-                <h2>Find answers to your business storage questions.</h2>
-                <p>
-                  If you're new to Public Storage or looking for storage space
-                  for your business, this page will help you learn more about
-                  our solutions and features. Find answers to common questions
-                  about storage unit sizes, facility hours, location policies
-                  and much more.
-                </p>
-                <button>More About Us</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="explore-main">
-      <div class="container">
-        <h2>Explore Other Resources</h2>
+    </div>
+  </section>
+  <section class="business-stroge">
+    <div class="strore-1">
+      <div class="datalft">
+        <h2>
+          BUSINESS STORAGE <br />
+          SOLUTIONS
+        </h2>
         <ul>
           <li>
-            <img src="images/icon-14.png" />
-            <p>Moving Tips & Advice</p>
-            <span
-              >Get prepped with tips and tricks for planning a move while saving
-              money and staying organized throughout the process.</span
-            >
-            <hr />
-            <a href="#">Read More</a>
+            <h3>
+              Construction <br />
+              Storage
+            </h3>
+            <p>
+              Tired of storing all your equipment in your truck or garage? Our
+              drive-up business storage units make it easy to access supplies,
+              materials and equipment.
+            </p>
           </li>
           <li>
-            <img src="images/icon-15.png" />
-            <p>Storage Tips</p>
-            <span
-              >Check out our tips on corralling all your business supplies for
-              easy and fast access.</span
-            >
-            <hr />
-            <a href="#">Read More</a>
-          </li>
-          <li>
-            <img src="images/icon-16.png" />
-            <p>Packing Hacks</p>
-            <span
-              >Try these packing hacks to help you save money, free up space and
-              unpack more efficiently.</span
-            >
-            <hr />
-            <a href="#">Read More</a>
-          </li>
-          <li>
-            <img src="images/icon-17.png" />
-            <p>Organizing Advice</p>
-            <span
-              >Get expert advice for decluttering and organizing your workspace
-              to boost productivity.</span
-            >
-            <hr />
-            <a href="#">Read More</a>
+            <h3>
+              Pharmaceutical <br />
+              Storage
+            </h3>
+            <p>
+              Need a place to store your sales materials and samples? Our
+              climate-controlled commercial storage units are perfect for
+              sales reps who need easy access to their inventory.
+            </p>
           </li>
         </ul>
       </div>
-    </section>
-    <section class="ldding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+      <div class="datargt">
+        <img src="images/image-8.png" />
+      </div>
+    </div>
+  </section>
+  <section class="solution-strore">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Business Storage Solutions</h3>
+          <ul>
+            <li>
+              <img src="images/image-9.png" />
+              <p>1.Office Equipment Storage</p>
+              <span>Why waste money on pricey commercial real estate? Our
+                business storage solutions make it possible to store your
+                stuff at a fraction of the cost.</span>
+            </li>
+            <li>
+              <img src="images/image-10.png" />
+              <p>1.Office Equipment Storage</p>
+              <span>Why waste money on pricey commercial real estate? Our
+                business storage solutions make it possible to store your
+                stuff at a fraction of the cost.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="business-stroge">
+    <div class="strore-1">
+      <div class="datalft">
+        <h2>
+          COMMERCIAL STORAGE<br />
+          SOLUTIONS
+        </h2>
+        <ul>
+          <li>
+            <h3>Retail Inventory Storage</h3>
             <p>
-              Public Storage is the leading provider of Storage units for Your
-              personal, business and vehicle needs with thousands of locations
-              nationwide. We offer a wide variety of unites and sizes available
-              with no obligation and no long-term commitment. Call today at
-              1-855-663-3181 for a free reservation and get your first month's
-              rent for just $1.
-              <i class="fa fa-info-circle" aria-hidden="true"></i>
+              When it comes to managing a retail business, it pays to be
+              prepared for anything. Commercial self-storage is the perfect
+              way to make sure you always have access to the inventory you
+              need, when you need it.
             </p>
+          </li>
+          <li>
+            <h3>Real Estate Agent Storage</h3>
+            <p>
+              If location is everything, we've got the competition beat.
+              There’s a commercial storage unit near every neighborhood, so
+              you can store your signs, banners, brochures and home staging
+              supplies right around the corner from your next big sale.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="datargt">
+        <img src="images/image-11.png" />
+      </div>
+    </div>
+  </section>
+  <section class="testimonals">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <button>Testimonial</button>
+          <h3>
+            See what our customers<br />
+            have to say
+          </h3>
+          <hr />
+        </div>
+        <div class="col-md-8">
+          <div id="news-slider3" class="owl-carousel">
+            <div class="item">
+              <p>
+                When I needed a storage unit for my business, I chose Public
+                Storage on a recommendation from a co-worker. I like the
+                spacious units, code entry for privacy purposes and easy
+                access. The office staff was very helpful and got me all set
+                up the day of my first visit.
+              </p>
+              <h2>
+                <img src="images/trustpiolte.png" />
+
+                <span>Testimonials provided by actual My Storage Mart customers.
+                  Images are stock photography and not of the actual persons
+                  providing the testimonial.</span>
+              </h2>
+              <div class="photoall">
+                <div class="dta1">
+                  <img src="images/photo.png" />
+                  <p>
+                    <img src="images/star5.png" /><br />
+                    Hannah S.
+                  </p>
+                </div>
+                <div class="dta2">
+                  <img src="images/coma-icon.png" />
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <p>
+                When I needed a storage unit for my business, I chose Public
+                Storage on a recommendation from a co-worker. I like the
+                spacious units, code entry for privacy purposes and easy
+                access. The office staff was very helpful and got me all set
+                up the day of my first visit.
+              </p>
+              <h2>
+                <img src="images/trustpiolte.png" />
+
+                <span>Testimonials provided by actual Public Storage customers.
+                  Images are stock photography and not of the actual persons
+                  providing the testimonial.</span>
+              </h2>
+              <div class="photoall">
+                <div class="dta1">
+                  <img src="images/photo.png" />
+                  <p>
+                    <img src="images/star5.png" /><br />
+                    Hannah S.
+                  </p>
+                </div>
+                <div class="dta2">
+                  <img src="images/coma-icon.png" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- <section class="foott">
+    </div>
+  </section>
+  <section class="public-stroge">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Why Public Storage</h2>
+        </div>
+        <div class="col-md-5">
+          <div class="container">
+            <div class="row">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="width: 100%">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <span>01</span> Free Reservations
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel"
+                    aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      You can access our unit from 6am to 9pm. at most
+                      locations.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <span>02</span> Convenient Hours
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      You can access our unit from 6am to 9pm. at most
+                      locations.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <span>03</span> Temperature Controlled
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                    aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      You can access our unit from 6am to 9pm. at most
+                      locations.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingfour">
+                    <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefour"
+                        aria-expanded="false" aria-controls="collapsefour">
+                        <span>04</span> Multiple Unit Sizes
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
+                    <div class="panel-body">
+                      You can access our unit from 6am to 9pm. at most
+                      locations.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingfive">
+                    <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefive"
+                        aria-expanded="false" aria-controls="collapsefive">
+                        <span>05</span> Electronic Gate Access
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfive">
+                    <div class="panel-body">
+                      You can access our unit from 6am to 9pm. at most
+                      locations.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <img src="images/image-12.png" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="find-answer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul>
+            <li><img src="images/image-13.png" class="img-fluid" /></li>
+
+            <li>
+              <h2>Find answers to your business storage questions.</h2>
+              <p>
+                If you're new to Public Storage or looking for storage space
+                for your business, this page will help you learn more about
+                our solutions and features. Find answers to common questions
+                about storage unit sizes, facility hours, location policies
+                and much more.
+              </p>
+              <button>More About Us</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="explore-main">
+    <div class="container">
+      <h2>Explore Other Resources</h2>
+      <ul>
+        <li>
+          <img src="images/icon-14.png" />
+          <p>Moving Tips & Advice</p>
+          <span>Get prepped with tips and tricks for planning a move while saving
+            money and staying organized throughout the process.</span>
+          <hr />
+          <a href="#">Read More</a>
+        </li>
+        <li>
+          <img src="images/icon-15.png" />
+          <p>Storage Tips</p>
+          <span>Check out our tips on corralling all your business supplies for
+            easy and fast access.</span>
+          <hr />
+          <a href="#">Read More</a>
+        </li>
+        <li>
+          <img src="images/icon-16.png" />
+          <p>Packing Hacks</p>
+          <span>Try these packing hacks to help you save money, free up space and
+            unpack more efficiently.</span>
+          <hr />
+          <a href="#">Read More</a>
+        </li>
+        <li>
+          <img src="images/icon-17.png" />
+          <p>Organizing Advice</p>
+          <span>Get expert advice for decluttering and organizing your workspace
+            to boost productivity.</span>
+          <hr />
+          <a href="#">Read More</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="ldding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            Public Storage is the leading provider of Storage units for Your
+            personal, business and vehicle needs with thousands of locations
+            nationwide. We offer a wide variety of unites and sizes available
+            with no obligation and no long-term commitment. Call today at
+            1-855-663-3181 for a free reservation and get your first month's
+            rent for just $1.
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="foott">
       <div class="container">
          <div class="row">
             <div class="col-md-3 data-1">
@@ -1017,188 +743,183 @@
       </div>
    </section> -->
 
-    <footer>
-      <section class="media">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="media-middla">
-                <div class="media-lft">
-                  <p>Download App</p>
-                  <ul>
-                    <li>
-                      <img src="images/google-icon.png" />
-                      <img src="images/apple-icon.png" />
-                    </li>
-                  </ul>
-                </div>
-                <div class="media-rgt">
-                  <div class="social-icons">
-                    <a href="#" title="facebook">
-                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" title="twitter">
-                      <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" title="instagram">
-                      <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" title="youtube">
-                      <i class="fa fa-youtube-square" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" title="linkedin">
-                      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" title="pinterest">
-                      <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                    </a>
-                  </div>
+  <footer>
+    <!-- <section class="media">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="media-middla">
+              <div class="media-lft">
+                <p>Download App</p>
+                <ul>
+                  <li>
+                    <img src="images/google-icon.png" />
+                    <img src="images/apple-icon.png" />
+                  </li>
+                </ul>
+              </div>
+              <div class="media-rgt">
+                <div class="social-icons">
+                  <a href="#" title="facebook">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" title="twitter">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" title="instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" title="youtube">
+                    <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" title="linkedin">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" title="pinterest">
+                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Storage Types</h3>
-            <ul>
-              <li>
-                <a href="#"> Self Storage Facilities </a>
-              </li>
-              <li>
-                <a href="#"> Business Storage </a>
-              </li>
-              <li>
-                <a href="#"> Car and RV Storage </a>
-              </li>
-              <li>
-                <a href="#"> Boat Storage </a>
-              </li>
-              <li>
-                <a href="#"> Climate Controlled Storage </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3>Support</h3>
-            <ul>
-              <li>
-                <a href="contactus.html"> Contact Us </a>
-              </li>
-              <li>
-                <a href="privacypolicy.html"> Privacy Policy </a>
-              </li>
-              <li>
-                <a href="cookiespolicy.html"> Cookies Policy </a>
-              </li>
-              <li>
-                <a href="termsconditions.html"> Terms and Conditions </a>
-              </li>
-              <li>
-                <a href="#"> Size Guide </a>
-              </li>
-              <li>
-                <a href="#"> Public Storage Blog </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3>Company Info</h3>
-            <ul>
-              <li>
-                <a href="#"> Careers </a>
-              </li>
-              <li>
-                <a href="#"> U.S. Locations </a>
-              </li>
-              <li>
-                <a href="#"> Global Locations </a>
-              </li>
-              <li>
-                <a href="#"> 3rd Party Management </a>
-              </li>
-              <li>
-                <a href="#"> Commercial Real Estate </a>
-              </li>
-              <li>
-                <a href="#"> Cell Tower Lease </a>
-              </li>
-              <li>
-                <a href="#"> AdChoices </a>
-              </li>
-            </ul>
-          </div>
+      </div>
+    </section> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Storage Types</h3>
+          <ul>
+            <li>
+              <a href="#"> Self Storage Facilities </a>
+            </li>
+            <li>
+              <a href="#"> Business Storage </a>
+            </li>
+            <li>
+              <a href="#"> Car and RV Storage </a>
+            </li>
+            <li>
+              <a href="#"> Boat Storage </a>
+            </li>
+            <li>
+              <a href="#"> Climate Controlled Storage </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Support</h3>
+          <ul>
+            <li>
+              <a href="contactus.html"> Contact Us </a>
+            </li>
+            <li>
+              <a href="privacypolicy.html"> Privacy Policy </a>
+            </li>
+            <li>
+              <a href="cookiespolicy.html"> Cookies Policy </a>
+            </li>
+            <li>
+              <a href="termsconditions.html"> Terms and Conditions </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Company Info</h3>
+          <ul>
+            <li>
+              <a href="#"> Careers </a>
+            </li>
+            <li>
+              <a href="#"> U.S. Locations </a>
+            </li>
+            <li>
+              <a href="#"> Global Locations </a>
+            </li>
+            <li>
+              <a href="#"> 3rd Party Management </a>
+            </li>
+            <li>
+              <a href="#"> Commercial Real Estate </a>
+            </li>
+            <li>
+              <a href="#"> Cell Tower Lease </a>
+            </li>
+            <li>
+              <a href="#"> AdChoices </a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="col-md-12">
-            <hr />
-            <p>© 2026 My Storage Mart. All rights reserved.</p>
-          </div>
+        <div class="col-md-12">
+          <hr />
+          <p>© 2026 My Storage Mart. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-   <div class="phone-footer">
-          <a href="tel:1-855-663-3181"><img src="images/phone-icon.png"> 1-855-663-3181</a>
-   </div>
-   <div class="phone-footer-mobile">
-          <a href="tel:1-855-663-3181"><i class="fa fa-phone"></i></a>
-   </div>
+    </div>
+  </footer>
+  <div class="phone-footer">
+    <a href="tel:1-855-663-3181"><img src="images/phone-icon.png"> 1-855-663-3181</a>
+  </div>
+  <div class="phone-footer-mobile">
+    <a href="tel:1-855-663-3181"><i class="fa fa-phone"></i></a>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="module" src="js/autocomplete-cities.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="module" src="js/autocomplete-cities.js"></script>
 
 
-    <script>
-      $("#news-slider2").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        navigation: true,
-        autoPlay: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 1,
-          },
-          1000: {
-            items: 3,
-          },
+  <script>
+    $("#news-slider2").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      navigation: true,
+      autoPlay: true,
+      responsive: {
+        0: {
+          items: 1,
         },
-      });
-      $("#news-slider3").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        navigation: true,
-        autoPlay: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 1,
-          },
-          1000: {
-            items: 1,
-          },
+        600: {
+          items: 1,
         },
-      });
-    </script>
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("mySidenav1").style.width = "250px";
-      }
+        1000: {
+          items: 3,
+        },
+      },
+    });
+    $("#news-slider3").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      navigation: true,
+      autoPlay: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+        },
+      },
+    });
+  </script>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("mySidenav1").style.width = "250px";
+    }
 
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("mySidenav1").style.width = "0";
-      }
-    </script>
-  </body>
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("mySidenav1").style.width = "0";
+    }
+  </script>
+</body>
+
 </html>
