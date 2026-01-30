@@ -413,4 +413,107 @@
         font-size: 13px;
     }
 
+    .thanks-head h1 {
+        font-size: 18px;
+    }
+
+    .thanks-head p,
+    .thanks-head a {
+        font-size: 14px;
+    }
+
+    .top-head h2 {
+        font-size: 18px;
+    }
+
+    .top-head ul li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 4%;
+    }
+
+    .top-head ul li strong {
+        font-size: 15px;
+    }
+
+    .address-bar {
+        margin-top: 30px;
+    }
+
+    .address-bar h3,
+    .address-bar-1 h3 {
+        font-size: 15px;
+    }
+
+    .address-bar p,
+    .address-bar-1 p {
+        font-size: 13px;
+
+    }
+
+    .process-works h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .process-works ul {
+
+        display: block;
+    }
+
+    .process-works ul li {
+        list-style-type: none;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .process-works ul li h5 {
+        color: #000;
+        font-weight: 700;
+        font-size: 15px;
+        margin: 11px 0 7px;
+    }
+
+    .process-works ul li p {
+        font-size: 13px;
+    }
+
+    .top-head .total-price p {
+        font-size: 13px;
+    }
+
+    .top-head .total-price strong {
+        font-size: 18px;
+    }
+
+    .need-banner {
+        height: auto;
+        margin: 2px 0 0px;
+    }
+
+    .need-banner h6 {
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 23px 0 14px;
+    }
+
+    .need-banner p {
+        color: #fff;
+        font-weight: 400;
+        font-size: 15px;
+        margin: 5px 0 0;
+    }
+
+    .need-banner button {
+        display: inline-block;
+        background: #fff;
+        color: #000;
+        border-radius: 25px;
+        margin-top: 36px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+
 }
