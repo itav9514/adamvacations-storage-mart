@@ -784,9 +784,6 @@
                         <!-- Preferred Area with Autocomplete -->
                         <div class="col-md-12">
                           <div class="form-group position-relative">
-                            <label for="preferredAreaInput" class="form-label"
-                              >Preferred Area*</label
-                            >
                             <input
                               type="text"
                               id="preferredAreaInput"
@@ -1592,7 +1589,7 @@
             payNowBtn.textContent = "Processing...";
 
             const response = await fetch(
-              "https://localhost:32769/api/MyStorageMartIndividualEnquiry",
+              "https://crm.adamvacations.com/api/MyStorageMartIndividualEnquiry",
               {
                 method: "POST",
                 headers: {
@@ -1626,7 +1623,7 @@
                 "myStorageMartIndividualEnquiryResponse",
                 JSON.stringify(data),
               );
-              
+
               window.location.href = "/thankyou.html"; // or
               } else {
               // ── Error handling ──────────────────────────────────────────────

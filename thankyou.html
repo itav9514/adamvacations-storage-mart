@@ -1,72 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>Thankyou</title>
+    <style>
+      .bg-breadcrumb {
+        background:
+          linear-gradient(rgba(31, 46, 78, 1), rgba(0, 12, 33, 0.1)),
+          url(images/thanks-banner.png);
+        padding: 83px 0 100px 0;
+      }
 
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/owl.carousel.min.css">
-  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/responsive.css">
-  <title>Thankyou</title>
-  <style>
-    .bg-breadcrumb {
-      background: linear-gradient(rgba(31, 46, 78, 1), rgba(0, 12, 33, 0.1)), url(images/thanks-banner.png);
-      padding: 83px 0 100px 0;
-    }
-  </style>
-</head>
+      .individual-only {
+        display: none;
+      }
+      .business-only {
+        display: none;
+      }
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark hide-top">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <a class="logo-home" href="/" title="My Storage Cart Home" aria-label="Go to Home page">
-          <img src="images/logo-6.svg" alt="Commerce Cloud Storefront Reference Architecture" fetchpriority="high"
-            width="100%" height="80px">
-        </a>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="business.html">
-              Business
-            </a>
-          </li>
+      /* Show only for the active type – added by JS if needed */
+      body[data-enquiry-type="individual"] .individual-only {
+        display: list-item;
+      }
+      body[data-enquiry-type="business"] .business-only {
+        display: list-item;
+      }
+    </style>
+  </head>
 
-          <li class="nav-item">
-            <a class="nav-link" href="business.html">
-              Size Guide
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Storage Types
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark hide-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a
+            class="logo-home"
+            href="/"
+            title="My Storage Cart Home"
+            aria-label="Go to Home page"
+          >
+            <img
+              src="images/logo-6.svg"
+              alt="Commerce Cloud Storefront Reference Architecture"
+              fetchpriority="high"
+              width="100%"
+              height="80px"
+            />
+          </a>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="business.html"> Business </a>
+            </li>
 
-                    <ul class="nav flex-column">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="self-storage.html">Self Storage</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="24-hour-self-storage.html">24 Hour Self Storage</a>
-                      </li>
-                      <!-- <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link" href="business.html"> Size Guide </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Storage Types
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="self-storage.html"
+                            >Self Storage</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="24-hour-self-storage.html"
+                            >24 Hour Self Storage</a
+                          >
+                        </li>
+                        <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Business Storage</a>
                       </li>
                       <li class="nav-item">
@@ -78,422 +115,560 @@
                       <li class="nav-item">
                         <a class="nav-link" href="#">Climate Controlled Storage</a>
                       </li> -->
-                    </ul>
+                      </ul>
+                    </div>
                   </div>
-
                 </div>
+                <!--  /.container  -->
               </div>
-              <!--  /.container  -->
+            </li>
+            <li class="nav-item">
+              <a href="Form.html" class="primary-btn px-3 py-2">Book Storage</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 ml-1">
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <a href="index.html">Home</a>
+              <a href="business.html">Business</a>
+              <a href="self-storage.html">Self Storage</a>
+              <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
+
+              <!-- <a href="#">About Us</a> -->
             </div>
-          </li>
-          <li class="nav-item">
-            <a href="Form.html"><button class="primary-btn px-3 py-2">Book Storage</button></a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0 ml-1">
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="business.html">Business</a>
-            <a href="self-storage.html">Self Storage</a>
-            <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
-
-            <!-- <a href="#">About Us</a> -->
-          </div>
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <div class="mobile-new">
-    <div>
-      <a class="logo-home" href="/" title="My Storage Cart Home" aria-label="Go to Home page">
-        <img src="images/logo-6.svg" alt="Commerce Cloud Storefront Reference Architecture" fetchpriority="high"
-          width="100%" height="50px">
-      </a>
-    </div>
-    <div id="mySidenav1" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.html">Home</a>
-      <a href="business.html">Business</a>
-      <a href="self-storage.html">Self Storage</a>
-      <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
-
-    </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-  </div>
-  <!-- MultiStep Form -->
-  <div class="container-fluid bg-breadcrumb mb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 thanks-head">
-          <h1>
-            Booking Request Received
-          </h1>
-          <p>Your Storege Mart request has been submitted successfully. Our team is reviewing the details and will
-            confirm shortly.</p>
-          <a href="#"><img src="images/tick-new-icon.png"> Secure <img src="images/circle.png"> Fast <img
-              src="images/circle.png"> Reliable</a>
-
+            <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+              >&#9776;</span
+            >
+          </form>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-
-
-      <div class="col-md-8">
-      <div class="top-head">
-        <h2>Booking Summary</h2>
-        <ul id="enquiry-summary-list">
-          <!-- These <li> items will be replaced / filled by JavaScript -->
-          <li><strong>Booking Ref</strong><p id="booking-ref">Loading...</p></li>
-          <li><strong>Name</strong><p id="customer-name">Loading...</p></li>
-          <li><strong>Email</strong><p id="customer-email">Loading...</p></li>
-          <li><strong>Phone</strong><p id="customer-phone">Loading...</p></li>
-          <li><strong>Storage Package</strong><p id="package-type">Loading...</p></li>
-          <li><strong>Package Description</strong><p id="package-desc">Loading...</p></li>
-          <li><strong>Preferred Area</strong><p id="preferred-area">Loading...</p></li>
-          <li><strong>Lift Available</strong><p id="lift-availability">Loading...</p></li>
-          <li><strong>Floor</strong><p id="floor-number">Loading...</p></li>
-          <li><strong>Duration</strong><p id="duration-months">Loading...</p></li>
-          <li><strong>Tentative Pickup Date</strong><p id="tentative-date">Loading...</p></li>
-        </ul>
-
-        <div class="total-price">
-          <p>Total Estimated Cost</p>
-          <strong id="total-cost-display">$0.00</strong>
-        </div>
+    </nav>
+    <div class="mobile-new">
+      <div>
+        <a
+          class="logo-home"
+          href="/"
+          title="My Storage Cart Home"
+          aria-label="Go to Home page"
+        >
+          <img
+            src="images/logo-6.svg"
+            alt="Commerce Cloud Storefront Reference Architecture"
+            fetchpriority="high"
+            width="100%"
+            height="50px"
+          />
+        </a>
       </div>
-    </div>
-
-      <div class="col-md-4">
-        <div class="address-bar">
-          <h3><img src="images/thanks-icon-1.png"> Office Address</h3>
-          <p>7901 4TH ST N STE 300, St Petersburg,
-            FL 33702</p>
-        </div>
-        <div class="address-bar-1">
-          <h3><img src="images/thanks-icon-2.png"> Email Support</h3>
-          <p>support@adamvacations.com</p>
-        </div>
-        <div class="address-bar-1">
-          <h3><img src="images/thanks-icon-3.png"> Availability</h3>
-          <p>24/7 Customer Support</p>
-        </div>
+      <div id="mySidenav1" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="index.html">Home</a>
+        <a href="business.html">Business</a>
+        <a href="self-storage.html">Self Storage</a>
+        <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
       </div>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776;</span
+      >
     </div>
-  </div>
-  <section class="mt-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="process-works">
-            <h4>Here’s how the self-storage process works.</h4>
-            <ul>
-              <li>
-                <span><img src="images/thanks-icon-4.png"></span>
-                <h5>Find a location</h5>
-                <p>Start by searching for storage near you. With thousands of locations nationwide, we're always just
-                  around the corner.</p>
-              </li>
-              <li>
-                <span><img src="images/thanks-icon-5.png"></span>
-                <h5>Reserve your unit</h5>
-                <p>Reserve your unit for free with no obligation, and complete your rental online to save time on
-                  move-in
-                  day.</p>
-              </li>
-              <li>
-                <span><img src="images/thanks-icon-6.png"></span>
-                <h5>Move in</h5>
-                <p>Find your space and move on in! (Pro tip: Download the My Storage Cart app to open make move-in a
-                  breeze
-                  with easy gate access and more!)</p>
-              </li>
-            </ul>
+    <!-- MultiStep Form -->
+    <div class="container-fluid bg-breadcrumb mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 thanks-head">
+            <h1>Booking Request Received</h1>
+            <p>
+              Your Storege Mart request has been submitted successfully. Our
+              team is reviewing the details and will confirm shortly.
+            </p>
+            <a href="#"
+              ><img src="images/tick-new-icon.png" /> Secure
+              <img src="images/circle.png" /> Fast
+              <img src="images/circle.png" /> Reliable</a
+            >
           </div>
         </div>
-
       </div>
     </div>
-  </section>
-  <section class="need-banner">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <h6>Need any changes or help?</h6>
-          <p>Our travel experts are just a click away.</p>
+          <div class="top-head">
+            <h2>Booking Summary</h2>
+
+            <div class="booking-summary">
+              <ul id="enquiry-summary-list">
+                <li>
+                  <strong>Booking Ref</strong>
+                  <p id="booking-ref">Loading...</p>
+                </li>
+                <li>
+                  <strong>Name</strong>
+                  <p id="customer-name">Loading...</p>
+                </li>
+
+                <!-- Business-only -->
+                <li class="business-only">
+                  <strong>Business Name</strong>
+                  <p id="business-name">Loading...</p>
+                </li>
+                <li class="business-only">
+                  <strong>Business Email</strong>
+                  <p id="business-email">Loading...</p>
+                </li>
+
+                <!-- Common -->
+                <li>
+                  <strong>Phone</strong>
+                  <p id="customer-phone">Loading...</p>
+                </li>
+                <li>
+                  <strong>Preferred Area</strong>
+                  <p id="preferred-area">Loading...</p>
+                </li>
+
+                <!-- Individual-only (will be hidden for business) -->
+                <li class="individual-only">
+                  <strong>Email</strong>
+                  <p id="customer-email">Loading...</p>
+                </li>
+                <li class="individual-only">
+                  <strong>Storage Package</strong>
+                  <p id="package-type">Loading...</p>
+                </li>
+                <li class="individual-only">
+                  <strong>Package Description</strong>
+                  <p id="package-desc">Loading...</p>
+                </li>
+                <li class="individual-only">
+                  <strong>Lift Available</strong>
+                  <p id="lift-availability">Loading...</p>
+                </li>
+                <li class="individual-only">
+                  <strong>Floor</strong>
+                  <p id="floor-number">Loading...</p>
+                </li>
+                <li class="individual-only">
+                  <strong>Duration</strong>
+                  <p id="duration-months">Loading...</p>
+                </li>
+                <li class="individual-only">
+                  <strong>Tentative Pickup Date</strong>
+                  <p id="tentative-date">Loading...</p>
+                </li>
+
+                <!-- Business-only -->
+                <li class="business-only">
+                  <strong>Storage Type</strong>
+                  <p id="storage-type">Loading...</p>
+                </li>
+
+                <li>
+                  <strong>Submitted On</strong>
+                  <p id="submitted-date">Loading...</p>
+                </li>
+              </ul>
+
+              <div class="total-price individual-only">
+                <p>Total Estimated Cost</p>
+                <strong id="total-cost-display">$0.00</strong>
+              </div>
+            </div>
+          </div>
         </div>
+
         <div class="col-md-4">
-          <button class="primary-btn px-4 py-2"><a href="contactus.html">Contact Support</a></button>
+          <div class="address-bar">
+            <h3><img src="images/thanks-icon-1.png" /> Office Address</h3>
+            <p>7901 4TH ST N STE 300, St Petersburg, FL 33702</p>
+          </div>
+          <div class="address-bar-1">
+            <h3><img src="images/thanks-icon-2.png" /> Email Support</h3>
+            <p>support@adamvacations.com</p>
+          </div>
+          <div class="address-bar-1">
+            <h3><img src="images/thanks-icon-3.png" /> Availability</h3>
+            <p>24/7 Customer Support</p>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-
-
-  <footer>
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-4">
-          <h3>Storage Types</h3>
-          <ul>
-            <li>
-              <a href="self-storage.html">
-                Self Storage
-              </a>
-            </li>
-             <li>
-              <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
-            </li>
-            <li>
-              <a href="#">
-                Business Storage
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Car and RV Storage
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Climate Controlled Storage
-              </a>
-            </li>
-          </ul>
+    <section class="mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="process-works">
+              <h4>Here’s how the self-storage process works.</h4>
+              <ul>
+                <li>
+                  <span><img src="images/thanks-icon-4.png" /></span>
+                  <h5>Find a location</h5>
+                  <p>
+                    Start by searching for storage near you. With thousands of
+                    locations nationwide, we're always just around the corner.
+                  </p>
+                </li>
+                <li>
+                  <span><img src="images/thanks-icon-5.png" /></span>
+                  <h5>Reserve your unit</h5>
+                  <p>
+                    Reserve your unit for free with no obligation, and complete
+                    your rental online to save time on move-in day.
+                  </p>
+                </li>
+                <li>
+                  <span><img src="images/thanks-icon-6.png" /></span>
+                  <h5>Move in</h5>
+                  <p>
+                    Find your space and move on in! (Pro tip: Download the My
+                    Storage Cart app to open make move-in a breeze with easy
+                    gate access and more!)
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h3>Support</h3>
-          <ul>
-            <li>
-              <a href="contactus.html">
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a href="privacypolicy.html">
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="cookiespolicy.html">
-                Cookies Policy
-              </a>
-            </li>
-            <li>
-              <a href="termsconditions.html">
-                Terms and Conditions
-              </a>
-            </li>
-
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h3>Company Info</h3>
-          <ul>
-            <li>
-              <a href="#">
-                Careers
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                U.S. Locations
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Global Locations
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                3rd Party Management
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Commercial Real Estate
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Cell Tower Lease
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                AdChoices
-              </a>
-            </li>
-
-          </ul>
-        </div>
-
-        <div class="col-md-12">
-          <hr>
-          <p>© 2026 My Storage Mart. All rights reserved.</p>
-        </div>
-
       </div>
+    </section>
+    <section class="need-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h6>Need any changes or help?</h6>
+            <p>Our travel experts are just a click away.</p>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="contactus.html"
+              class="primary-btn px-4 py-2 d-inline-block text-center"
+              >Contact Support</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Storage Types</h3>
+            <ul>
+              <li>
+                <a href="self-storage.html"> Self Storage </a>
+              </li>
+              <li>
+                <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
+              </li>
+              <li>
+                <a href="#"> Business Storage </a>
+              </li>
+              <li>
+                <a href="#"> Car and RV Storage </a>
+              </li>
+              <li>
+                <a href="#"> Climate Controlled Storage </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Support</h3>
+            <ul>
+              <li>
+                <a href="contactus.html"> Contact Us </a>
+              </li>
+              <li>
+                <a href="privacypolicy.html"> Privacy Policy </a>
+              </li>
+              <li>
+                <a href="cookiespolicy.html"> Cookies Policy </a>
+              </li>
+              <li>
+                <a href="termsconditions.html"> Terms and Conditions </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Company Info</h3>
+            <ul>
+              <li>
+                <a href="#"> Careers </a>
+              </li>
+              <li>
+                <a href="#"> U.S. Locations </a>
+              </li>
+              <li>
+                <a href="#"> Global Locations </a>
+              </li>
+              <li>
+                <a href="#"> 3rd Party Management </a>
+              </li>
+              <li>
+                <a href="#"> Commercial Real Estate </a>
+              </li>
+              <li>
+                <a href="#"> Cell Tower Lease </a>
+              </li>
+              <li>
+                <a href="#"> AdChoices </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-12">
+            <hr />
+            <p>© 2026 My Storage Mart. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="phone-footer">
+      <a href="tel:1-855-663-3181"
+        ><img src="images/phone-icon.png" /> 1-855-663-3181</a
+      >
+    </div>
+    <div class="phone-footer-mobile">
+      <a href="tel:1-855-663-3181"><i class="fa fa-phone"></i></a>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".nav-tabs > li a[title]").tooltip();
 
-  </footer>
-  <div class="phone-footer">
-    <a href="tel:1-855-663-3181"><img src="images/phone-icon.png"> 1-855-663-3181</a>
-  </div>
-  <div class="phone-footer-mobile">
-    <a href="tel:1-855-663-3181"><i class="fa fa-phone"></i></a>
-  </div>
+        //Wizard
+        $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
+          var target = $(e.target);
 
+          if (target.parent().hasClass("disabled")) {
+            return false;
+          }
+        });
 
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script>
-
-    $(document).ready(function () {
-      $('.nav-tabs > li a[title]').tooltip();
-
-      //Wizard
-      $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-
-        var target = $(e.target);
-
-        if (target.parent().hasClass('disabled')) {
-          return false;
-        }
+        $(".next-step").click(function (e) {
+          var active = $(".wizard .nav-tabs li.active");
+          active.next().removeClass("disabled");
+          nextTab(active);
+        });
+        $(".prev-step").click(function (e) {
+          var active = $(".wizard .nav-tabs li.active");
+          prevTab(active);
+        });
       });
 
-      $(".next-step").click(function (e) {
-
-        var active = $('.wizard .nav-tabs li.active');
-        active.next().removeClass('disabled');
-        nextTab(active);
-
-      });
-      $(".prev-step").click(function (e) {
-
-        var active = $('.wizard .nav-tabs li.active');
-        prevTab(active);
-
-      });
-    });
-
-    function nextTab(elem) {
-      $(elem).next().find('a[data-toggle="tab"]').click();
-    }
-    function prevTab(elem) {
-      $(elem).prev().find('a[data-toggle="tab"]').click();
-    }
-
-
-    $('.nav-tabs').on('click', 'li', function () {
-      $('.nav-tabs li.active').removeClass('active');
-      $(this).addClass('active');
-    });
-
-  </script>
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("mySidenav1").style.width = "250px";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("mySidenav1").style.width = "0";
-    }
-  </script>
-
-
-
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const storedData = sessionStorage.getItem("myStorageMartIndividualEnquiryResponse");
-
-    if (!storedData) {
-      // No data → show fallback message
-      document.getElementById("enquiry-summary-list").innerHTML = 
-        '<li class="text-danger"><strong>Error:</strong> No booking details found. Please contact support.</li>';
-      document.getElementById("total-cost-display").textContent = "—";
-      return;
-    }
-
-    try {
-      const data = JSON.parse(storedData);
-
-      // Booking Ref – using your format AV- followed by padded ID
-      const refId = data.id ? `SM-${String(data.id).padStart(6, '0')}` : "—";
-      document.getElementById("booking-ref").textContent = refId;
-
-      // Name
-      const fullName = [
-        data.personalInfo?.firstName || "",
-        data.personalInfo?.lastName || ""
-      ].filter(Boolean).join(" ") || "—";
-      document.getElementById("customer-name").textContent = fullName;
-
-      // Email & Phone
-      document.getElementById("customer-email").textContent = data.personalInfo?.email || "—";
-      document.getElementById("customer-phone").textContent = data.personalInfo?.phone || "—";
-
-      // Storage info
-      document.getElementById("package-type").textContent = data.selectedStoragePackage?.selectedType || "—";
-      document.getElementById("package-desc").textContent = data.selectedStoragePackage?.description || "—";
-
-      // Pickup info
-      document.getElementById("preferred-area").textContent = data.pickupDetails?.preferredArea || "—";
-      document.getElementById("lift-availability").textContent = 
-        (data.pickupDetails?.liftAvailability || "—").toUpperCase();
-
-      document.getElementById("floor-number").textContent = data.pickupDetails?.floor ?? "—";
-
-      const duration = data.pickupDetails?.durationMonths 
-        ? `${data.pickupDetails.durationMonths} months` 
-        : "—";
-      document.getElementById("duration-months").textContent = duration;
-
-      // Tentative date – formatted nicely
-      let pickupDate = "—";
-      if (data.pickupDetails?.tentativeDate) {
-        const dateObj = new Date(data.pickupDetails.tentativeDate);
-        if (!isNaN(dateObj)) {
-          pickupDate = dateObj.toLocaleDateString("en-US", {
-            year: "numeric",
-            month: "long",
-            day: "numeric"
-          });
-        }
+      function nextTab(elem) {
+        $(elem).next().find('a[data-toggle="tab"]').click();
       }
-      document.getElementById("tentative-date").textContent = pickupDate;
+      function prevTab(elem) {
+        $(elem).prev().find('a[data-toggle="tab"]').click();
+      }
 
-      // Total cost
-      document.getElementById("total-cost-display").textContent = 
-        data.totalStorageCost || "—";
+      $(".nav-tabs").on("click", "li", function () {
+        $(".nav-tabs li.active").removeClass("active");
+        $(this).addClass("active");
+      });
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mySidenav1").style.width = "250px";
+      }
 
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("mySidenav1").style.width = "0";
+      }
+    </script>
 
-    } catch (error) {
-      console.error("Error parsing stored data:", error);
-      document.getElementById("enquiry-summary-list").innerHTML = 
-        '<li class="text-danger"><strong>Error:</strong> Unable to load booking details.</li>';
-      document.getElementById("total-cost-display").textContent = "—";
-    }
-  });
+    <script>
+      // Unified Thank You Summary – supports multiple enquiry types
+      document.addEventListener("DOMContentLoaded", function () {
+        const listEl = document.getElementById("enquiry-summary-list");
+        const totalCostEl = document.getElementById("total-cost-display");
 
-</script>
+        if (!listEl) {
+          console.warn("Summary list element not found");
+          return;
+        }
 
+        // Try loading business first (priority), then individual
+        const businessJson = sessionStorage.getItem(
+          "myStorageMartBusinessEnquiryResponse",
+        );
+        const individualJson = sessionStorage.getItem(
+          "myStorageMartIndividualEnquiryResponse",
+        );
 
-</body>
+        let data = null;
+        let enquiryType = "none";
 
+        if (businessJson) {
+          try {
+            data = JSON.parse(businessJson);
+            enquiryType = "business";
+          } catch (e) {
+            console.error("Failed to parse business response:", e);
+          }
+        }
+
+        if (!data && individualJson) {
+          try {
+            data = JSON.parse(individualJson);
+            enquiryType = "individual";
+          } catch (e) {
+            console.error("Failed to parse individual response:", e);
+          }
+        }
+
+        if (!data) {
+          listEl.innerHTML =
+            '<li class="text-danger"><strong>Error:</strong> No enquiry details found. Please contact support.</li>';
+          if (totalCostEl) totalCostEl.textContent = "—";
+          return;
+        }
+
+        // Crucial: Set this so CSS can show/hide correct rows
+        document.body.dataset.enquiryType = enquiryType;
+
+        try {
+          // ── Common fields ───────────────────────────────────────
+          const refPrefix = enquiryType === "business" ? "SMB" : "SMI";
+          const refId = data.id
+            ? `${refPrefix}-${String(data.id).padStart(6, "0")}`
+            : "—";
+          const refEl = document.getElementById("booking-ref");
+          if (refEl) refEl.textContent = refId;
+
+          // Submitted date (common)
+          let submittedDate = "—";
+          const submitted = data.submittedAt || data.SubmittedAt;
+          if (submitted) {
+            const dateObj = new Date(submitted);
+            if (!isNaN(dateObj)) {
+              submittedDate = dateObj.toLocaleString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                hour: "numeric",
+                minute: "2-digit",
+                hour12: true,
+              });
+            }
+          }
+          const submittedEl = document.getElementById("submitted-date");
+          if (submittedEl) submittedEl.textContent = submittedDate;
+
+          // ── Individual enquiry layout ───────────────────────────
+          if (enquiryType === "individual") {
+            const fullName =
+              [
+                data.personalInfo?.firstName || "",
+                data.personalInfo?.lastName || "",
+              ]
+                .filter(Boolean)
+                .join(" ") || "—";
+            const nameEl = document.getElementById("customer-name");
+            if (nameEl) nameEl.textContent = fullName;
+
+            const emailEl = document.getElementById("customer-email");
+            if (emailEl) emailEl.textContent = data.personalInfo?.email || "—";
+
+            const phoneEl = document.getElementById("customer-phone");
+            if (phoneEl) phoneEl.textContent = data.personalInfo?.phone || "—";
+
+            const pkgTypeEl = document.getElementById("package-type");
+            if (pkgTypeEl)
+              pkgTypeEl.textContent =
+                data.selectedStoragePackage?.selectedType || "—";
+
+            const pkgDescEl = document.getElementById("package-desc");
+            if (pkgDescEl)
+              pkgDescEl.textContent =
+                data.selectedStoragePackage?.description || "—";
+
+            const areaEl = document.getElementById("preferred-area");
+            if (areaEl)
+              areaEl.textContent = data.pickupDetails?.preferredArea || "—";
+
+            const liftEl = document.getElementById("lift-availability");
+            if (liftEl)
+              liftEl.textContent = (
+                data.pickupDetails?.liftAvailability || "—"
+              ).toUpperCase();
+
+            const floorEl = document.getElementById("floor-number");
+            if (floorEl) floorEl.textContent = data.pickupDetails?.floor ?? "—";
+
+            const duration = data.pickupDetails?.durationMonths
+              ? `${data.pickupDetails.durationMonths} months`
+              : "—";
+            const durationEl = document.getElementById("duration-months");
+            if (durationEl) durationEl.textContent = duration;
+
+            let pickupDate = "—";
+            if (data.pickupDetails?.tentativeDate) {
+              const dateObj = new Date(data.pickupDetails.tentativeDate);
+              if (!isNaN(dateObj)) {
+                pickupDate = dateObj.toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                });
+              }
+            }
+            const dateEl = document.getElementById("tentative-date");
+            if (dateEl) dateEl.textContent = pickupDate;
+
+            if (totalCostEl)
+              totalCostEl.textContent = data.totalStorageCost || "—";
+          }
+
+          // ── Business enquiry layout ─────────────────────────────
+          else if (enquiryType === "business") {
+            const nameEl = document.getElementById("customer-name");
+            if (nameEl) nameEl.textContent = data.fullName || "—";
+
+            const bizNameEl = document.getElementById("business-name");
+            if (bizNameEl) bizNameEl.textContent = data.businessName || "—";
+
+            const bizEmailEl = document.getElementById("business-email");
+            if (bizEmailEl) bizEmailEl.textContent = data.businessEmail || "—";
+
+            const phoneEl = document.getElementById("customer-phone");
+            if (phoneEl) phoneEl.textContent = data.phone || "—";
+
+            const areaEl = document.getElementById("preferred-area");
+            if (areaEl) areaEl.textContent = data.preferredArea || "—";
+
+            const storageTypeDisplay = data.storageType
+              ? data.storageType
+                  .split("-")
+                  .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+                  .join(" ")
+              : "—";
+            const typeEl = document.getElementById("storage-type");
+            if (typeEl) typeEl.textContent = storageTypeDisplay;
+
+            if (totalCostEl) totalCostEl.textContent = "Quote Pending";
+          }
+
+          // Optional: clear storage after display
+          sessionStorage.removeItem("myStorageMartIndividualEnquiryResponse");
+          sessionStorage.removeItem("myStorageMartBusinessEnquiryResponse");
+        } catch (error) {
+          console.error("Error parsing enquiry data:", error);
+          listEl.innerHTML =
+            '<li class="text-danger"><strong>Error:</strong> Unable to load enquiry details.</li>';
+          if (totalCostEl) totalCostEl.textContent = "—";
+        }
+      });
+    </script>
+  </body>
 </html>
