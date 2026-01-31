@@ -33,76 +33,55 @@
     <title>Form</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark hide-top">
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <a
-            class="logo-home"
-            href="/"
-            title="My Storage Cart Home"
-            aria-label="Go to Home page"
-          >
-            <img
-              src="images/logo-6.svg"
-              alt="Commerce Cloud Storefront Reference Architecture"
-              fetchpriority="high"
-              width="100%"
-              height="80px"
-            />
-          </a>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"> Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="business.html"> Business </a>
-            </li>
+  <nav class="navbar navbar-expand-lg navbar-dark hide-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="logo-home" href="/" title="My Storage Cart Home" aria-label="Go to Home page">
+          <img src="images/logo-6.svg" alt="Commerce Cloud Storefront Reference Architecture" fetchpriority="high"
+            width="100%" height="80px">
+        </a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="business.html">
+              Business
+            </a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="business.html"> Size Guide </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Storage Types
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <ul class="nav flex-column">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="self-storage.html"
-                            >Self Storage</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="24-hour-self-storage.html"
-                            >24 Hour Self Storage</a
-                          >
-                        </li>
-                        <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Business Storage</a>
+          <li class="nav-item">
+            <a class="nav-link" href="size-guide.html">
+              Size Guide
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Storage Types
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="self-storage.html">Self Storage</a>
                       </li>
                       <li class="nav-item">
+                        <a class="nav-link" href="24-hour-self-storage.html">24 Hour Self Storage</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="business-storage.html">Business Storage</a>
+                      </li>
+                      <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Vehicle & RV Storage</a>
                       </li>
                       <li class="nav-item">
@@ -111,68 +90,52 @@
                       <li class="nav-item">
                         <a class="nav-link" href="#">Climate Controlled Storage</a>
                       </li> -->
-                      </ul>
-                    </div>
+                    </ul>
                   </div>
-                </div>
-                <!--  /.container  -->
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="Form.html"
-                ><button class="primary-btn px-3 py-2">Book Storage</button></a
-              >
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0 ml-1">
-            <div id="mySidenav" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                >&times;</a
-              >
-              <a href="index.html">Home</a>
-              <a href="business.html">Business</a>
-              <a href="self-storage.html">Self Storage</a>
-              <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
 
-              <!-- <a href="#">About Us</a> -->
+                </div>
+              </div>
+              <!--  /.container  -->
             </div>
-            <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-              >&#9776;</span
-            >
-          </form>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a href="Form.html"><button class="primary-btn px-3 py-2">Book Storage</button></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 ml-1">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="business.html">Business</a>
+            <a href="self-storage.html">Self Storage</a>
+            <a href="business-storage.html">Business Storage</a>
+            <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
+
+            <!-- <a href="#">About Us</a> -->
+          </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </form>
       </div>
-    </nav>
-    <div class="mobile-new">
-      <div>
-        <a
-          class="logo-home"
-          href="/"
-          title="My Storage Cart Home"
-          aria-label="Go to Home page"
-        >
-          <img
-            src="images/logo-6.svg"
-            alt="Commerce Cloud Storefront Reference Architecture"
-            fetchpriority="high"
-            width="100%"
-            height="50px"
-          />
-        </a>
-      </div>
-      <div id="mySidenav1" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <a href="index.html">Home</a>
-        <a href="business.html">Business</a>
-        <a href="self-storage.html">Self Storage</a>
-        <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
-      </div>
-      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-        >&#9776;</span
-      >
     </div>
+  </nav>
+  <div class="mobile-new">
+    <div>
+      <a class="logo-home" href="/" title="My Storage Cart Home" aria-label="Go to Home page">
+        <img src="images/logo-6.svg" alt="Commerce Cloud Storefront Reference Architecture" fetchpriority="high"
+          width="100%" height="50px">
+      </a>
+    </div>
+    <div id="mySidenav1" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="business.html">Business</a>
+      <a href="self-storage.html">Self Storage</a>
+      <a href="business-storage.html">Business Storage</a>
+      <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
+
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
     <!-- MultiStep Form -->
     <div class="container-fluid">
       <section class="signup-step-container">
@@ -1024,81 +987,117 @@
       </section>
     </div>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Storage Types</h3>
-            <ul>
-              <li>
-                <a href="self-storage.html"> Self Storage </a>
-              </li>
-              <li>
-                <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
-              </li>
-              <li>
-                <a href="#"> Business Storage </a>
-              </li>
+     <footer>
 
-              <li>
-                <a href="#"> Car and RV Storage </a>
-              </li>
-              <li>
-                <a href="#"> Climate Controlled Storage </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3>Support</h3>
-            <ul>
-              <li>
-                <a href="contactus.html"> Contact Us </a>
-              </li>
-              <li>
-                <a href="privacypolicy.html"> Privacy Policy </a>
-              </li>
-              <li>
-                <a href="cookiespolicy.html"> Cookies Policy </a>
-              </li>
-              <li>
-                <a href="termsconditions.html"> Terms and Conditions </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3>Company Info</h3>
-            <ul>
-              <li>
-                <a href="#"> Careers </a>
-              </li>
-              <li>
-                <a href="#"> U.S. Locations </a>
-              </li>
-              <li>
-                <a href="#"> Global Locations </a>
-              </li>
-              <li>
-                <a href="#"> 3rd Party Management </a>
-              </li>
-              <li>
-                <a href="#"> Commercial Real Estate </a>
-              </li>
-              <li>
-                <a href="#"> Cell Tower Lease </a>
-              </li>
-              <li>
-                <a href="#"> AdChoices </a>
-              </li>
-            </ul>
-          </div>
+    <div class="container">
 
-          <div class="col-md-12">
-            <hr />
-            <p>© 2026 My Storage Mart. All rights reserved.</p>
-          </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Storage Types</h3>
+          <ul>
+            <li>
+              <a href="self-storage.html"> Self Storage</a>
+            </li>
+            <li>
+              <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
+            </li>
+            <li>
+              <a href="business-storage.html">
+                Business Storage
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Car and RV Storage
+              </a>
+            </li>
+           
+            <li>
+              <a href="#">
+                Climate Controlled Storage
+              </a>
+            </li>
+          </ul>
         </div>
+        <div class="col-md-4">
+          <h3>Support</h3>
+          <ul>
+            <li>
+              <a href="contactus.html">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="privacypolicy.html">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="cookiespolicy.html">
+                Cookies Policy
+              </a>
+            </li>
+            <li>
+              <a href="termsconditions.html">
+                Terms and Conditions
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Company Info</h3>
+          <ul>
+            <li>
+              <a href="#">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                U.S. Locations
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Global Locations
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                3rd Party Management
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Commercial Real Estate
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Cell Tower Lease
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                AdChoices
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="col-md-12">
+          <hr>
+          <p>© 2026 My Storage Mart. All rights reserved.</p>
+        </div>
+
       </div>
-    </footer>
+
+    </div>
+
+
+  </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
