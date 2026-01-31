@@ -441,9 +441,9 @@ button {
 }
 
 .business-stroge .strore-1 .datalft {
-    width: 84.7%;
+    width: 57.7%;
     background: #121c30;
-    padding: 46px 2% 0 20%;
+    padding: 46px 2% 0 8%;
     height: 468px;
 }
 
@@ -497,8 +497,9 @@ button {
 }
 
 .business-stroge .strore-1 .datargt {
-    width: 42.5%;
-    position: relative;
+    width: 51.5%;
+    /* position: relative; */
+        background: #121c30;
 }
 
 .business-stroge .strore-1 .datargt img {
