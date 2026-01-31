@@ -428,6 +428,7 @@
 
     .top-head ul li {
         width: 100%;
+        height: auto;
         margin-right: 0;
         margin-bottom: 4%;
     }
@@ -685,6 +686,156 @@
     .public-stroge h3 {
         font-size: 20px;
         margin-top: 0;
+    }
+
+    .inventory-1 h2 {
+        color: #060606;
+        font-size: 23px;
+        font-weight: 800;
+        margin-top: 0;
+    }
+
+    .inventory-1 ul {
+        margin-top: 18px;
+    }
+
+    .inventory-1 ul li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+
+    .inventory-1 ul li h3 {
+        padding: 0 0 0;
+    }
+
+    .industries {
+        height: auto;
+        margin-top: 5px;
+        margin-bottom: 0;
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    .fits h2 {
+        font-size: 16px;
+    }
+
+    .industries h2 {
+        font-size: 19px;
+        line-height: 29px;
+
+    }
+
+    .industries li {
+        font-size: 14px;
+    }
+
+    .moving ul {
+        display: block;
+    }
+
+    .bustness-all .managing-1 h2,
+    .bustness-all .managing-2 h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .bustness-all .managing-1 h3,
+    .bustness-all .managing-2 h3 {
+        font-size: 16px;
+    }
+
+    .bustness-all .managing-1 p,
+    .bustness-all .managing-2 p {
+        font-size: 13px;
+    }
+
+    .moving h2 {
+        font-size: 23px;
+    }
+
+    .moving ul li h3 {
+        font-size: 16px;
+    }
+
+    .moving ul li p {
+        color: #000;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .size-guide h2 {
+        font-size: 20px;
+    }
+
+    .size-guide p {
+        font-size: 13px;
+    }
+
+    .size-guide .nav {
+        justify-content: center;
+        gap: 4px;
+        margin-top: 0;
+        display: flex;
+        overflow: hidden;
+
+    }
+
+    .lockers {
+        display: block;
+    }
+
+    .lockers .locks-1,
+    .lockers .locks-2 {
+        width: 100%;
+    }
+
+    .lockers .locks-2 h3 {
+        font-size: 20px;
+    }
+
+    .lockers .locks-2 p,
+    .Picking span {
+        font-size: 13px;
+    }
+
+    .lockers .locks-2 li {
+        font-size: 14px;
+    }
+
+    .comparison {
+
+        margin: 18px 0 0;
+    }
+
+    .comparison h2 {
+        font-size: 21px;
+        margin-bottom: 15px;
+
+    }
+
+    .table thead th {
+        background: #f7bc13;
+        font-size: 14px;
+    }
+
+    .table td,
+    .table th {
+        font-size: 14px;
+    }
+
+    .Picking h2 {
+        font-size: 20px;
+    }
+
+    .loveseat h3 {
+        font-size: 16px;
+    }
+
+    .loveseat p {
+        font-size: 12px;
+
     }
 
 }

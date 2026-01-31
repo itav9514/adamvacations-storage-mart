@@ -657,7 +657,11 @@ div#news-slider3 {
     width: 100%;
     padding: 50px 20px 0;
 }
-.public-stroge p{font-size: 14px;}
+
+.public-stroge p {
+    font-size: 14px;
+}
+
 .public-stroge h2 {
     text-align: center;
     font-size: 35px;
@@ -665,13 +669,15 @@ div#news-slider3 {
     color: #000;
     margin-bottom: 50px;
 }
+
 .public-stroge h3 {
-     text-align: left;
+    text-align: left;
     font-size: 30px;
     font-weight: 700;
     color: #000;
     margin-top: 136px;
 }
+
 .public-stroge a span {
     background: #f9b32c;
     border-radius: 50%;
@@ -2039,87 +2045,97 @@ select.form-control:not([size]):not([multiple]) {
 
 /* Base slider */
 .form-range.yellow-range {
-  height: 6px;
-  cursor: pointer;
+    height: 6px;
+    cursor: pointer;
 }
 
 /* ===== TRACK (background line) ===== */
 .form-range.yellow-range::-webkit-slider-runnable-track {
-  background: #ffecb3; /* light yellow track */
-  height: 6px;
-  border-radius: 5px;
+    background: #ffecb3;
+    /* light yellow track */
+    height: 6px;
+    border-radius: 5px;
 }
+
 .form-range.yellow-range::-moz-range-track {
-  background: #ffecb3;
-  height: 6px;
-  border-radius: 5px;
+    background: #ffecb3;
+    height: 6px;
+    border-radius: 5px;
 }
+
 .form-range.yellow-range::-ms-track {
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
 }
 
 /* ===== FILLED PROGRESS (Firefox only) ===== */
 .form-range.yellow-range::-moz-range-progress {
-  background-color: #ffc107; /* strong yellow progress */
-  height: 6px;
-  border-radius: 5px;
+    background-color: #ffc107;
+    /* strong yellow progress */
+    height: 6px;
+    border-radius: 5px;
 }
 
 /* ===== THUMB (the draggable circle) ===== */
 .form-range.yellow-range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #ffc107;
-  border: 2px solid #e0a800;
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-  margin-top: -6px; /* centers thumb */
-  box-shadow: 0 0 0 2px #fff;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ffc107;
+    border: 2px solid #e0a800;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-top: -6px;
+    /* centers thumb */
+    box-shadow: 0 0 0 2px #fff;
 }
+
 .form-range.yellow-range::-moz-range-thumb {
-  background-color: #ffc107;
-  border: 2px solid #e0a800;
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
+    background-color: #ffc107;
+    border: 2px solid #e0a800;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
 }
+
 .form-range.yellow-range::-ms-thumb {
-  background-color: #ffc107;
-  border: 2px solid #e0a800;
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
+    background-color: #ffc107;
+    border: 2px solid #e0a800;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
 }
 
 /* Hover effect */
 .form-range.yellow-range::-webkit-slider-thumb:hover {
-  background-color: #ffca2c;
+    background-color: #ffca2c;
 }
+
 .form-range.yellow-range::-moz-range-thumb:hover {
-  background-color: #ffca2c;
+    background-color: #ffca2c;
 }
 
 
 
 
-  /* Flatpickr Yellow Theme Overrides */
-  .flatpickr-day.selected,
-  .flatpickr-day.selected:hover,
-  .flatpickr-day.selected:focus {
+/* Flatpickr Yellow Theme Overrides */
+.flatpickr-day.selected,
+.flatpickr-day.selected:hover,
+.flatpickr-day.selected:focus {
     background: #ffc107 !important;
     border-color: #ffc107 !important;
     color: #000 !important;
-  }
-  .flatpickr-day.today {
+}
+
+.flatpickr-day.today {
     border-color: #ffc107;
-  }
-  .flatpickr-calendar {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.flatpickr-calendar {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     font-family: inherit;
-  }
+}
 
 /********Thankyou Start*************/
 .thanks-head {}
@@ -2176,11 +2192,12 @@ select.form-control:not([size]):not([multiple]) {
     list-style-type: none;
     background: #f5f8ff;
     width: 48%;
+    height: 73px;
     margin-right: 2%;
     margin-bottom: 2%;
     float: left;
     border-radius: 10px;
-    padding: 2px 11px;
+    padding: 11px 11px;
 }
 
 .top-head ul li strong {
@@ -2641,4 +2658,486 @@ select.form-control:not([size]):not([multiple]) {
     font-size: 16px;
     margin: 14px 0 0;
 }
-.facilities li img{margin-right: 10px;}
+
+.facilities li img {
+    margin-right: 10px;
+}
+
+#pickupDetailsForm {
+    width: 100%;
+}
+
+.inventory-1 {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.inventory-1 h2 {
+    color: #060606;
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+
+.inventory-1 p {
+    color: #060606;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.inventory-1 ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.inventory-1 ul li {
+    list-style-type: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 2%;
+    padding: 15px;
+}
+
+.inventory-1 ul li h3 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 0 12px;
+}
+
+.industries {
+    background: url(../images/bussiness-banner-1.png) no-repeat center center / cover;
+    width: 100%;
+    height: 450px;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    align-items: center;
+    display: flex;
+}
+
+.industries h2 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 42px;
+    margin: 33px 0 18px;
+    text-align: CENTER;
+}
+
+.industries p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.industries ul {
+    margin: 0;
+    padding: 0;
+}
+
+.industries li {
+    color: #fff;
+    list-style: none;
+    font-size: 16px;
+    margin: 14px 0 0;
+}
+
+.industries li img {
+    margin-right: 10px;
+}
+
+.fits {
+    width: 100%;
+    float: left;
+    margin: 20px 0 20px;
+}
+
+.fits h2 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Hover Effect: Card lifts and glows slightly */
+.gallery {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 500px;
+}
+
+.card {
+    flex: 1;
+    /* All cards start with equal width */
+    background-image: var(--bg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    position: relative;
+    transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    /* Smooth stretch */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* THE STRETCH: Increase flex-grow on hover */
+.card:hover {
+    flex: 3;
+    /* This makes the hovered card 3x wider than others */
+}
+
+/* Styling the text inside */
+.content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    background: rgba(26, 26, 26, 0.9);
+    /* Dark overlay */
+    padding: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: flex-end; */
+}
+
+/* Vertical text for the "shrunk" state */
+.content h2 {
+    color: white;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+    transition: writing-mode 0.3s;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 10px 0;
+    text-align: left;
+}
+
+/* Change text to horizontal when the image stretches */
+.card:hover .content h2 {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    text-align: left;
+}
+
+/* Vertical text for the "shrunk" state */
+.content span {
+    color: white;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+    transition: writing-mode 0.3s;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Change text to horizontal when the image stretches */
+.card:hover .content span {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.card:hover .content {
+    height: 30%;
+    background: #fff;
+    /* Dark overlay */
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #000;
+}
+
+
+
+.bustness-all {
+    width: 100%;
+    float: left;
+    margin: 30px 0 30px;
+}
+
+.bustness-all .managing-1 {}
+
+.bustness-all .managing-1 h2 {
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.bustness-all .managing-1 h3 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bustness-all .managing-1 hr {}
+
+.bustness-all .managing-1 p {
+    color: #76767e;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.bustness-all .managing-2 {
+    background: url(../images/store-banner.png);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.bustness-all .managing-2 h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.bustness-all .managing-2 h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bustness-all .managing-2 hr {
+    border-top: 1px solid #fff;
+}
+
+.bustness-all .managing-2 p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.moving {
+    width: 100%;
+    float: left;
+    margin: 52px 0 30px;
+}
+
+.moving h2 {
+    color: #060606;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.moving ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.moving ul li {
+    list-style-type: none;
+    text-align: center;
+    background: #f8fafc;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+.moving ul li.add {
+    border: 2px solid #f9cc07;
+    border-radius: 20px;
+}
+
+.moving ul li h3 {
+    color: #000;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 15px 0 12px;
+
+}
+
+.moving ul li p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.size-guide {
+    width: 100%;
+    float: left;
+}
+
+.size-guide h2 {
+    color: #060606;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    text-align: center;
+}
+
+.size-guide p {
+    color: #76767e;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}
+
+.size-guide .nav {
+    justify-content: center;
+    gap: 11px;
+    margin-top: 30px;
+}
+
+.size-guide .nav-link {
+    background: #e5e7eb;
+    border-radius: 20px;
+    color: #010404;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #e5e7eb;
+}
+
+.size-guide .nav-pills .nav-link.active,
+.size-guide .nav-pills .show>.nav-link {
+    color: #010404;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 2px solid #f9cc07;
+}
+
+.lockers {
+    display: flex;
+}
+
+.lockers .locks-1 {
+    width: 30%;
+}
+
+.lockers .locks-1 .data-1 {
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.lockers .locks-1 .data-1 strong {
+    line-height: 30px;
+}
+
+.lockers .locks-2 {
+    width: 70%;
+}
+
+.lockers .locks-2 h3 {
+    color: #060606;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    text-align: left;
+}
+
+.lockers .locks-2 p {
+    color: #76767e;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 0;
+}
+
+.lockers .locks-2 ul {
+    margin: 0;
+    padding: 0;
+}
+
+.lockers .locks-2 li {
+    color: #060606;
+    list-style: none;
+    font-size: 16px;
+    margin: 14px 0 0;
+}
+
+.lockers .locks-2 li img {
+    margin-right: 10px;
+}
+
+.comparison {
+    width: 100%;
+    float: left;
+    margin: 50px 0 0;
+}
+
+.comparison h2 {
+    color: #060606;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.table thead th {
+    background: #f7bc13;
+}
+
+.table {
+    border: 1px solid #f7bc13;
+}
+
+.Picking {
+    float: left;
+    width: 100%;
+    margin: 20px 0 0;
+}
+
+.Picking h2 {
+    color: #060606;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.Picking span {
+    color: #a3adbb;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    display: flow;
+    margin-bottom: 37px;
+}
+
+.Picking img {
+    border-radius: 10px;
+}
+
+.loveseat {
+    float: left;
+    width: 100%;
+    margin: 20px 0 20px;
+    border-bottom: 1px solid #d7d2d2;
+}
+
+.loveseat h3 {
+    color: #060606;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.loveseat p {
+    color: #76767e;
+    font-size: 15px;
+    font-weight: 400;
+}
