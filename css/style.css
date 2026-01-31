@@ -441,9 +441,9 @@ button {
 }
 
 .business-stroge .strore-1 .datalft {
-    width: 84.7%;
+    width: 57.7%;
     background: #121c30;
-    padding: 46px 2% 0 20%;
+    padding: 46px 2% 0 8%;
     height: 468px;
 }
 
@@ -497,8 +497,9 @@ button {
 }
 
 .business-stroge .strore-1 .datargt {
-    width: 42.5%;
-    position: relative;
+    width: 51.5%;
+    /* position: relative; */
+        background: #121c30;
 }
 
 .business-stroge .strore-1 .datargt img {
@@ -3258,14 +3259,22 @@ select.form-control:not([size]):not([multiple]) {
     width: 100%;
     float: left;
     margin: 50px 0 30px;
+    background-position: bottom;
 }
-
+.find-answer ul li:nth-child(2) button a{color:#fff;}
 .canoes h2 {
     font-size: 26px;
     color: #fff;
     margin: 23px 0 14px;
 }
-
+footer span {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block;
+    margin:10px 0 10px;
+}
+footer a{color:#fff; font-weight: 600; font-size:14px;}
 .canoes hr {
     border-top: 1px solid rgb(255 255 255 / 100%);
 }
