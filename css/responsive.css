@@ -838,4 +838,64 @@
 
     }
 
+    .vehicles h2 {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 20px;
+    }
+
+    .vehicles ul {
+        display: block;
+    }
+
+    .vehicles ul li {
+        list-style-type: none;
+        border: 1px solid #dddddd;
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+
+    .vehicles ul li h3 {
+        font-size: 16px;
+        margin: 0 0 7px;
+    }
+
+    .vehicles h3 {
+        font-size: 18px;
+        margin: 0 0 16px;
+    }
+
+    .evbarries h2 {
+        font-size: 18px;
+        margin-bottom: 13px;
+    }
+
+    .evbarries span {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .evbarries h3 {
+        font-size: 18px;
+    }
+
+    .evbarries img {
+        margin-bottom: 25px;
+    }
+
+    .vehicles h4 {
+
+        font-size: 20px;
+
+    }
+
+    .canoes {
+
+        margin: 12px 0 0;
+        background-position: right;
+    }
+
+
+
 }

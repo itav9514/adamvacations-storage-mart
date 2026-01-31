@@ -3141,3 +3141,145 @@ select.form-control:not([size]):not([multiple]) {
     font-size: 15px;
     font-weight: 400;
 }
+
+.vehicles {
+    float: left;
+    width: 100%;
+    margin: 0 0 0;
+}
+
+.vehicles h2 {
+    color: #060606;
+    font-size: 29px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.vehicles h3 {
+    color: #060606;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin: 33px 0 30px;
+}
+
+.vehicles ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.vehicles ul li {
+    list-style-type: none;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.vehicles ul li h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 10px;
+    text-align: left;
+}
+
+.vehicles h4 {
+    color: #060606;
+    font-size: 29px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+
+.vehicles ul li p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #a3adbb;
+    margin-bottom: 0;
+}
+
+.vehicles span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #a3adbb;
+    margin-bottom: 30px;
+    text-align: center;
+    display: inherit;
+}
+
+.evbarries {
+    float: left;
+    width: 100%;
+    margin: 50px 0 0;
+}
+
+.evbarries h2 {
+    color: #060606;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.evbarries span {
+    font-size: 17px;
+    font-weight: 400;
+    color: #a3adbb;
+    margin-bottom: 51px;
+    text-align: center;
+    display: block;
+}
+
+.evbarries p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #a3adbb;
+    margin-bottom: 0;
+}
+
+
+.evbarries h3 {
+    color: #060606;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: left;
+    margin: 16px 0 5px;
+}
+
+.canoes {
+    background: url(../images/boat-banner-2.png);
+    border-radius: 0;
+    width: 100%;
+    float: left;
+    margin: 50px 0 30px;
+}
+
+.canoes h2 {
+    font-size: 26px;
+    color: #fff;
+    margin: 23px 0 14px;
+}
+
+.canoes hr {
+    border-top: 1px solid rgb(255 255 255 / 100%);
+}
+
+.canoes h3 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    margin: 10px 0 6px;
+}
+
+.canoes p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
