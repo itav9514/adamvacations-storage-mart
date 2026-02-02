@@ -336,7 +336,7 @@
         display: none;
     }
 
-    /* .mobile-new {
+    .mobile-new {
         display: -webkit-box;
         display: -webkit-flex;
         display: flex;
@@ -344,16 +344,11 @@
         justify-content: space-between;
         padding: 8px 17px 8px;
         position: relative;
-    } */
+    }
 
 
 
-    .mobile-new {
-    display: flex;
-    justify-content: left;
-    padding: 8px 17px 8px;   
-    position: relative;
-}
+
 
     .mobile-new a img {
         float: left;
