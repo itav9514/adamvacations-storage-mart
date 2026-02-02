@@ -337,7 +337,10 @@
     }
 
     .mobile-new {
+        display: -webkit-flex;
+        /* Safari 8 and below */
         display: flex;
+        -webkit-justify-content: space-between;
         justify-content: space-between;
         padding: 8px 17px 8px;
         position: relative;
