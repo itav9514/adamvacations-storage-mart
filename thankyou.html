@@ -35,6 +35,18 @@
         display: list-item;
         list-style-type: none;
       }
+      .contact-only {
+      display: none;
+    }
+
+    body[data-enquiry-type="contact"] .contact-only {
+      display: list-item;
+      list-style-type: none;
+    }
+    .not-contact-only {
+      display: none;
+    }
+
     </style>
   </head>
 
@@ -157,7 +169,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 thanks-head">
-            <h1>Booking Request Received</h1>
+            <h1>Your Request Received</h1>
             <p>
               Your Storege Mart request has been submitted successfully. Our
               team is reviewing the details and will confirm shortly.
@@ -179,7 +191,7 @@
 
             <div class="booking-summary">
               <ul id="enquiry-summary-list">
-                <li>
+                <li class="not-contact-only">
                   <strong>Booking Ref</strong>
                   <p id="booking-ref">Loading...</p>
                 </li>
@@ -203,7 +215,7 @@
                   <strong>Phone</strong>
                   <p id="customer-phone">Loading...</p>
                 </li>
-                <li>
+                <li class="not-contact-only">
                   <strong>Preferred Area</strong>
                   <p id="preferred-area">Loading...</p>
                 </li>
@@ -248,12 +260,29 @@
                   <strong>Submitted On</strong>
                   <p id="submitted-date">Loading...</p>
                 </li>
+
+                              <!-- Contact-only -->
+<li class="contact-only">
+  <strong>Email</strong>
+  <p id="contact-email">Loading...</p>
+</li>
+<li class="contact-only">
+  <strong>Preferred Callback Time</strong>
+  <p id="contact-time">Loading...</p>
+</li>
+<li class="contact-only">
+  <strong>Message</strong>
+  <p id="contact-message">Loading...</p>
+</li>
               </ul>
 
               <div class="total-price individual-only">
                 <p>Total Estimated Cost</p>
                 <strong id="total-cost-display">$0.00</strong>
               </div>
+
+
+
             </div>
           </div>
         </div>
@@ -471,6 +500,9 @@
           "myStorageMartIndividualEnquiryResponse",
         );
 
+        const contactJson = sessionStorage.getItem("myStorageCartContactResponse");
+
+
         let data = null;
         let enquiryType = "none";
 
@@ -492,6 +524,15 @@
           }
         }
 
+        if (!data && contactJson) {
+  try {
+    data = JSON.parse(contactJson);
+    enquiryType = "contact";
+  } catch (e) {
+    console.error("Failed to parse contact response:", e);
+  }
+}
+
         if (!data) {
           listEl.innerHTML =
             '<li class="text-danger"><strong>Error:</strong> No enquiry details found. Please contact support.</li>';
@@ -504,7 +545,12 @@
 
         try {
           // ── Common fields ───────────────────────────────────────
-          const refPrefix = enquiryType === "business" ? "SMB" : "SMI";
+
+const refPrefix =
+  enquiryType === "business" ? "SMB" :
+  enquiryType === "individual" ? "SMI" :
+  enquiryType === "contact" ? "SMC" :
+  "REF";
           const refId = data.id
             ? `${refPrefix}-${String(data.id).padStart(6, "0")}`
             : "—";
@@ -624,9 +670,32 @@
             if (totalCostEl) totalCostEl.textContent = "Quote Pending";
           }
 
+          // ── Contact enquiry layout ─────────────────────────────
+else if (enquiryType === "contact") {
+  const nameEl = document.getElementById("customer-name");
+  if (nameEl) nameEl.textContent = data.name || "—";
+
+  const emailEl = document.getElementById("contact-email");
+  if (emailEl) emailEl.textContent = data.email || "—";
+
+  const phoneEl = document.getElementById("customer-phone");
+  if (phoneEl) phoneEl.textContent = data.phone || "—";
+
+  const timeEl = document.getElementById("contact-time");
+  if (timeEl) timeEl.textContent = data.preferredTime || "—";
+
+  const msgEl = document.getElementById("contact-message");
+  if (msgEl) msgEl.textContent = data.userMessage || "—";
+
+  if (totalCostEl) totalCostEl.parentElement.style.display = "none";
+}
+
+
           // Optional: clear storage after display
           sessionStorage.removeItem("myStorageMartIndividualEnquiryResponse");
           sessionStorage.removeItem("myStorageMartBusinessEnquiryResponse");
+          sessionStorage.removeItem("myStorageCartContactResponse");
+
         } catch (error) {
           console.error("Error parsing enquiry data:", error);
           listEl.innerHTML =
