@@ -391,7 +391,7 @@
         display: block;
         position: fixed;
         bottom: 20px;
-        right:10px;
+        right: 10px;
         width: 30px;
         height: 30px;
         background-color: #f7bc13;
@@ -887,7 +887,7 @@
     .vehicles h4 {
 
         font-size: 20px;
-
+        line-height: 26px;
     }
 
     .canoes {
@@ -896,6 +896,17 @@
         background-position: right;
     }
 
+    .climate {
+        background-position: right;
+    }
 
+    .climate h2 {
+        font-size: 17px;
+    }
+
+    .climate h3 {
+        font-size: 15px;
+    }
+    .climate p{font-size:13px;}
 
 }
