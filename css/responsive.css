@@ -907,6 +907,12 @@
     .climate h3 {
         font-size: 15px;
     }
-    .climate p{font-size:13px;}
 
+    .climate p {
+        font-size: 13px;
+    }
+
+    .need-banner .primary-btn {
+        margin: 25px 0 22px;
+    }
 }

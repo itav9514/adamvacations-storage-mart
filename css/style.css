@@ -1879,7 +1879,6 @@ select.form-control:not([size]):not([multiple]) {
     font-size: 16px;
     font-weight: 600;
 }
-
 .primary-btn {
     background-color: #f7bc13;
     border-radius: 25px;
@@ -1887,6 +1886,14 @@ select.form-control:not([size]):not([multiple]) {
     color: #000;
     font-weight: 600;
     margin: 4px 14px 0;
+}
+.need-banner .primary-btn {
+    background-color: #f7bc13;
+    border-radius: 25px;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    margin: 106px 14px 0;
 }
 
 .hide-top {
