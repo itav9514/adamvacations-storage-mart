@@ -350,8 +350,8 @@
 
     .mobile-new {
     display: flex;
-    justify-content: space-between;
-    padding: 8px 17px 8px;   /* or just padding: 8px 17px; if bottom = top */
+    justify-content: left;
+    padding: 8px 17px 8px;   
     position: relative;
 }
 
