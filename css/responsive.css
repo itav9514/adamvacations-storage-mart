@@ -346,7 +346,7 @@
         padding: 8px 17px 8px;
         position: relative;
     }
-
+.mobile-new a img{        float: left;}
     .thankyou {
         width: 100%;
     }
