@@ -1879,7 +1879,6 @@ select.form-control:not([size]):not([multiple]) {
     font-size: 16px;
     font-weight: 600;
 }
-
 .primary-btn {
     background-color: #f7bc13;
     border-radius: 25px;
@@ -1887,6 +1886,14 @@ select.form-control:not([size]):not([multiple]) {
     color: #000;
     font-weight: 600;
     margin: 4px 14px 0;
+}
+.need-banner .primary-btn {
+    background-color: #f7bc13;
+    border-radius: 25px;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    margin: 106px 14px 0;
 }
 
 .hide-top {
@@ -3292,3 +3299,65 @@ footer a{color:#fff; font-weight: 600; font-size:14px;}
     font-weight: 400;
     color: #fff;
 }
+
+.climate {
+    background: url(../images/climate-banner-1.png);
+    border-radius: 0;
+    width: 100%;
+    float: left;
+    margin: 50px 0 30px;
+    background-position: bottom;
+}
+.climate h2 {
+    font-size: 26px;
+    color: #fff;
+    margin: 23px 0 14px;
+}
+.climate hr {
+    border-top: 1px solid rgb(255 255 255 / 100%);
+}
+
+.climate h3 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    margin: 10px 0 6px;
+}
+
+.climate p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.magnetic  {
+    background: url(../images/climate-banner-2.png);
+    border-radius: 0;
+    width: 100%;
+    float: left;
+    margin: 50px 0 30px;
+    background-position: top;
+}
+.magnetic h2 {
+    font-size: 26px;
+    color: #fff;
+    margin: 23px 0 14px;
+}
+.magnetic hr {
+    border-top: 1px solid rgb(255 255 255 / 100%);
+}
+
+.magnetic h3 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    margin: 10px 0 6px;
+}
+
+.magnetic p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+ .phone-header-mobile{display:none;}
