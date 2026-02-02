@@ -45,119 +45,164 @@
     <title>Business Stroge</title>
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-dark hide-top">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <a class="logo-home" href="/" title="My Storage Cart Home" aria-label="Go to Home page">
-          <img src="images/logo-6.svg" alt="Commerce Cloud Storefront Reference Architecture" fetchpriority="high"
-            width="100%" height="80px">
-        </a>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="business.html">
-              Business
-            </a>
-          </li>
+    <nav class="navbar navbar-expand-lg navbar-dark hide-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a
+            class="logo-home"
+            href="/"
+            title="My Storage Cart Home"
+            aria-label="Go to Home page"
+          >
+            <img
+              src="images/logo-6.svg"
+              alt="Commerce Cloud Storefront Reference Architecture"
+              fetchpriority="high"
+              width="100%"
+              height="80px"
+            />
+          </a>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="business.html"> Business </a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="size-guide.html">
-              Size Guide
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Storage Types
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-
-                    <ul class="nav flex-column">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="self-storage.html">Self Storage</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="24-hour-self-storage.html">24 Hour Self Storage</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="business-storage.html">Business Storage</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="vehicle.html">Vehicle & RV Storage</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="boat-storage.html">Boat Storage</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="climate-controlled.html">Climate Controlled Storage</a>
-                      </li>
-                    </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="size-guide.html"> Size Guide </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Storage Types
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="self-storage.html"
+                            >Self Storage</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="24-hour-self-storage.html"
+                            >24 Hour Self Storage</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="business-storage.html"
+                            >Business Storage</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="vehicle.html"
+                            >Vehicle & RV Storage</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="boat-storage.html"
+                            >Boat Storage</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="climate-controlled.html"
+                            >Climate Controlled Storage</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-
                 </div>
+                <!--  /.container  -->
               </div>
-              <!--  /.container  -->
+            </li>
+            <li class="nav-item">
+              <a href="Form.html"
+                ><button class="primary-btn px-3 py-2">Book Storage</button></a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 ml-1">
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <a href="index.html">Home</a>
+              <a href="business.html">Business</a>
+              <a href="size-guide.html">Size Guide</a>
+              <a href="self-storage.html">Self Storage</a>
+              <a href="business-storage.html">Business Storage</a>
+              <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
+              <a href="vehicle.html">Vehicle & RV Storage</a>
+              <a href="boat-storage.html">Boat Storage</a>
+              <a href="climate-controlled.html">Climate Controlled Storage</a>
+
+              <!-- <a href="#">About Us</a> -->
             </div>
-          </li>
-          <li class="nav-item">
-            <a href="Form.html"><button class="primary-btn px-3 py-2">Book Storage</button></a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0 ml-1">
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="business.html">Business</a>
-            <a href="size-guide.html">Size Guide</a>
-            <a href="self-storage.html">Self Storage</a>
-            <a href="business-storage.html">Business Storage</a>
-            <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
-            <a href="vehicle.html">Vehicle & RV Storage</a>
-            <a href="boat-storage.html">Boat Storage</a>
-            <a href="climate-controlled.html">Climate Controlled Storage</a>
-
-
-
-            <!-- <a href="#">About Us</a> -->
-          </div>
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        </form>
+            <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+              >&#9776;</span
+            >
+          </form>
+        </div>
       </div>
+    </nav>
+    <div class="mobile-new">
+      <div>
+        <a
+          class="logo-home"
+          href="/"
+          title="My Storage Cart Home"
+          aria-label="Go to Home page"
+        >
+          <img
+            src="images/logo-6.svg"
+            alt="Commerce Cloud Storefront Reference Architecture"
+            fetchpriority="high"
+            width="100%"
+            height="50px"
+          />
+        </a>
+      </div>
+      <div id="mySidenav1" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="index.html">Home</a>
+        <a href="business.html">Business</a>
+        <a href="size-guide.html">Size Guide</a>
+        <a href="self-storage.html">Self Storage</a>
+        <a href="business-storage.html">Business Storage</a>
+        <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
+        <a href="vehicle.html">Vehicle & RV Storage</a>
+        <a href="boat-storage.html">Boat Storage</a>
+        <a href="climate-controlled.html">Climate Controlled Storage</a>
+      </div>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776;</span
+      >
     </div>
-  </nav>
-  <div class="mobile-new">
-    <div>
-      <a class="logo-home" href="/" title="My Storage Cart Home" aria-label="Go to Home page">
-        <img src="images/logo-6.svg" alt="Commerce Cloud Storefront Reference Architecture" fetchpriority="high"
-          width="100%" height="50px">
-      </a>
-    </div>
-    <div id="mySidenav1" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.html">Home</a>
-      <a href="business.html">Business</a>
-      <a href="size-guide.html">Size Guide</a>
-      <a href="self-storage.html">Self Storage</a>
-      <a href="business-storage.html">Business Storage</a>
-      <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
-      <a href="vehicle.html">Vehicle & RV Storage</a>
-      <a href="boat-storage.html">Boat Storage</a>
-      <a href="climate-controlled.html">Climate Controlled Storage</a>
-
-    </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-  </div>
     <!-- MultiStep Form -->
     <section class="warehose-storage">
       <div class="container">
@@ -167,7 +212,7 @@
               <h2>Efficient. Reliable. Affordable</h2>
               <p>
                 Store My Goods offers the best warehouse storage services in
-                Globali  with its tech-enabled storage facilities enabling a
+                Globali with its tech-enabled storage facilities enabling a
                 hassle-free storage experience for business managers and owners.
                 Our Business Customer App allows you to keep track of inventory
                 and oversee warehouse operationsfrom the comfort of your home.
@@ -342,7 +387,7 @@
             <p>
               If you require an urgent Pick-Up,or need any other assistance,
               please call us and<br />
-              speak to  our representative.
+              speak to our representative.
             </p>
           </div>
           <div class="col-md-4 col-xs-12 mob-txt">
@@ -354,68 +399,73 @@
       </div>
     </section>
 
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Company Info</h3>
+            <img
+              src="images/logo-foter.png"
+              style="height: 60px; margin: 0 auto 0; display: block"
+            />
+            <span>
+              My Storage Cart is the leading provider of Storage units for Your
+              personal, business and vehicle needs with thousands of locations
+              nationwide.
+            </span>
+            <a href="aboutus.html">Read More</a>
+          </div>
 
-  <footer>
-    
-    <div class="container">
-      <div class="row">
-         <div class="col-md-4">
-          <h3>Company Info</h3>
-         <img src="images/logo-foter.png" style="height:60px; margin:0 auto 0; display: block;">
-         <span>
-          My Storage Cart is the leading provider of Storage units for Your personal, business and vehicle needs with thousands of locations nationwide.
-         </span>
-         <a href="aboutus.html">Read More</a>
-        </div>
-        
-        <div class="col-md-4">
-          <h3>Support</h3>
-          <ul>
-             <li>
-              <a href="contactus.html"> Contact Us </a>
-            </li>
-            <li>
-              <a href="aboutus.html"> About Us </a>
-            </li>
-            <li>
-              <a href="privacypolicy.html"> Privacy Policy </a>
-            </li>
-            <li>
-              <a href="cookiespolicy.html"> Cookies Policy </a>
-            </li>
-            <li>
-              <a href="termsconditions.html"> Terms and Conditions </a>
-            </li>
-          </ul>
-        </div>   
-        <div class="col-md-4">
-          <h3>Storage Types</h3>
-          <ul>
-            <li>
-              <a href="self-storage.html"> Self Storage</a>
-            </li>
-            <li>
-              <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
-            </li>
-            <li>
-              <a href="business-storage.html"> Business Storage </a>
-            </li>
-            <li>
-              <a href="vehicle.html"> Vehicle & RV Storage </a>
-            </li>
+          <div class="col-md-4">
+            <h3>Support</h3>
+            <ul>
+              <li>
+                <a href="contactus.html"> Contact Us </a>
+              </li>
+              <li>
+                <a href="aboutus.html"> About Us </a>
+              </li>
+              <li>
+                <a href="privacypolicy.html"> Privacy Policy </a>
+              </li>
+              <li>
+                <a href="cookiespolicy.html"> Cookies Policy </a>
+              </li>
+              <li>
+                <a href="termsconditions.html"> Terms and Conditions </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Storage Types</h3>
+            <ul>
+              <li>
+                <a href="self-storage.html"> Self Storage</a>
+              </li>
+              <li>
+                <a href="24-hour-self-storage.html">24 Hour Self Storage</a>
+              </li>
+              <li>
+                <a href="business-storage.html"> Business Storage </a>
+              </li>
+              <li>
+                <a href="vehicle.html"> Vehicle & RV Storage </a>
+              </li>
 
-            <li>
-              <a href="climate-controlled.html"> Climate Controlled Storage </a>
-            </li>
-          </ul>
-        </div>   
-        <div class="col-md-12">
-          <hr />
-          <p>© 2026 My Storage Mart. All rights reserved.</p>
+              <li>
+                <a href="climate-controlled.html">
+                  Climate Controlled Storage
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-12">
+            <hr />
+            <p>© 2026 My Storage Mart. All rights reserved.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
     <div class="phone-footer">
       <a href="tel:1-855-663-3181"
         ><img src="images/phone-icon.png" /> 1-855-663-3181</a
@@ -625,98 +675,103 @@
       // ────────────────────────────────────────────────
 
       form.addEventListener("submit", async function (e) {
-  e.preventDefault();
+        e.preventDefault();
 
-  if (submitBtn.disabled) return;
+        if (submitBtn.disabled) return;
 
-  // ── Show loading state ────────────────────────────────
-  submitBtn.disabled = true;
-  submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Sending...';
+        // ── Show loading state ────────────────────────────────
+        submitBtn.disabled = true;
+        submitBtn.innerHTML =
+          '<span class="spinner-border spinner-border-sm me-2"></span> Sending...';
 
-  // ── Collect sanitized data ─────────────────────────────
-  const payload = {
-    fullName: document.getElementById("fullName").value.trim(),
-    phone: phoneInput.getNumber(),              // +91xxxxxxxxxx format
-    businessEmail: document.getElementById("businessEmail").value.trim().toLowerCase(),
-    businessName: document.getElementById("businessName").value.trim(),
-    preferredArea: document.getElementById("preferredAreaInput").value.trim(),
-    storageType: document.getElementById("storageType").value,
-    // submittedAt: new Date().toISOString(),   // optional – backend usually sets it
-  };
+        // ── Collect sanitized data ─────────────────────────────
+        const payload = {
+          fullName: document.getElementById("fullName").value.trim(),
+          phone: phoneInput.getNumber(), // +91xxxxxxxxxx format
+          businessEmail: document
+            .getElementById("businessEmail")
+            .value.trim()
+            .toLowerCase(),
+          businessName: document.getElementById("businessName").value.trim(),
+          preferredArea: document
+            .getElementById("preferredAreaInput")
+            .value.trim(),
+          storageType: document.getElementById("storageType").value,
+          // submittedAt: new Date().toISOString(),   // optional – backend usually sets it
+        };
 
-  console.log("Sending payload:", payload);
+        console.log("Sending payload:", payload);
 
-  try {
-    const response = await fetch("/api/MyStorageCartBusinessEnquiry", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        // "Authorization": "Bearer ..." // ← add if you later use JWT
-      },
-      body: JSON.stringify(payload),
-    });
+        try {
+          const response = await fetch("/api/MyStorageCartBusinessEnquiry", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              // "Authorization": "Bearer ..." // ← add if you later use JWT
+            },
+            body: JSON.stringify(payload),
+          });
 
-    const responseText = await response.text();
+          const responseText = await response.text();
 
-    let data;
-    try {
-      data = JSON.parse(responseText);
-    } catch {
-      data = { message: responseText };
-    }
+          let data;
+          try {
+            data = JSON.parse(responseText);
+          } catch {
+            data = { message: responseText };
+          }
 
-    if (response.ok) {
-      // ── SUCCESS ──────────────────────────────────────────────
-      console.log("Success! Server returned:", data);
+          if (response.ok) {
+            // ── SUCCESS ──────────────────────────────────────────────
+            console.log("Success! Server returned:", data);
 
-      // Save full response in sessionStorage
-      sessionStorage.setItem(
-        "myStorageMartBusinessEnquiryResponse",
-        JSON.stringify(data)
-      );
+            // Save full response in sessionStorage
+            sessionStorage.setItem(
+              "myStorageMartBusinessEnquiryResponse",
+              JSON.stringify(data),
+            );
 
-      // Show success message (briefly)
-      messageDiv.innerHTML = '<div class="alert alert-success mt-3">Enquiry submitted successfully! Redirecting...</div>';
+            // Show success message (briefly)
+            messageDiv.innerHTML =
+              '<div class="alert alert-success mt-3">Enquiry submitted successfully! Redirecting...</div>';
 
-      // Redirect to thank you page after short delay
-      setTimeout(() => {
-        window.location.href = "/thankyou.html"; // ← change to your actual thank-you page path
-        // or: window.location.href = `/thankyou?id=${data.id}`;
-      }, 1200);
-    } else {
-      // ── SERVER ERROR (400, 500, etc.) ────────────────────────
-      console.error("Server error:", data);
+            // Redirect to thank you page after short delay
+            setTimeout(() => {
+              window.location.href = "/thankyou.html"; // ← change to your actual thank-you page path
+              // or: window.location.href = `/thankyou?id=${data.id}`;
+            }, 1200);
+          } else {
+            // ── SERVER ERROR (400, 500, etc.) ────────────────────────
+            console.error("Server error:", data);
 
-      let errorMsg = "Submission failed. Please try again.";
+            let errorMsg = "Submission failed. Please try again.";
 
-      if (response.status === 400 && data.errors) {
-        // Show first validation error
-        const firstError = Object.values(data.errors)[0]?.[0] || errorMsg;
-        errorMsg = `Please fix: ${firstError}`;
-      } else if (response.status === 500) {
-        errorMsg = "Server error occurred. Please try again later.";
-      } else {
-        errorMsg = data.message || errorMsg;
-      }
+            if (response.status === 400 && data.errors) {
+              // Show first validation error
+              const firstError = Object.values(data.errors)[0]?.[0] || errorMsg;
+              errorMsg = `Please fix: ${firstError}`;
+            } else if (response.status === 500) {
+              errorMsg = "Server error occurred. Please try again later.";
+            } else {
+              errorMsg = data.message || errorMsg;
+            }
 
-      alert(errorMsg);
-      messageDiv.innerHTML = `<div class="alert alert-danger mt-3">${errorMsg}</div>`;
-    }
-  } catch (err) {
-    // ── NETWORK / FETCH ERROR ────────────────────────────────
-    console.error("Fetch error:", err);
-    const errorMsg = "Could not connect to the server. Please check your internet and try again.";
-    alert(errorMsg);
-    messageDiv.innerHTML = `<div class="alert alert-danger mt-3">${errorMsg}</div>`;
-  } finally {
-    // ── Always reset button state ─────────────────────────────
-    submitBtn.disabled = false;
-    submitBtn.innerHTML = "Enquiry Now";
-  }
-});
-
-
-      
+            alert(errorMsg);
+            messageDiv.innerHTML = `<div class="alert alert-danger mt-3">${errorMsg}</div>`;
+          }
+        } catch (err) {
+          // ── NETWORK / FETCH ERROR ────────────────────────────────
+          console.error("Fetch error:", err);
+          const errorMsg =
+            "Could not connect to the server. Please check your internet and try again.";
+          alert(errorMsg);
+          messageDiv.innerHTML = `<div class="alert alert-danger mt-3">${errorMsg}</div>`;
+        } finally {
+          // ── Always reset button state ─────────────────────────────
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = "Enquiry Now";
+        }
+      });
     </script>
   </body>
 </html>
