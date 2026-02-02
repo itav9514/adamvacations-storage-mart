@@ -337,6 +337,7 @@
     }
 
     .mobile-new {
+        display: -webkit-box;
         display: -webkit-flex;
         /* Safari 8 and below */
         display: flex;
