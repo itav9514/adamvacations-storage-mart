@@ -338,7 +338,9 @@
 
     .mobile-new {
         display: -webkit-box;
+        /* Old Safari/iOS */
         display: -webkit-flex;
+        /* Newer Safari */
         /* Safari 8 and below */
         display: flex;
         -webkit-justify-content: space-between;
@@ -346,7 +348,11 @@
         padding: 8px 17px 8px;
         position: relative;
     }
-.mobile-new a img{        float: left;}
+
+    .mobile-new a img {
+        float: left;
+    }
+
     .thankyou {
         width: 100%;
     }
