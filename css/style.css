@@ -26,7 +26,8 @@ button {
     text-transform: capitalize;
     font-size: 15px;
     font-weight: 700;
-    padding: 0.8rem 1rem;
+    /* padding: 0.8rem 1rem; */
+    padding: 0.8rem 0.8rem;
     background: 0 0;
     border: 0;
 }
@@ -1895,6 +1896,27 @@ select.form-control:not([size]):not([multiple]) {
     font-weight: 600;
     margin: 106px 14px 0;
 }
+
+
+.outline-btn {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 25px;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    margin: 4px 14px 0;
+}
+.need-banner .outline-btn {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 25px;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    margin: 106px 14px 0;
+}
+
 
 .hide-top {
     display: block;
